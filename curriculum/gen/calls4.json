@@ -1,0 +1,189 @@
+[
+[
+"sk_tree",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A small olive tree with a tender new green shoot growing up from an old cut stump beside it. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_quill",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A feather quill pen resting in a small clay ink pot beside a partly unrolled blank scroll. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_crown",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A simple royal crown with a small star above it. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_bread",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A woven basket of round flatbreads next to a small clay jug and a cluster of olives. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_wedding",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A simple wedding canopy made of four poles and draped cloth, with two small clay cups on a little table beneath it. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_star",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A large bright eight-pointed star shining over the flat-roofed houses of a tiny hillside village at night. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_shepherds",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "Three first-century Hebrew shepherds with staffs hurrying along a path to the right, one carrying a lamb on his shoulders, full bodies, side view. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_starmap",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "An old wise man in a turban and long robe pointing up at a bright star, holding an open scroll in his other hand, full body. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_caravan",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "Three camels with saddlebags walking in a line to the left, led by one robed rider, side view. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_chest",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A small open treasure chest full of coins, beside a round incense jar with a wisp of smoke and a slender stoppered jar. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_heartgift",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "Two child's hands held open and lifted up, holding a small heart. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_menorah",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A seven-branched golden temple lampstand (menorah) with small flames. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_doves",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "Two turtledoves sitting side by side in a small woven wicker cage basket. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_oven",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A small flat-roofed first-century Israelite house of stone with an outside staircase, a doorway, and a round clay bread oven in the courtyard. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_pyramids",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "Two small pyramids with two palm trees and a wavy river in front. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_dream",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "A bearded first-century man asleep on a sleeping mat under a blanket, with a crescent moon and three stars above him. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+],
+[
+"sk_scroll",
+{
+"modelId": "gpt-image-2-text",
+"size": "1024x1024",
+"quality": "High",
+"output_format": "PNG",
+"n": 1,
+"prompt": "An open ancient scroll on two wooden rollers with wavy ink lines suggesting writing, with a small oil lamp beside it. Simple hand-drawn children's sketch: clean navy-blue ink line drawing with a light wash of warm gold watercolor in a few places, minimal detail, friendly and calm, one small subject centered and isolated on a pure white background with plenty of white space, no frame, no shadow box. No text, no letters, no words, no numbers."
+}
+]
+]

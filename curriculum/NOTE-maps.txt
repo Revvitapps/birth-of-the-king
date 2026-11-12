@@ -1,0 +1,1 @@
+Natural Earth data (10m/50m GeoJSON) from raw.githubusercontent.com/nvkelso/natural-earth-vector, saved in ne/ (excluded to save space).
