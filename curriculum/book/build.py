@@ -155,8 +155,10 @@ SFOOT = "Birth of the King · © For His Kingdom"
 def pg_work(p):
     ins = f'<div class="ins">{md(p["ins"])}</div>' if p.get('ins') else ''
     if p.get('sk'):
-        ins = f'<div class="insrow">{ins}<img class="sk" src="{src(p["sk"])}" style="height:{p.get("skh", 0.95)}in"></div>'
+        ins = f'<div class="insrow">{ins}<img class="sk" src="{src(p["sk"])}" style="height:{p.get("skh", 1.2)}in"></div>'
     body = ''.join(block_html(b) for b in p['blocks'])
+    if p.get('skbot'):
+        body += f'<div class="skbot"><img src="{src(p["skbot"][0])}" style="height:{p["skbot"][1]}in"></div>'
     return f'''<section class="page work {p.get('cls','')}">{wband(p, p.get("kick", "Activity"))}
 <div class="wbody fit">{ins}{body}</div>{foot(p, SFOOT)}</section>'''
 

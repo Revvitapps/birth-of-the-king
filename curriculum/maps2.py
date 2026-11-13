@@ -35,9 +35,29 @@ def town(ax, x, y, t, dx=0.25, dy=0.12, ha='left', size=10, bold=False, ms=6):
     ax.plot(x, y, 'o', ms=ms, mfc='white', mec=INK, mew=1.8, zorder=5)
     if t: ax.text(x + dx, y + dy, t, fontsize=size, color=INK, ha=ha, fontweight='bold' if bold else 'normal', zorder=6)
 
-def compass(ax, x, y, s=0.6):
-    ax.annotate('', xy=(x, y + s), xytext=(x, y - s * 0.2), arrowprops=dict(arrowstyle='-|>', color=INK, lw=2))
-    ax.text(x, y + s * 1.15, 'N', ha='center', fontsize=12, fontweight='bold', color=INK)
+def compass(ax, x, y, s=0.6, r=0.085, fc=None):
+    """full compass rose (N, E, S, W) centred near data point (x, y); r = radius as a fraction of the axes width"""
+    import numpy as np
+    from matplotlib.patches import Polygon, Circle
+    fx, fy = ax.transAxes.inverted().transform(ax.transData.transform((x, y)))
+    bb = ax.get_window_extent(); ry = r * bb.width / bb.height
+    fx = min(max(fx, r * 1.65), 1 - r * 1.65); fy = min(max(fy, ry * 1.65), 1 - ry * 1.65)
+    ia = ax.inset_axes([fx - r * 1.5, fy - ry * 1.5, r * 3, ry * 3], zorder=20)
+    ia.set_xlim(-1.5, 1.5); ia.set_ylim(-1.5, 1.5); ia.set_aspect('equal'); ia.axis('off'); ia.patch.set_alpha(0)
+    ia.add_patch(Circle((0, 0), 0.62, fc='none', ec=INK, lw=1.0))
+    ia.add_patch(Circle((0, 0), 0.52, fc='none', ec=INK, lw=0.5))
+    for k in range(4):                       # short diagonal points
+        t = np.pi / 4 + k * np.pi / 2
+        tip = (0.62 * np.cos(t), 0.62 * np.sin(t)); l = (0.16 * np.cos(t + np.pi / 2), 0.16 * np.sin(t + np.pi / 2))
+        ia.add_patch(Polygon([tip, l, (-l[0], -l[1])], closed=True, fc='white', ec=INK, lw=0.8))
+    for k in range(4):                       # long N E S W points, half dark, half light
+        t = np.pi / 2 - k * np.pi / 2
+        tip = (np.cos(t), np.sin(t)); l = (0.2 * np.cos(t + np.pi / 4 + np.pi / 2), 0.2 * np.sin(t + np.pi / 4 + np.pi / 2))
+        a_ = (0.2 * np.cos(t + np.pi / 4), 0.2 * np.sin(t + np.pi / 4)); b_ = (0.2 * np.cos(t - np.pi / 4), 0.2 * np.sin(t - np.pi / 4))
+        ia.add_patch(Polygon([tip, a_, (0, 0)], closed=True, fc=INK, ec=INK, lw=0.8))
+        ia.add_patch(Polygon([tip, b_, (0, 0)], closed=True, fc='white', ec=INK, lw=0.8))
+    for t_, (lx, ly) in {'N': (0, 1.27), 'E': (1.27, 0), 'S': (0, -1.27), 'W': (-1.27, 0)}.items():
+        ia.text(lx, ly, t_, ha='center', va='center', fontsize=10 if t_ == 'N' else 8, fontweight='bold', color=INK)
 
 def save(fig, name, dpi=220):
     fig.savefig(OUT + name + '.png', dpi=dpi, bbox_inches='tight', pad_inches=0.02); plt.close(fig)
@@ -58,7 +78,7 @@ ax.text(33.0, 34.0, 'Mediterranean\nSea', fontsize=10, color=WTXT, style='italic
 ax.text(34.0, 37.6, 'ROMAN EMPIRE', fontsize=10, fontweight='bold', color='#8a3326', alpha=.6, ha='center')
 ax.text(42, 28.5, 'ARABIAN DESERT', fontsize=9, color=INK, alpha=.5, ha='center')
 ax.text(49.6, 28.9, 'Persian\nGulf', fontsize=9, color=WTXT, style='italic', ha='center')
-compass(ax, 32.3, 29.6, 0.6)
+compass(ax, 32.6, 29.9, r=0.07)
 save(fig, 'map_magi_book')
 
 # 1b Magi route wide (book, colored)
@@ -77,7 +97,7 @@ ax.text(33.0, 34.0, 'Mediterranean\nSea', fontsize=10, color=WTXT, style='italic
 ax.text(34.5, 36.9, 'ROMAN EMPIRE', fontsize=10, fontweight='bold', color='#8a3326', alpha=.6, ha='center')
 ax.text(41, 30.0, 'ARABIAN DESERT', fontsize=9, color=INK, alpha=.5, ha='center')
 ax.text(50.0, 29.3, 'Persian\nGulf', fontsize=9, color=WTXT, style='italic', ha='center')
-compass(ax, 50.6, 35.6, 0.6)
+compass(ax, 45.7, 30.0, r=0.05)
 save(fig, 'map_magi_wide')
 
 # 2 Escape to Egypt: book (answer map, colored) and sheet (coloring, numbered dots to label and connect)
@@ -103,7 +123,7 @@ for kind in ['book', 'sheet']:
         ax.text(31.35, 29.1, 'Nile R.', fontsize=8, color=WTXT, style='italic')
         ax.text(33.6, 29.9, 'Sinai\nDesert', fontsize=9, color=INK, alpha=.5, ha='center')
         ax.text(32.6, 32.3, 'Mediterranean Sea', fontsize=11, color=WTXT, style='italic', ha='center')
-        compass(ax, 36.3, 29.5, 0.3)
+        compass(ax, 36.05, 29.62, r=0.085)
         save(fig, 'map_escape_book')
     else:
         fig, ax = base(ext, (6.4, 6.6), land10, 'white', 'white', LK, RV, lw=1.6, rlw=1.4)
@@ -118,7 +138,7 @@ for kind in ['book', 'sheet']:
         ax.text(32.3, 32.75, 'Mediterranean Sea', fontsize=11, color=INK, style='italic', ha='center', alpha=.6)
         ax.text(33.6, 29.9, 'Sinai Desert', fontsize=9, color=INK, alpha=.5, ha='center')
         ax.text(31.0, 29.35, 'Nile River', fontsize=8, color=INK, alpha=.6, style='italic')
-        compass(ax, 36.3, 29.5, 0.3)
+        compass(ax, 36.05, 29.62, r=0.085)
         save(fig, 'map_escape_sheet')
 
 # 3 Journey: Nazareth to Bethlehem (coloring)
@@ -136,31 +156,31 @@ ax.text(35.3, 32.93, 'GALILEE', fontsize=9, fontweight='bold', color=INK, alpha=
 ax.text(34.95, 31.48, 'JUDEA', fontsize=9, fontweight='bold', color=INK, alpha=.5, ha='center')
 ax.text(35.42, 32.72, '★ START', fontsize=9, fontweight='bold', color=INK, ha='center')
 ax.text(35.20, 31.64, 'FINISH ★', fontsize=9, fontweight='bold', color=INK, ha='center')
-compass(ax, 35.92, 31.5, 0.12)
+compass(ax, 35.86, 31.56, r=0.085)
 save(fig, 'map_journey')
 
-# 4 Bethlehem area: Migdal Eder (book, colored, small)
-fig, ax = plt.subplots(figsize=(5.2, 3.6))
-ax.set_facecolor('#f3ead2')
-ax.set_xlim(35.12, 35.33); ax.set_ylim(31.64, 31.80); ax.set_aspect(1.18)
-ax.set_xticks([]); ax.set_yticks([])
-for s in ax.spines.values(): s.set_edgecolor(INK); s.set_linewidth(2)
-ax.add_patch(plt.Circle((35.228, 31.700), 0.012, color='#c9d9a7', alpha=.9, zorder=1))
-ax.text(35.228, 31.6855, 'shepherds’ fields', fontsize=7.5, color='#4d6b2a', ha='center', style='italic')
-rd = [(35.2345, 31.7767), (35.222, 31.745), (35.207, 31.718), (35.2024, 31.7054), (35.19, 31.68), (35.17, 31.645)]
-ax.plot(*zip(*rd), color='#a08c64', lw=2, zorder=2)
-ax.text(35.178, 31.672, 'road to Hebron', fontsize=7, color='#7a6a4a', rotation=-60, style='italic')
-town(ax, 35.2345, 31.7767, 'Jerusalem', 0.006, 0.002, 'left', 10, True, ms=9)
-ax.plot(35.2390, 31.7780, 's', ms=7, color='#c9a24a', zorder=6); ax.text(35.245, 31.768, 'Temple', fontsize=8, color=INK)
-town(ax, 35.2024, 31.7054, 'Bethlehem', -0.006, 0.0, 'right', 10, True, ms=9)
-ax.plot(35.228, 31.700, '^', ms=11, mfc='#c9a24a', mec=INK, mew=1.5, zorder=6)
-ax.text(35.236, 31.703, 'Migdal Eder\n(Tower of the Flock)', fontsize=8.5, color=INK, fontweight='bold', va='center')
-town(ax, 35.2414, 31.6658, 'Herodium', 0.006, -0.002, 'left', 8.5, ms=6)
-ax.plot([35.135, 35.135 + 1.609 / (111 * 0.851)], [31.65, 31.65], color=INK, lw=3)
-ax.text(35.135, 31.654, '1 mile', fontsize=7.5, color=INK)
-ax.annotate('', xy=(35.31, 31.79), xytext=(35.31, 31.77), arrowprops=dict(arrowstyle='-|>', color=INK, lw=1.8))
-ax.text(35.31, 31.792, 'N', ha='center', fontsize=10, fontweight='bold', color=INK)
-save(fig, 'map_bethlehem')
+# 4 Bethlehem area: Migdal Eder (book): painted bird's-eye base (Magica) with our own labels and compass rose
+import matplotlib.image as mpimg, matplotlib.patheffects as pe
+img = mpimg.imread('/tmp/claude-0/-home-user/3a5c4b7d-4602-5541-b0fe-22f390b862a8/scratchpad/dl/bmapB.png')
+H_, W_ = img.shape[:2]
+fig, ax = plt.subplots(figsize=(7.68, 5.12))
+ax.imshow(img, extent=(0, 1, 0, 1), aspect=H_ / W_)
+ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.set_xticks([]); ax.set_yticks([])
+for s_ in ax.spines.values(): s_.set_edgecolor(INK); s_.set_linewidth(2)
+halo = [pe.withStroke(linewidth=3.2, foreground='white', alpha=.92)]
+def lab(x, y, t, size=11, bold=True, ha='center', color=INK, style='normal'):
+    ax.text(x, y, t, fontsize=size, fontweight='bold' if bold else 'normal', color=color, ha=ha, va='center', style=style, path_effects=halo, zorder=9, linespacing=1.05)
+lab(0.66, 0.945, 'Jerusalem', 19)
+lab(0.84, 0.865, 'Temple', 12, False, style='italic')
+lab(0.245, 0.49, 'Bethlehem', 19)
+lab(0.61, 0.585, 'Migdal Eder\n(Tower of the Flock)', 13.5)
+lab(0.60, 0.30, 'shepherds’ fields', 12, False, color='#33501a', style='italic')
+lab(0.82, 0.47, 'Herodium', 14.5)
+lab(0.17, 0.27, 'road to Hebron', 11, False, color='#5a4a2a', style='italic')
+lab(0.40, 0.77, 'road to Jerusalem', 11, False, color='#5a4a2a', style='italic')
+lab(0.92, 0.63, 'Judean\nwilderness', 11.5, False, color='#6b5a3a', style='italic')
+compass(ax, 0.90, 0.27, r=0.065)
+fig.savefig(OUT + 'map_bethlehem.png', dpi=200, bbox_inches='tight', pad_inches=0.02); plt.close(fig)
 
 # 5 Africa (larger)
 fig, ax = base((-20, 56, -36, 40), (6.2, 6.4), land50, 'white', 'white', lw=1.2, aspect=1.0)

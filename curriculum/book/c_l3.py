@@ -4,9 +4,9 @@ NEWS = '''<div class="paper"><div class="ear"><div class="box">Price<br>One Lept
 <div class="dateline"><span>Vol. I · No. 1</span><span>Jerusalem, Judea</span><span>Matthew 2:1–8</span></div>
 <div class="extra">★ EXTRA! EXTRA! ★</div><div class="head">Wise Men Seek a Newborn King!</div>
 <div class="grid"><div class="col"><h5>Strange Star Seen in the East</h5><div class="by">By ______________, Staff Reporter</div>''' + ''.join('<div class="ln"></div>' for _ in range(6)) + '''
-<div class="pic"><span>Draw your own picture for this story</span></div><div class="cap">Caption:<div class="ln"></div></div></div>
+<div class="pic"></div><div class="cap">Caption:<div class="ln"></div></div></div>
 <div class="col"><h5>King Herod Calls a Secret Meeting</h5><div class="by">By ______________, Palace Reporter</div>''' + ''.join('<div class="ln"></div>' for _ in range(9)) + '''
-<div class="side"><b>Interview Corner</b>If you could ask a Wise Man one question, what would it be?''' + ''.join('<div class="ln"></div>' for _ in range(2)) + '''</div>
+<div class="side"><b>Interview Corner</b>''' + ''.join('<div class="ln"></div>' for _ in range(2)) + '''</div>
 <div class="ad"><b>WANTED</b>Directions to Bethlehem! Ask the chief priests.<br><i>(Micah 5:2)</i></div></div></div></div>'''
 import random as _r
 def _wordsearch(words, n=13, seed=3):
@@ -49,13 +49,13 @@ dict(t='text', id='l3a', kicker='Lesson Three · Reading 1', title='Who Were the
   "## Why Would They Care About a Jewish King?",
   "Hundreds of years earlier, the Jews were carried away to Babylon. One of them, **Daniel**, became “chief of the governors over all the wise men of Babylon” (Daniel 2:48). Daniel’s writings included a timetable for the coming Messiah (Daniel 9:24–27).",
   "Many Jewish families stayed in Babylon and Persia for centuries. They knew the prophecy of Balaam: “There shall come a Star out of Jacob, and a Sceptre shall rise out of Israel” (Numbers 24:17). For scholars who studied the sky, a prophecy about a star would catch their attention! Generations of Eastern scholars may have kept and passed on this knowledge."],
- notes=[('Key word', '*Magi* (Greek *magoi*) is where we get the word “magic,” but these men were not tricksters. They were respected priests and scholars.\n**Astronomy** is studying the sun, moon, stars, and planets as God made them. **Astrology** is the belief that the stars control or foretell people’s lives, which the Bible warns against (Deuteronomy 18:10–12). The Magi practiced both, yet God used the sky they studied to lead them to Yeshua.'),
+ notes=[('Key word', '*Magi* (Greek *magoi*) is where the word “magic” comes from, but these men were not tricksters. They were respected priests and scholars.\n**Astronomy** is studying the sun, moon, stars, and planets as God made them. **Astrology** is the belief that the stars control or foretell people’s lives, which the Bible warns against (Deuteronomy 18:10–12). The Magi practiced both, yet God used the sky they studied to lead them to Yeshua.'),
         ('Daniel’s legacy', 'Daniel’s influence is a big reason many scholars believe Eastern Magi were expecting a Jewish King.'),
-        ('Ask', 'The Magi traveled a long way to find Yeshua. What does that tell us about how much they wanted to see Him?')],
+        ('Ask', 'The Magi traveled a long way to find Yeshua. What does that show about how much they wanted to see Him?')],
  callout=('Did You Know?', 'The Parthian royal council was called the *Megistanes*. Its members included royal family members, nobles, and the Magi.')),
 
 dict(t='color', lesson=3, title='A Wise Man from the East', img='c_magus', caption='“We have seen his star in the east, and are come to worship him.” (Matthew 2:2)'),
-dict(t='work', lesson=3, title='The Wise Men', sk='sk_starmap', skh=1.1, ins='Open your Bible and read Matthew 2:1–8. Then read “Who Were the Magi?” and answer the questions.',
+dict(t='work', lesson=3, title='The Wise Men', sk='sk_starmap', skh=1.1, skbot=('sk_caravan', 1.0), ins='Open your Bible and read Matthew 2:1–8. Then read “Who Were the Magi?” and answer the questions.',
  blocks=[('part', 'Part 1 · Circle the best answer'),
          ('mc', [('Who was king of Judea when Yeshua was born? (verse 1)', ['Caesar', 'Herod', 'David', 'Pilate']),
                  ('From where did the Wise Men come? (verse 1)', ['The west', 'Egypt', 'The east', 'Rome']),
@@ -71,7 +71,7 @@ dict(t='illus', img='l3_star', cap='Following the star'),
 dict(t='text', id='l3b', kicker='Lesson Three · Reading 2', title='The Star: What Did They See?', bignum='3', foot=F,
  verse='And, lo, the star, which they saw in the east, went before them, till it came and stood over where the young child was', vref='Matthew 2:9',
  read='Matthew 2:1–11, 16',
- paras=["What was the star the Magi saw? Matthew does not explain, but he gives us some clues.",
+ paras=["What was the star the Magi saw? Matthew does not explain, but he does give some clues.",
   "## What It Probably Was Not",
   "It was probably not a comet, because no recorded comet matches the time. And it was not an ordinary star sitting still above one house. Matthew says the star “went before them” and then “stood over where the young child was.” That sounds like God’s own guidance. Many believe the Magi first noticed an important sign in the sky, and then God guided them by a special light, like the glory cloud that led Israel in the wilderness, for the last part of their journey.",
   "## How Many Wise Men Were There?",
@@ -87,7 +87,7 @@ dict(t='text', id='l3c', kicker='Lesson Three · Reading 3', title='The Parthian
  verse='When Herod the king had heard these things, he was troubled, and all Jerusalem with him', vref='Matthew 2:3',
  read='Matthew 2:1–3',
  top=[('map_magi_wide', 'The Magi’s likely route from Parthia', 'contain')], toph=2.75,
- paras=["Parthia was a vast empire that stretched across the lands we now call Iran and Iraq, southeast of the Caspian Sea. The Parthians ruled the East at the same time the Romans ruled the lands around the Mediterranean Sea.",
+ paras=["Parthia was a vast empire that stretched across the lands now called Iran and Iraq, southeast of the Caspian Sea. The Parthians ruled the East at the same time the Romans ruled the lands around the Mediterranean Sea.",
   "## Rome’s Great Rival",
   "Rome started many wars with Parthia, but it never conquered it. In fact, the Parthians defeated Roman armies many times. In 53 BC they crushed a Roman army at the Battle of Carrhae. And from 40 to 37 BC, Parthian forces even took control of Judea and Jerusalem for a short time! After that, Rome wanted peace with Parthia, and Roman officials knew that starting another war could cost them their jobs, or their lives.",
   "## The Magi’s Journey",
@@ -138,7 +138,7 @@ dict(t='work', lesson=3, title='Parthia and King Herod', sk='c_herod', skh=1.3, 
          ('q', 'With an adult, use an atlas, encyclopedia, or the Internet to research the Parthian Empire. Write three facts below.', 0),
          ('html', '<ol class="qs">' + ''.join('<li><div class="ln"></div></li>' for _ in range(3)) + '</ol>')]),
 
-dict(t='work', lesson=3, title='The Judea Times', kick='Be a Reporter', ins='You are a reporter in Jerusalem! Read Matthew 2:1–8. Write two news stories about what happened, then draw a picture for your front page.',
+dict(t='work', lesson=3, title='The Judea Times', kick='Be a Reporter', ins='You are a reporter in Jerusalem! Read Matthew 2:1–8. Write two news stories about what happened. In the empty picture box, draw your own picture for the first story and write a caption under it. In the Interview Corner, write one question you would ask a Wise Man.',
  blocks=[('html', NEWS)]),
 dict(t='work', lesson=3, title='Star in the Sky Word Search', kick='Word Search', sk='sk_caravan', skh=0.9, ins='Find the words from Lesson 3 hidden in the puzzle. Words go across, down, or diagonally. Circle each one you find!',
  blocks=[('html', WS), ('q', 'Pick two words you found. Write a sentence about Lesson 3 using both words.', 2)]),

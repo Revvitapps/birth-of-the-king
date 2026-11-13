@@ -1,0 +1,33 @@
+PAGES = [
+dict(t='illus', img='map_escape_book', contain=True, cap='Answer map for “The Escape Route”: Bethlehem to Egypt and home to Nazareth'),
+dict(t='key', id='key', title='Answers: Lessons 1 and 2', bignum='', sections=[
+ ('L1 · Yeshua’s Family Tree', ['Abraham’s son: Isaac. Ruth’s husband: Boaz. David’s father: Jesse.', 'Matthew: Solomon → Joseph (legal father). Luke: Nathan → Mary (mother).', 'Joseph’s line came through Solomon.']),
+ ('L1 · Names of the King', ['Yeshua: God saves', 'Immanuel: God with us', 'Son of David: the King from David’s royal family', 'Messiah (Christ): the Anointed One, the chosen King', 'Son of the Most High: the Son of God', 'Answers will vary.']),
+ ('L1 · Nazareth Village', ['Fewer than 200 people', 'On a strip of land near their homes', 'Mud brick or stone', 'Bread, lentil stew, fruit, eggs, fish, goat meat, cheese, olives (red meat on special occasions)', 'They reclined on cushions on the floor', 'Answers will vary (God uses humble people and places).']),
+ ('L1 · A Hebrew Wedding', ['The groom’s father', 'A ketubah', 'He prepared a home (room) for his bride', 'To go and bring his bride home for the wedding feast', 'Up to seven days', 'He took Mary to be his wife', 'Like a groom, Yeshua is preparing a place for His people.']),
+ ('L1 · A Census', ['Caesar Augustus', 'Cyrenius (Quirinius)', 'He was of the house and lineage of David, and Bethlehem was David’s city', 'Mary, his espoused wife', 'About 90 miles', 'Micah (Micah 5:2)']),
+ ('L1 · The Road to Bethlehem', ['Route: Nazareth → Jordan valley → Jericho → Jerusalem → Bethlehem (about 90 miles).']),
+ ('L2 · The Tower of the Flock', ['Tower of the Flock', 'Micah (4:8)', 'At the edge of Bethlehem, in the shepherds’ fields just outside town', 'Sacrifices at the temple, especially Passover lambs', 'Swaddling cloths; a stone manger', 'Those were the signs of a perfect sacrificial lamb; it was “shepherd language” they understood', 'Guest room', 'There was no room in the guest room, and the tower’s lower room was a clean birthing place with a manger and swaddling cloths close at hand', '“The Lamb of God, which taketh away the sin of the world”']),
+ ('L2 · Cut and Paste, Maze', ['Baby Yeshua goes in the manger. Luke 2:11: “David” · “Saviour.”']),
+ ('L2 · Let’s See What You Remember', ['B. Caesar Augustus', 'B. To register for the census', 'D. Micah', 'B. In a manger', 'C. Shepherds', 'B. Kept them and pondered them in her heart', 'B. From spring until early fall', 'C. Sukkot (Tabernacles)', 'Yeshua (Jesus)', '“Glory to God in the highest, and on earth peace, good will toward men”', 'Told everyone what they had seen and heard, and praised God', 'Shepherds in the fields at night, Zechariah’s temple service, or the crowds of the fall feasts', 'That God kept His promise right on time']),
+]),
+dict(t='key', title='Answers: Lessons 3 and 4', bignum='', sections=[
+ ('L3 · The Wise Men', ['B. Herod', 'C. The east', 'D. Magi', 'A. The Parthian Empire', 'B. Daniel', '“Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.”', 'They had the power to help choose or remove a king', 'A Star (and a Sceptre)']),
+ ('L3 · Journey to Jerusalem', ['Prepare gifts, settle business, load a caravan, find soldiers for protection', 'Answers will vary (Daniel’s prophecies passed down; the star prophecy).', 'Answers will vary.']),
+ ('L3 · Parthia and King Herod', ['Answers will vary: Parthia was Rome’s powerful enemy; Parthian officials asking for a new king seemed like a threat to Herod’s throne.', 'In Bethlehem of Judea; the prophet Micah', 'Rome (the Roman Senate)', 'Caesarea, Herodium, Masada, the temple, fortresses, palaces, theaters', 'Archelaus', 'Answers will vary (Herod was made king by Rome and ruled by fear; Yeshua was born King and rules with love).', 'Research: e.g., Parthia lasted about 247 BC–AD 224; its capital was Ctesiphon; it defeated Rome at Carrhae; it was famous for horse archers.']),
+ ('L3 · Word Search', ['Words: Magi, Star, Herod, Bethlehem, Parthia, Camel, Caravan, Scribes, Prophet, Jerusalem, Daniel, Micah, King, East.']),
+ ('L3 · The Judea Times', ['Answers will vary. Look for the main events of Matthew 2:1–8: the star, the Magi in Jerusalem, Herod troubled, the chief priests and Micah 5:2, Herod’s secret meeting.']),
+ ('L4 · Gifts for the King', ['Gold: a treasure fit for royalty (Yeshua is King)', 'Frankincense: burned in worship (Yeshua is our High Priest)', 'Myrrh: used in burial (Yeshua’s death for our sins)', 'They fell down and worshiped Him', 'They likely paid for the trip to Egypt and life there', 'His suffering and death for our sins (the cross and His burial)']),
+ ('L4 · Temple in Jerusalem', ['King Solomon', 'The Ark of the Covenant', 'The Babylonians', 'Passover, Shavuot (Pentecost), and Sukkot (Tabernacles)', 'The highest Jewish court', 'The Romans, in AD 70']),
+ ('L4 · Presentation at the Temple', ['Matching: 1 Gabriel: told Mary to name her son Yeshua · 2 Simeon: “Mine eyes have seen thy salvation” · 3 Anna: prophetess, 84, tribe of Asher · 4 Two turtledoves: offering of a family who could not afford a lamb · 5 Jerusalem: city where the temple stood', 'C. The eighth day', 'A. Every firstborn son belonged to the Lord', 'B. He would see the Lord’s Christ before he died', 'B. Worshiped with fasting and prayer night and day', 'A. To give yourself completely to Him as a living sacrifice']),
+]),
+dict(t='key', title='Answers: Lesson 5', bignum='', sections=[
+ ('L5 · Label the House', ['Upstairs living space', 'Straw-covered roof', 'Kitchen', 'Stable', 'Courtyard', 'To keep them safe from wild animals and robbers', 'In a house', 'Answers will vary.']),
+ ('L5 · Escape to Egypt', ['The angel of the Lord', 'Egypt', 'By night', 'Until Herod died', 'Hosea', 'Ordered the death of all the boys in Bethlehem two years old and under', 'Nazareth']),
+ ('L5 · Joseph’s Four Dreams', ['1 Matthew 1:20: “Fear not to take unto thee Mary thy wife” · 2 Matthew 2:13: “Flee into Egypt” · 3 Matthew 2:19–20: “Go into the land of Israel” · 4 Matthew 2:22: Go to Galilee, not Judea', 'He obeyed right away.']),
+ ('L5 · Where Is Egypt?', ['Possible answers: Abraham, Joseph, Jacob, Moses, Aaron, Miriam, Jeremiah, Mary, Joseph, and Yeshua.']),
+ ('L5 · The Escape Route', ['1 Bethlehem, 2 Gaza, 3 Egypt, 4 Joppa, 5 Caesarea, 6 Nazareth. Escape: 1 → 2 → 3. Trip home: 3 → 2 → 4 → 5 → 6. See the answer map.']),
+ ('L5 · Put the Story in Order', ['A 5, B 9, C 2, D 10, E 4, F 1, G 3, H 8, I 6, J 7']),
+]),
+dict(t='back'),
+]

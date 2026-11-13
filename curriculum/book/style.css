@@ -119,7 +119,7 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 .trace.solid span { color:var(--navy); }
 .trace.en span { font-family:Inter; font-size:40pt; letter-spacing:.06em; }
 .letters { display:flex; justify-content:space-between; gap:8px; margin:6px 0 12px; direction:rtl; }
-.letters div { flex:1; border:2px solid var(--navy); border-radius:10px; text-align:center; padding:6px 0; background:var(--cream); }
+.letters > div { flex:1; border:2px solid var(--navy); border-radius:10px; text-align:center; padding:6px 0; background:var(--cream); }
 .letters .hl { font-family:"DejaVu Sans"; font-size:30pt; color:var(--navy); line-height:1.1; }
 .letters .nm { font-family:Inter; font-size:8pt; font-weight:700; color:var(--navy2); direction:ltr; }
 .news { border:3px double var(--navy); padding:10px 12px; }
@@ -197,7 +197,7 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 .paper h5 { font-family:Inter; font-weight:800; font-size:9.5pt; margin:0 0 2px; line-height:1.1; }
 .paper .by { font-style:italic; font-size:7.5pt; margin-bottom:2px; }
 .paper .ln { height:0.27in; }
-.paper .pic { border:1.5px solid #222; height:1.7in; position:relative; margin:4px 0 2px; background:#fff; }
+.paper .pic { border:1.5px solid #222; height:2.5in; position:relative; margin:4px 0 2px; background:#fff; }
 .paper .pic span, .paper .ad span { position:absolute; left:6px; top:4px; font-family:Inter; font-size:6.8pt; font-weight:700; text-transform:uppercase; color:#555; }
 .paper .cap { font-size:7.5pt; font-style:italic; display:flex; gap:4px; align-items:flex-end; }
 .paper .cap .ln { flex:1; height:.2in; }
@@ -229,11 +229,11 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 
 /* ===== round 3 additions ===== */
 .side { width:1.8in; flex:none; display:flex; flex-direction:column; gap:9px; }
-.side .notes { width:auto; align-self:stretch; }
-.mynotes { flex:1; min-height:1.15in; background:#fff; border:1.3px solid var(--gold); border-radius:7px; padding:7px 9px 4px; background-image:repeating-linear-gradient(180deg, transparent 0, transparent calc(0.27in - 1px), #cfc9b8 calc(0.27in - 1px), #cfc9b8 0.27in); background-position:0 0.3in; background-repeat:repeat-y; background-origin:content-box; background-clip:content-box; }
+.side .notes { width:auto; align-self:stretch; flex:1; }
+.mynotes { flex:none; height:1.62in; box-sizing:border-box; background:#fff; border:1.3px solid var(--gold); border-radius:7px; padding:7px 9px 4px; background-image:repeating-linear-gradient(180deg, transparent 0, transparent calc(0.27in - 1px), #cfc9b8 calc(0.27in - 1px), #cfc9b8 0.27in); background-position:0 0.3in; background-repeat:repeat-y; background-origin:content-box; background-clip:content-box; }
 .mynotes .tag { font-family:Inter; font-weight:800; font-size:7.6pt; letter-spacing:.16em; color:var(--navy); text-transform:uppercase; background:#fff; }
 .sfig { margin:0; position:relative; border-radius:8px; overflow:hidden; border:1px solid #e3dccb; background:#fff; }
-.sfig img { width:100%; display:block; }
+.sfig img { width:100%; height:2.15in; object-fit:cover; display:block; }
 .sfig figcaption { background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:7pt; padding:4px 8px; text-align:center; line-height:1.25; }
 .callout .c2 { margin-top:5px; padding-top:5px; border-top:1px solid rgba(31,47,92,.18); }
 .insrow { display:flex; gap:14px; align-items:center; margin-bottom:8px; }
@@ -249,3 +249,11 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 .jmap > img.f { position:absolute; }
 .routelist { display:grid; grid-template-columns:repeat(3,1fr); gap:3px 14px; font-size:1em; margin:4px 0 6px; }
 .routelist b { font-family:Inter; color:var(--gold); margin-right:4px; }
+
+/* round 4 additions */
+.skbot { text-align:center; margin-top:10px; }
+.skbot img { max-width:100%; object-fit:contain; }
+.seqrow { display:flex; gap:10px; align-items:center; }
+.seqrow .sq { flex:1; }
+.seqrow img { width:2.25in; flex:none; object-fit:contain; }
+.tree .treesk { position:absolute; right:0.05in; top:0.05in; height:1.75in; }

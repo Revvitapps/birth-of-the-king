@@ -12,7 +12,7 @@ _parts = [_n(2.325,0,'Abraham',True), _v(_C,0.42,0.6), _n(2.325,0.6,"Abraham's s
           _n(2.325,4.6,'Yeshua',True),
           '<div style="position:absolute;left:0.35in;top:2.62in;width:1.75in;font-family:Inter;font-size:7.5pt;color:#c9a24a;font-weight:800;text-align:center">LEGAL RIGHT · MATTHEW 1</div>',
           '<div style="position:absolute;left:3.8in;top:2.62in;width:1.75in;font-family:Inter;font-size:7.5pt;color:#c9a24a;font-weight:800;text-align:center">BLOOD RIGHT · LUKE 3</div>']
-TREE = '<div class="tree" style="height:5.1in">' + ''.join(_parts) + '</div>'
+TREE = '<div class="tree" style="height:5.1in"><img class="treesk" src="imgc/sk_tree.png">' + ''.join(_parts) + '</div>'
 
 def _hw(kind, words):
     """handwriting guide row as SVG: words = list of (text, style) where style in solid|trace|''"""
@@ -67,18 +67,18 @@ dict(t='illus', img='l1_jesse', cap='“A rod out of the stem of Jesse” · Isa
 dict(t='text', id='l1b', kicker='Lesson One · Reading 2', title='Two Family Lines: The Right to Be King', bignum='1', foot=F,
  verse='And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots', vref='Isaiah 11:1',
  read='Matthew 1:1–17 · Luke 3:23–38',
- paras=["The Bible gives us two family trees for Yeshua. Matthew 1 and Luke 3 list His ancestors, but the lists are different. Why? Together they show that Yeshua had the right to be King through **both sides** of His family.",
+ paras=["The Bible gives two family trees for Yeshua. Matthew 1 and Luke 3 list His ancestors, but the lists are different. Why? Together they show that Yeshua had the right to be King through **both sides** of His family.",
   "## The Legal Right: Joseph’s Line",
   "Matthew traces the family from Abraham to King David, and then through David’s son **Solomon**, the line of the kings, all the way to Joseph. Joseph was not Yeshua’s birth father, but by adopting Him, Joseph gave Yeshua the *legal* right to David’s throne.",
   "## The Blood Right: Mary’s Line",
   "Luke traces the family through David’s son **Nathan**. Many Bible teachers believe this is Mary’s family line. Through Mary, Yeshua was truly born from David’s family. He had the *blood* right to the throne, just as Isaiah promised.",
   "## Adopted Into His Family",
-  "Here is good news for us: just as Yeshua was adopted into Joseph’s family, God adopts us into His family. “God sent forth his Son … that we might receive the adoption of sons” (Galatians 4:4–5). We who were far away are brought near “by the blood of Christ” (Ephesians 2:13).",
+  "Here is good news: just as Yeshua was adopted into Joseph’s family, God adopts all who believe into His family. “God sent forth his Son … that we might receive the adoption of sons” (Galatians 4:4–5). Those who were far away are brought near “by the blood of Christ” (Ephesians 2:13).",
   "## Three Sets of Fourteen",
   "Matthew arranges the names into three groups of fourteen generations (Matthew 1:17). Matthew even lists some women with surprising stories, like Tamar, Rahab, Ruth, and Bathsheba, showing that God’s grace reaches everyone."],
  notes=[('Legal and Blood', '**Legal right:** Joseph, Solomon’s line (Jer. 23:5–6).\n**Blood right:** Mary, Nathan’s line (Isa. 11).'),
         ('Numbers', '“14” is often linked to deliverance and salvation; “3” to divine completeness. Three sets of fourteen cover Israel’s long seasons of hardship before the Deliverer came.'),
-        ('Gospel link', 'We are adopted into God’s family (Gal. 4:4–5) and brought near by His blood (Eph. 2:13).')],
+        ('Gospel link', 'Believers are adopted into God’s family (Gal. 4:4–5) and brought near by His blood (Eph. 2:13).')],
  callout=('Did You Know?', 'Luke’s list goes all the way back to Adam, “which was the son of God” (Luke 3:38). There were about 2,000 years from Abraham to Yeshua.')),
 
 dict(t='color', lesson=1, title='King David', img='c_david', caption='God promised that a King from David’s family would reign forever. (2 Samuel 7:16)'),
@@ -109,8 +109,8 @@ dict(t='text', id='l1d', kicker='Lesson One · Reading 4', title='His Name Is Ye
   "## A Hebrew Name",
   "Mary and Joseph were Hebrews, so it was natural for them to give their son a Hebrew name. Later, when the good news spread to people who spoke Greek, His name was written *Iēsous*. From there it came into Latin and, many centuries later, into English as *Jesus*. In fact, the letter “J” was not used in English until about 500 years ago!",
   "## Immanuel: God With Us",
-  "Matthew tells us that all this happened to fulfill Isaiah’s prophecy: the virgin would have a son, and they would call Him *Immanuel*, which means “God with us” (Matthew 1:23). Yeshua is both. He is the God who saves, and the God who came to be with us."],
- notes=[('Name study', '*Yeshua* is the same name as *Joshua* in the Old Testament. Joshua led Israel into the Promised Land; Yeshua leads us into God’s kingdom.'),
+  "Matthew explains that all this happened to fulfill Isaiah’s prophecy: the virgin would have a son, and they would call Him *Immanuel*, which means “God with us” (Matthew 1:23). Yeshua is both. He is the God who saves, and the God who came to be with His people."],
+ notes=[('Name study', '*Yeshua* is the same name as *Joshua* in the Old Testament. Joshua led Israel into the Promised Land; Yeshua leads His people into God’s kingdom.'),
         ('Joseph’s obedience', 'Joseph “did as the angel of the Lord had bidden him” (Matt. 1:24). Ask: How did Joseph show faith?'),
         ('Activity tip', 'Hebrew is read from right to left. Show the class before they try the writing page.')],
  callout=('Did You Know?', 'The name *Yeshua* appears in Hebrew as ישוע. It is made from four Hebrew letters: Yod, Shin, Vav, and Ayin.')),
@@ -166,7 +166,7 @@ dict(t='text', kicker='Lesson One · Reading 6', title='A Hebrew Wedding', bignu
  callout=('Did You Know?', 'Joseph planned to end the betrothal quietly so Mary would not be shamed (Matthew 1:19). The Bible calls him “a just man.”')),
 
 dict(t='color', lesson=1, title='The Bride and Groom', img='c_wedding', caption='A Hebrew wedding feast could last up to seven days!'),
-dict(t='work', lesson=1, title='A Hebrew Wedding', sk='sk_wedding', ins='Read “A Hebrew Wedding” and Matthew 1:18–25. Answer the questions below.',
+dict(t='work', lesson=1, title='A Hebrew Wedding', sk='sk_wedding', skh=1.5, ins='Read “A Hebrew Wedding” and Matthew 1:18–25. Answer the questions below.',
  blocks=[('qs', [('Who usually selected a bride for a young man?', 1), ('What was the marriage contract called?', 1),
                  ('What did the groom do while he waited for his wedding day?', 2),
                  ('What instruction did the groom’s father give when he saw everything was ready?', 2),

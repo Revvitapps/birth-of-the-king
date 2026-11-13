@@ -7,3 +7,12 @@ w=int(m.width*0.34); f=f.resize((w,int(f.height*w/f.width)),Image.LANCZOS)
 x,y=int(m.width*0.27),int(m.height*0.44)
 reg=m.crop((x,y,x+f.width,y+f.height)); m.paste(ImageChops.multiply(reg,f),(x,y))
 m.quantize(64,dither=Image.NONE).save(B+'imgc/map_journey.png',optimize=True)
+
+# print-ready copies of every map: line maps as 64-colour PNG, the painted Bethlehem map as JPG
+import os
+for n,w in [('map_magi_book',1300),('map_magi_wide',1214),('map_escape_book',1300),('map_escape_sheet',1100)]:
+    im=Image.open(B+f'img/{n}.png').convert('RGB'); im=im.resize((w,int(im.height*w/im.width)),Image.LANCZOS)
+    im.quantize(64,dither=Image.NONE).save(B+f'imgc/{n}.png',optimize=True)
+im=Image.open(B+'img/map_bethlehem.png').convert('RGB'); im=im.resize((1200,int(im.height*1200/im.width)),Image.LANCZOS)
+im.save(B+'imgc/map_bethlehem.jpg',quality=84,optimize=True)
+if os.path.exists(B+'imgc/map_bethlehem.png'): os.remove(B+'imgc/map_bethlehem.png')
