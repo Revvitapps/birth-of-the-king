@@ -18,6 +18,7 @@ An in-depth Bible curriculum on the birth of the King: a 102-page teaching flip 
 ```
 cd curriculum/book && python3 build.py
 cd .. && node render_book.js book book.html book/book_raw.pdf shots
+node render_cover.js "$PWD/book"   # letter-size cover
 python3 finish.py
 ```
 
