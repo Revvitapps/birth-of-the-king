@@ -1,6 +1,6 @@
 # Birth of the King
 
-An in-depth Bible curriculum on the birth of the King: a 102-page teaching flip book (7 x 10 in), printable student pages for each of the five lessons, and a page-turning web version.
+An in-depth Bible curriculum on the birth of the King: a 102-page teaching flip book (8.5 x 11 in), printable student pages for each of the five lessons, and a page-turning web version.
 
 ## Layout
 
@@ -17,9 +17,10 @@ An in-depth Bible curriculum on the birth of the King: a 102-page teaching flip 
 
 ```
 cd curriculum/book && python3 build.py
-cd .. && node render_book.js book book.html book/book_raw.pdf shots
-node render_cover.js "$PWD/book"   # letter-size cover
+cd .. && node render_book.js "$PWD/book" book.html "$PWD/book/book_raw.pdf" "$PWD/shots"
 python3 finish.py
 ```
+
+Every page is US Letter (8.5 x 11 in). Pages are laid out at 7.727 x 10 in and zoomed 1.1 in `style.css`. Do not use CSS text-shadow or blurred box-shadow: PDF viewers show them as dark boxes.
 
 Do not recompress the PDF by swapping images with pypdf. It blanks the maps and logos. Keep the file small by re-encoding the JPGs in `book/imgc` instead.

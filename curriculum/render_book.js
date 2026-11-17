@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 (async () => {
   const [dir, html, out, shots] = process.argv.slice(2);
   const b = await chromium.launch();
-  const p = await b.newPage({ viewport: { width: 672, height: 960 } });
+  const p = await b.newPage({ viewport: { width: 816, height: 1056 } });
   await p.goto('file://' + dir + '/' + html, { waitUntil: 'load' });
   await p.evaluate(async () => {
     await document.fonts.ready;
@@ -31,7 +31,7 @@ const { chromium } = require('playwright');
     window.__log = log;
   });
   console.log((await p.evaluate(() => window.__log)).join('\n'));
-  await p.pdf({ path: out, width: '7in', height: '10in', printBackground: true });
+  await p.pdf({ path: out, width: '8.5in', height: '11in', printBackground: true });
   if (shots) {
     const els = await p.$$('.page');
     for (let i = 0; i < els.length; i++) await els[i].screenshot({ path: `${shots}/p${String(i + 1).padStart(3, '0')}.png` });

@@ -1,9 +1,11 @@
-<!doctype html><html><head><meta charset="utf-8"><style>@page { size: 7in 10in; margin: 0; }
+<!doctype html><html><head><meta charset="utf-8"><style>@page { size: 8.5in 11in; margin: 0; }
+/* pages are laid out at 7.727 x 10 in and zoomed 1.1x, which gives exactly 8.5 x 11 in */
+body { zoom:1.1; }
 :root { --navy:#1f2f5c; --navy2:#2b3f78; --gold:#c9a24a; --goldsoft:#efe2bf; --cream:#fbf8f1; --ink:#22242a; }
 * { box-sizing: border-box; }
 html,body { margin:0; padding:0; }
 body { font-family: Caladea, "Liberation Serif", serif; color: var(--ink); }
-.page { width:7in; height:10in; position:relative; overflow:hidden; page-break-after: always; background: var(--cream); }
+.page { width:7.727in; height:10in; position:relative; overflow:hidden; page-break-after: always; background: var(--cream); }
 .page:last-child { page-break-after: auto; }
 
 /* illustration pages */
@@ -12,7 +14,7 @@ body { font-family: Caladea, "Liberation Serif", serif; color: var(--ink); }
 .art.map { background:#fff; }
 .art.map img { inset:0.4in; width:calc(100% - 0.8in); height:calc(100% - 0.8in); }
 .art.map .pill { top:auto; bottom:0.45in; }
-.art .pill { position:absolute; top:0.45in; right:0.45in; background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:9.5pt; padding:5px 14px; border-radius:999px; box-shadow:0 2px 8px rgba(0,0,0,.25); max-width:4.8in; }
+.art .pill { position:absolute; top:0.45in; right:0.45in; background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:9.5pt; padding:5px 14px; border-radius:999px; max-width:4.8in; }
 .art .edge { position:absolute; top:0; bottom:0; right:0; width:0.14in; background:linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,.28)); }
 .opener .op-band { position:absolute; left:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(31,47,92,0), rgba(31,47,92,.86) 28%, rgba(31,47,92,.95)); color:#fff; padding:0.9in 0.55in 0.5in; }
 .op-kick { font-family:Inter; font-weight:800; font-size:11pt; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
@@ -156,7 +158,7 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 .wband h1 { max-width:4.25in; }
 .wart { position:absolute; right:0.5in; top:0.5in; display:flex; align-items:center; gap:8px; }
 .wart .spot { height:0.66in; width:auto; }
-.wart .logo { height:0.74in; width:auto; background:#fff; border-radius:8px; padding:3px 5px; box-shadow:0 1px 3px rgba(31,47,92,.18); }
+.wart .logo { height:0.74in; width:auto; background:#fff; border-radius:8px; padding:3px 5px; }
 .wbody { top:1.36in; }
 .color .cimg { top:1.5in; }
 .drawbox, .grid4 .cell, .match .mi, .seq .bx { background:rgba(255,255,255,.82); }
@@ -166,7 +168,7 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 /* inline figures in readings */
 .main figure.fig { margin:6px 0 8px; position:relative; border-radius:8px; overflow:hidden; border:1px solid #e3dccb; background:#fff; }
 .main figure.fig img { width:100%; height:100%; display:block; }
-.main figure.fig figcaption { position:absolute; left:8px; bottom:8px; background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:7.5pt; padding:3px 10px; border-radius:999px; box-shadow:0 1px 5px rgba(0,0,0,.2); }
+.main figure.fig figcaption { position:absolute; left:8px; bottom:8px; background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:7.5pt; padding:3px 10px; border-radius:999px; }
 /* multiple choice */
 .mcq .opts { display:flex; flex-wrap:wrap; gap:4px 16px; margin:3px 0 2px; }
 .mcq .opt { display:flex; align-items:center; gap:5px; font-size:.95em; }
@@ -225,7 +227,7 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 .topfig { display:flex; gap:10px; margin-top:0.12in; }
 .topfig figure { margin:0; position:relative; border-radius:8px; overflow:hidden; border:1px solid #e3dccb; background:#fff; }
 .topfig img { width:100%; height:100%; display:block; }
-.topfig figcaption { position:absolute; left:8px; bottom:8px; background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:7.5pt; padding:3px 10px; border-radius:999px; box-shadow:0 1px 5px rgba(0,0,0,.2); }
+.topfig figcaption { position:absolute; left:8px; bottom:8px; background:#fff; color:var(--navy); font-family:Inter; font-weight:800; font-size:7.5pt; padding:3px 10px; border-radius:999px; }
 
 /* ===== round 3 additions ===== */
 .side { width:1.8in; flex:none; display:flex; flex-direction:column; gap:9px; }
@@ -257,15 +259,9 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 .seqrow .sq { flex:1; }
 .seqrow img { width:2.25in; flex:none; object-fit:contain; }
 .tree .treesk { position:absolute; right:0.05in; top:0.05in; height:1.75in; }
-
-/* letter-size (8.5 x 11 in) front cover, full bleed */
-.cover.letter { width:8.5in; height:11in; }
-.cover.letter .cv-top { top:0.9in; }
-.cover.letter .cv-kick { font-size:11pt; }
-.cover.letter h1 { font-size:63pt; margin:14px 0 12px; }
-.cover.letter .cv-sub { font-size:15.5pt; }
-.cover.letter .cv-top:after { width:1.7in; height:5px; margin-top:19px; }
-.cover.letter .cv-bot { font-size:12pt; padding:17px 0; border-top-width:6px; }
+/* letter-size layout fixes */
+.tree { width:5.9in; margin-left:auto; margin-right:auto; }
+table.wsearch { margin-left:auto; margin-right:auto; }
 </style></head><body><section class="page cover"><img src="imgc/cover.jpg">
 <div class="cv-top"><div class="cv-kick">An In-Depth Bible Curriculum on</div><h1>Birth of<br>the King</h1>
 <div class="cv-sub">The Story of Yeshua the Messiah · Matthew 1–2 · Luke 1–2</div></div>
@@ -396,7 +392,7 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 <div class="cols"><div class="main"><p class="first">The night was quiet in the fields near the Tower of the Flock. Suddenly an angel of the Lord stood before the shepherds, and God’s glory shone all around them. They were terrified! But the angel said, “Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people. For unto you is born this day in the city of David a Saviour, which is Christ the Lord.”</p><h2>The Heavenly Army</h2><p>Then the sky filled with a <i>multitude of the heavenly host</i>. The word <b>host</b> means an army. Heaven’s army had come to honor their Commander, who had just entered the world as a baby! Together they were praising God with one voice: “Glory to God in the highest, and on earth peace, good will toward men.”</p><h2>Angels Are God’s Messengers</h2><p>The word <i>angel</i> means “messenger.” In the Bible, angels deliver exactly the words God gives them. An angel announced John’s birth to Zechariah (Luke 1:11–17). Gabriel announced Yeshua’s birth to Mary (Luke 1:26–33). An angel announced His birth to the shepherds (Luke 2:9–14). And angels announced His resurrection at the empty tomb (Matthew 28:5–7).</p><p>Paul wrote that God was “manifest in the flesh … seen of angels” (1 Timothy 3:16). The angels who worship God in heaven now saw His glory in the face of a newborn baby.</p></div><div class="side"><aside class="notes"><div class="tag">Teaching Nuggets</div><h3>Look closely</h3><p>Luke says the angels were “praising God, and saying, Glory to God in the highest, and on earth peace, good will toward men” (Luke 2:13–14). Ask: Does the Bible say the angels <i>sang</i>? (It says they spoke praise. Singing is possible, but not stated.)</p><h3>Good news</h3><p>The angel said the good news was “to all people”: a Saviour, Christ the Lord, born in the city of David (Luke 2:10–11). Ask: Who is this good news for? (Everyone, including you!)</p><h3>Commander</h3><p>Yeshua is the Lord of hosts, the commander of heaven’s armies. Even as a baby, He was their King.</p></aside><div class="mynotes"><div class="tag">Notes</div></div></div></div><div class="callout"><b class="t">Did You Know?</b><br>Gabriel, the angel who visited Zechariah and Mary, had also brought God’s messages to the prophet Daniel hundreds of years earlier (Daniel 8:16; 9:21).</div></div>
 <div class="foot r"><span>Birth of the King · Lesson 2</span><span class="pg">41</span></div></section>
 <section class="page text"><div class="band"><div class="kicker">Lesson Two · Reading 3, continued</div><h1>The Shepherds Come to See</h1>
-<div class="num">2</div><div class="gold"></div></div><div class="body fit"><div class="topfig" style="height:2.45in"><figure style="flex:0.72"><img src="imgc/l2_shepherds.jpg" style="object-fit:cover"><figcaption>The shepherds find the baby</figcaption></figure><figure style="flex:1.5"><img src="imgc/map_bethlehem.jpg" style="object-fit:cover"><figcaption>Bethlehem and Migdal Eder</figcaption></figure></div>
+<div class="num">2</div><div class="gold"></div></div><div class="body fit"><div class="topfig" style="height:2.45in"><figure style="flex:0.78"><img src="imgc/l2_shepherds.jpg" style="object-fit:cover"><figcaption>The shepherds find the baby</figcaption></figure><figure style="flex:1.0"><img src="imgc/map_bethlehem.jpg" style="object-fit:cover"><figcaption>Bethlehem and Migdal Eder</figcaption></figure></div>
 <div class="cols"><div class="main"><p class="first">As soon as the angels went back into heaven, the shepherds said to one another, “Let us now go even unto Bethlehem, and see this thing which is come to pass.” They did not have far to go. They hurried into town and found Mary and Joseph, and the baby lying in a manger, just as the angel had said.</p><p>Then the shepherds told everyone what they had heard and seen, and all who heard it were amazed. Mary treasured these things and thought about them in her heart. The shepherds went back to their flocks, “glorifying and praising God.”</p><h2>The Setting Was Not an Accident</h2><p class="li"><b>In Bethlehem,</b> the city of David, fulfilling the royal promise (Micah 5:2).</p><p class="li"><b>At Migdal Eder,</b> where spotless lambs were born and protected (Micah 4:8).</p><p class="li"><b>Announced first to shepherds</b> who knew what swaddling cloths and a manger meant (Luke 2:12).</p><blockquote>“That the Messiah was to be born in Bethlehem was a settled conviction. Equally so was the belief that He was to be revealed from Migdal Eder.” (Alfred Edersheim, 1883)</blockquote></div><div class="side"><aside class="notes"><div class="tag">Teaching Nuggets</div><h3>Summary chart</h3><p><b>Born in Bethlehem:</b> Micah 5:2 → Luke 2:4–7</p><p><b>Tower of the Flock:</b> Micah 4:8 → Luke 2:8–12</p><p><b>Sign of the lamb:</b> Luke 2:7, 12</p><p><b>Sacrificial Lamb:</b> Exodus 12; Isaiah 53 → John 1:29</p><h3>Edersheim</h3><p>Alfred Edersheim was a 19th-century Jewish scholar who became a follower of Yeshua.</p></aside><div class="mynotes"><div class="tag">Notes</div></div></div></div><div class="callout"><b class="t">Your Turn</b><br>The shepherds could not keep the good news to themselves. Who can you tell about Yeshua this week?</div></div>
 <div class="foot l"><span>Birth of the King · Lesson 2</span><span class="pg">42</span></div></section>
 <section class="page work "><img class="wm" src="imgc/fhk_watermark.png"><div class="wband"><div class="wk">Maze · Lesson 2</div>

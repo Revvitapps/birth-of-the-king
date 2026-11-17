@@ -117,7 +117,7 @@ dict(t='text', id='l2c', kicker='Lesson Two · Reading 3', title='Heaven’s Arm
         ('Commander', 'Yeshua is the Lord of hosts, the commander of heaven’s armies. Even as a baby, He was their King.')],
  callout=('Did You Know?', 'Gabriel, the angel who visited Zechariah and Mary, had also brought God’s messages to the prophet Daniel hundreds of years earlier (Daniel 8:16; 9:21).')),
 dict(t='text', kicker='Lesson Two · Reading 3, continued', title='The Shepherds Come to See', bignum='2', foot=F,
- top=[('l2_shepherds', 'The shepherds find the baby', 'cover', 0.72), ('map_bethlehem', 'Bethlehem and Migdal Eder', 'cover', 1.5)], toph=2.45,
+ top=[('l2_shepherds', 'The shepherds find the baby', 'cover', 0.78), ('map_bethlehem', 'Bethlehem and Migdal Eder', 'cover', 1.0)], toph=2.45,
  paras=["As soon as the angels went back into heaven, the shepherds said to one another, “Let us now go even unto Bethlehem, and see this thing which is come to pass.” They did not have far to go. They hurried into town and found Mary and Joseph, and the baby lying in a manger, just as the angel had said.",
   "Then the shepherds told everyone what they had heard and seen, and all who heard it were amazed. Mary treasured these things and thought about them in her heart. The shepherds went back to their flocks, “glorifying and praising God.”",
   "## The Setting Was Not an Accident",
