@@ -262,3 +262,8 @@ ol.qs li::marker { font-family:Inter; font-weight:800; color:var(--gold); }
 /* letter-size layout fixes */
 .tree { width:5.9in; margin-left:auto; margin-right:auto; }
 table.wsearch { margin-left:auto; margin-right:auto; }
+
+/* round 4: new title */
+.cv-ref { font-family:Inter; font-weight:700; letter-spacing:.2em; font-size:8.5pt; text-transform:uppercase; color:var(--goldsoft); margin-top:10px; }
+.bk-s { font-style:italic; font-size:12pt; margin-top:6px; }
+.cv-ed { display:inline-block; margin-top:16px; background:var(--gold); color:var(--navy); font-family:Inter; font-weight:900; font-size:17pt; letter-spacing:.14em; text-transform:uppercase; padding:8px 22px; border-radius:8px; }

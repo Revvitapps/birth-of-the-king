@@ -1,26 +1,28 @@
-import json
-from pypdf import PdfReader, PdfWriter, Transformation, PageObject
+"""Builds the finished PDFs from the rendered book. Usage: python3 finish.py <raw book pdf> <student cover pdf> <out dir>"""
+import json, sys, os
+from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject
-B='/tmp/claude-0/-home-user/3a5c4b7d-4602-5541-b0fe-22f390b862a8/scratchpad/book/'
-OUT='/mnt/project-files/birth-of-the-king/'
-pages=json.load(open(B+'pages.json'))
-r=PdfReader(B+'book_raw.pdf')
-w=PdfWriter(clone_from=r)
-w._root_object[NameObject('/PageLayout')]=NameObject('/TwoPageRight')
-w.add_metadata({'/Title':'Birth of the King - Teacher Edition','/Author':'Birth of the King Curriculum'})
-names={'l1':'Lesson 1 · The Promised King','l2':'Lesson 2 · A King Is Born','l3':'Lesson 3 · Star in the Sky','l4':'Lesson 4 · The Wise Men Worship the King','l5':'Lesson 5 · Escape to Egypt','key':'Teacher Answer Key'}
-w.add_outline_item('Cover',0); w.add_outline_item('How to Use This Book',2); w.add_outline_item('Contents',3)
+RAW, SCOVER, OUT = sys.argv[1], sys.argv[2], sys.argv[3].rstrip('/') + '/'
+T = 'Beyond the Manger'
+pages = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'book', 'pages.json')))
+r = PdfReader(RAW); sc = PdfReader(SCOVER)
+w = PdfWriter(clone_from=r)
+w._root_object[NameObject('/PageLayout')] = NameObject('/TwoPageRight')
+w.add_metadata({'/Title': T + ': A Detailed Look into the Story of the Promised King - Teacher Edition', '/Author': 'For His Kingdom'})
+names = {'l1': 'Lesson 1', 'l2': 'Lesson 2', 'l3': 'Lesson 3', 'l4': 'Lesson 4', 'l5': 'Lesson 5', 'key': 'Teacher Answer Key'}
+w.add_outline_item('Cover', 0); w.add_outline_item('How to Use This Book', 2); w.add_outline_item('Contents', 3)
 for p in pages:
-    if p.get('id') in names: w.add_outline_item(names[p['id']],p['n']-1)
-w.write(OUT+'Birth-of-the-King-Flip-Book.pdf')
-cw=PdfWriter(); cw.add_page(r.pages[0]); cw.write(OUT+'Front-Cover-8.5x11.pdf')
-# printable packs: the book pages are already letter size, so student pages are copied as they are
-allw=PdfWriter()
-for L in range(1,6):
-    pw=PdfWriter(); idx=[p['n']-1 for p in pages if p['t'] in('color','work') and p.get('lesson')==L]
+    if p.get('id') in names:
+        w.add_outline_item(names[p['id']] + (' · ' + p['title'] if p.get('title') and p['id'] != 'key' else ''), p['n'] - 1)
+w.write(OUT + 'Beyond-the-Manger-Flip-Book.pdf')
+cw = PdfWriter(); cw.add_page(r.pages[0]); cw.write(OUT + 'Front-Cover-8.5x11.pdf')
+cw = PdfWriter(); cw.add_page(sc.pages[0]); cw.write(OUT + 'Student-Workbook-Cover-8.5x11.pdf')
+allw = PdfWriter(); allw.add_page(sc.pages[0])
+for L in range(1, 6):
+    pw = PdfWriter(); idx = [p['n'] - 1 for p in pages if p['t'] in ('color', 'work') and p.get('lesson') == L]
     for i in idx:
         pw.add_page(r.pages[i]); allw.add_page(r.pages[i])
-    pw.add_metadata({'/Title':f'Birth of the King - Lesson {L} Student Pages (Printable)'})
-    pw.write(OUT+f'Printable-Lesson-{L}-Student-Pages.pdf'); print(L,len(idx))
-allw.add_metadata({'/Title':'Birth of the King - All Student Pages (Printable)'})
-allw.write(OUT+'Printable-All-Student-Pages.pdf')
+    pw.add_metadata({'/Title': f'{T} - Lesson {L} Student Pages (Printable)'})
+    pw.write(OUT + f'Printable-Lesson-{L}-Student-Pages.pdf'); print(L, len(idx))
+allw.add_metadata({'/Title': T + ' - Student Workbook'})
+allw.write(OUT + 'Beyond-the-Manger-Student-Workbook.pdf')
