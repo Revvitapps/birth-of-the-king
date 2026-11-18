@@ -2,8 +2,8 @@
 """Builds the Beyond the Manger flip book HTML from content modules."""
 TITLE = "Beyond the Manger"
 SUBTITLE = "A Detailed Look into the Story of the Promised King"
-# Copyright owner: placeholder until the author confirms the name or business.
-OWNER = "[OWNER NAME]"
+# Copyright owner, confirmed by the author 2026-11-18.
+OWNER = "Athena Bryan"
 COPYRIGHT = (f"© 2026 {OWNER}. All rights reserved.",
              "No part of this book may be reproduced or shared without written permission, except that the purchaser may copy the student pages for use in their own household or single classroom.")
 import html, re, sys, json, importlib
