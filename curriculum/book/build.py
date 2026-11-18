@@ -46,7 +46,12 @@ def copy_html():
 
 def pg_title(p):
     return f'''<section class="page titlepg"><div class="tp-in"><div class="tp-k">An In-Depth Bible Curriculum</div><h1>Beyond<br>the Manger</h1><div class="tp-bar"></div>
-<div class="tp-s">{SUBTITLE}</div><div class="tp-r">Matthew 1–2 · Luke 1–2</div><div class="tp-e">Teacher Edition with Student Activity Pages</div><div class="tp-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
+<div class="tp-s">{SUBTITLE}</div><div class="tp-r">Matthew 1–2 · Luke 1–2</div><div class="tp-e">Teacher Edition with Student Activity Pages</div><div class="tp-logo"><img src="imgc/fhk_logo.png"></div>
+<div class="tp-c"><b>{html.escape(COPYRIGHT[0])}</b><br>{html.escape(COPYRIGHT[1])}</div></div></section>'''
+
+def pg_verse(p):
+    return f'''<section class="page back"><div class="bk-in"><div class="bk-star">✦</div>
+<p class="bk-v">{md(p["verse"])}</p><p class="bk-r">{md(p["ref"])}</p></div></section>'''
 
 def pg_copy(p):
     return f'<section class="page copyonly">{copy_html()}</section>'
@@ -208,7 +213,7 @@ def pg_back(p):
 <p class="bk-r">Isaiah 9:6</p><p class="bk-t">Beyond the Manger</p><p class="bk-s">A Detailed Look into the Story of the Promised King</p><div class="bk-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
 
 R = dict(cover=pg_cover, illus=pg_illus, opener=pg_opener, text=pg_text, plan=pg_plan, work=pg_work,
-         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back, copy=pg_copy, title=pg_title)
+         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back, copy=pg_copy, title=pg_title, verse=pg_verse)
 
 def load_pages():
     pages = []

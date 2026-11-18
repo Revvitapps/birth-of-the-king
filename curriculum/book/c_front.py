@@ -2,7 +2,8 @@ PAGES = [
 dict(t='cover', img='cover'),
 dict(t='illus', img='front'),
 dict(t='title'),
-dict(t='copy'),
+# back of the title page: keeps paintings on left pages and readings on right pages
+dict(t='verse', verse='“But thou, Bethlehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting.”', ref='Micah 5:2'),
 dict(t='fm', kicker='Welcome, Teacher', title='How to Use This Book', bignum='', paras=[
  "Welcome to *Beyond the Manger: A Detailed Look into the Story of the Promised King*, an all-in-one curriculum that walks your family through the story of Yeshua's birth, from the promises of the prophets to the family's journey home to Nazareth. Everything you need to teach is in this one book: the reading, your Teaching Nuggets, and the student activity pages, placed right where they belong in each lesson.",
  "## How Each Lesson Works",
