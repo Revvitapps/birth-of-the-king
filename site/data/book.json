@@ -1,0 +1,2806 @@
+{
+ "front": [
+  {
+   "title": "How to Use This Book",
+   "kicker": "Welcome, Teacher",
+   "paras": [
+    "Welcome to *Birth of the King*, an all-in-one curriculum that walks your family through the story of Yeshua's birth, from the promises of the prophets to the family's escape to Egypt. Everything you need to teach is in this one book: the reading, your Teaching Nuggets, and the student activity pages, placed right where they belong in each lesson.",
+    "## How Each Lesson Works",
+    "- **Lesson Plan.** Every lesson opens with a one-page plan: the Bible passages, the lesson goals, an opening prayer, a short overview, and the order of the readings and activities.",
+    "- **Reading Spreads.** Each topic is a two-page spread, with an illustration on the left and the reading on the right. Read the right-hand page aloud while everyone looks at the picture.",
+    "- **Teaching Nuggets.** The gold-edged column beside the reading holds background, word studies, and talking points for you. Think of these as bite-sized, digestible key takeaways and extra hidden gems inside the lesson.",
+    "- **Did You Know?** The gold boxes hold a fun or surprising fact to share.",
+    "- **Activity Pages.** Coloring pages and worksheets follow the reading they belong to. Answers are in the Answer Key at the back of the book.",
+    "## Printable Student Pages",
+    "Every coloring page and worksheet in this book is also in a separate printable pack for each lesson, sized for standard 8.5 × 11 paper. Print as many copies as you need for your family.",
+    "## Ages and Pacing",
+    "This book is for people of all ages. Whether young or old, there is something new you are bound to discover. You can go at your own pace, according to what fits best for your family. Don't feel pressed to walk through all the information at one time. Use this book year after year to come back and uncover something new in the amazing story of the Messiah."
+   ],
+   "slug": "how-to-use-this-book"
+  },
+  {
+   "title": "A Note on Names and Sources",
+   "kicker": "Before You Begin",
+   "paras": [
+    "## Yeshua and Jesus",
+    "In this book you will see both names, *Yeshua* and *Jesus*. *Yeshua* is the Hebrew name that Mary and Joseph gave their son. It means “God saves” or “God is salvation.” *Jesus* is the same name after it passed through Greek and Latin into English. Using His Hebrew name helps children remember that Jesus was born into a Hebrew family, in the land of Israel, as the promised King from David's line.",
+    "## Bible Verses",
+    "The verses printed at the top of each reading are from the King James Version. Feel free to read the passages aloud from the Bible translation your class uses.",
+    "## History and Tradition",
+    "Some parts of this study, such as the Tower of the Flock, the season of Yeshua's birth, and the homeland of the Wise Men, draw on Jewish history, ancient writings, and the work of Bible scholars. Where good teachers disagree, the Teaching Nuggets show the different views. The Bible itself is always the final word.",
+    "## What You Will Need",
+    "- A Bible for each reader, if possible",
+    "- Pencils, crayons or colored pencils",
+    "- Copies of the printable student pages for each lesson",
+    "- A map or globe for the geography activities (optional)",
+    "> “But thou, Bethlehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel.” (Micah 5:2)"
+   ],
+   "slug": "a-note-on-names-and-sources"
+  }
+ ],
+ "lessons": [
+  {
+   "num": 1,
+   "title": "The Promised King",
+   "ref": "Matthew 1 · Luke 1:26–38 · Luke 2:1–5",
+   "cover": "l1_open.jpg",
+   "page": 6,
+   "steps": [
+    {
+     "kind": "reading",
+     "slug": "the-promised-king-son-of-david",
+     "title": "The Promised King: Son of David",
+     "kicker": "Lesson One · Reading 1",
+     "page": 9,
+     "paras": [
+      "Long ago, God made a promise to King David, the shepherd boy from Bethlehem who became Israel’s greatest king. God told David that one of his descendants would sit on his throne, and that this King’s kingdom would last forever (2 Samuel 7:12–16).",
+      "For hundreds of years, God’s people waited. The prophets kept the promise alive. Jeremiah said God would raise up a “righteous Branch” for David. Isaiah said a shoot would grow from the stump of Jesse, David’s father, and the Spirit of the Lord would rest on Him (Isaiah 11:1–2).",
+      "## Waiting for a King",
+      "By the time Yeshua was born, Israel was ruled by Rome. Many people were looking for a warrior king who would drive out the Romans with an army. The Pharisees, who carefully kept the Torah, believed they were protecting God’s ways. But God’s King came in a way almost no one expected: as a baby, born to a humble family.",
+      "## “Son of David”",
+      "Matthew begins his Gospel with these words: “Jesus Christ, the son of David, the son of Abraham.” Calling Yeshua the *Son of David* was a bold announcement. It was a title for the Messiah, the promised King. Matthew wanted every reader to know that Yeshua was the One God had promised."
+     ],
+     "verse": "Behold, the days come, saith the LORD, that I will raise unto David a righteous Branch, and a King shall reign and prosper",
+     "vref": "Jeremiah 23:5",
+     "read": "Matthew 1:1 · 2 Samuel 7:12–16 · Isaiah 11:1–2",
+     "notes": [
+      {
+       "h": "Ask the class",
+       "t": "What kind of king do you think people were hoping for? How is Yeshua different?"
+      },
+      {
+       "h": "Fulfilled prophecy",
+       "t": "Yeshua fulfilled more than 300 Old Testament prophecies. Have children find Jeremiah 23:5–6 and Isaiah 11:1–2 in their Bibles."
+      },
+      {
+       "h": "Key word",
+       "t": "*Messiah* (Hebrew) and *Christ* (Greek) both mean “Anointed One,” the chosen King."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Jesse, David’s father, lived in Bethlehem. That is why Isaiah calls the coming King a shoot from “the stem of Jesse.”"
+      ]
+     },
+     "art": {
+      "img": "l1_david.jpg",
+      "cap": "David, the shepherd boy from Bethlehem",
+      "contain": false,
+      "page": 8
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "two-family-lines-the-right-to-be-king",
+     "title": "Two Family Lines: The Right to Be King",
+     "kicker": "Lesson One · Reading 2",
+     "page": 11,
+     "paras": [
+      "The Bible gives two family trees for Yeshua. Matthew 1 and Luke 3 list His ancestors, but the lists are different. Why? Together they show that Yeshua had the right to be King through **both sides** of His family.",
+      "## The Legal Right: Joseph’s Line",
+      "Matthew traces the family from Abraham to King David, and then through David’s son **Solomon**, the line of the kings, all the way to Joseph. Joseph was not Yeshua’s birth father, but by adopting Him, Joseph gave Yeshua the *legal* right to David’s throne.",
+      "## The Blood Right: Mary’s Line",
+      "Luke traces the family through David’s son **Nathan**. Many Bible teachers believe this is Mary’s family line. Through Mary, Yeshua was truly born from David’s family. He had the *blood* right to the throne, just as Isaiah promised.",
+      "## Adopted Into His Family",
+      "Here is good news: just as Yeshua was adopted into Joseph’s family, God adopts all who believe into His family. “God sent forth his Son … that we might receive the adoption of sons” (Galatians 4:4–5). Those who were far away are brought near “by the blood of Christ” (Ephesians 2:13).",
+      "## Three Sets of Fourteen",
+      "Matthew arranges the names into three groups of fourteen generations (Matthew 1:17). Matthew even lists some women with surprising stories, like Tamar, Rahab, Ruth, and Bathsheba, showing that God’s grace reaches everyone."
+     ],
+     "verse": "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots",
+     "vref": "Isaiah 11:1",
+     "read": "Matthew 1:1–17 · Luke 3:23–38",
+     "notes": [
+      {
+       "h": "Legal and Blood",
+       "t": "**Legal right:** Joseph, Solomon’s line (Jer. 23:5–6).\n**Blood right:** Mary, Nathan’s line (Isa. 11)."
+      },
+      {
+       "h": "Numbers",
+       "t": "“14” is often linked to deliverance and salvation; “3” to divine completeness. Three sets of fourteen cover Israel’s long seasons of hardship before the Deliverer came."
+      },
+      {
+       "h": "Gospel link",
+       "t": "Believers are adopted into God’s family (Gal. 4:4–5) and brought near by His blood (Eph. 2:13)."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Luke’s list goes all the way back to Adam, “which was the son of God” (Luke 3:38). There were about 2,000 years from Abraham to Yeshua."
+      ]
+     },
+     "art": {
+      "img": "l1_jesse.jpg",
+      "cap": "“A rod out of the stem of Jesse” · Isaiah 11:1",
+      "contain": false,
+      "page": 10
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "king-david-coloring",
+     "title": "King David",
+     "kick": "Color It!",
+     "img": "c_david.png",
+     "caption": "God promised that a King from David’s family would reign forever. (2 Samuel 7:16)",
+     "page": 12
+    },
+    {
+     "kind": "activity",
+     "slug": "yeshuas-family-tree-activity",
+     "title": "Yeshua’s Family Tree",
+     "kick": "Activity",
+     "ins": "Read Matthew 1:1–17 and Luke 3:23–38. Use the word bank to fill in the empty boxes of Yeshua’s family tree.",
+     "page": 13,
+     "blocks": [
+      {
+       "k": "bank",
+       "words": [
+        "Isaac",
+        "Boaz",
+        "Jesse",
+        "Solomon",
+        "Nathan",
+        "Joseph",
+        "Mary"
+       ]
+      },
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "Through which son of David did Joseph’s family line come?",
+       "lines": 1
+      },
+      {
+       "k": "q",
+       "text": "Through which son of David did Mary’s family line come?",
+       "lines": 1
+      },
+      {
+       "k": "q",
+       "text": "How did Yeshua get the legal right to be King? How did He get the blood right?",
+       "lines": 2
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "reading",
+     "slug": "an-angel-visits-mary",
+     "title": "An Angel Visits Mary",
+     "kicker": "Lesson One · Reading 3",
+     "page": 15,
+     "paras": [
+      "In the hill country of Galilee sat a little village called Nazareth. In this quiet place lived a young woman named Mary, who was promised in marriage to a carpenter named Joseph.",
+      "One day God sent the angel Gabriel to Mary. “Greetings, you who are highly favored! The Lord is with you,” he said. Mary was troubled, but Gabriel told her not to be afraid. She would have a baby boy, the Son of the Most High, and she was to call Him *Yeshua*. “The Lord God shall give unto him the throne of his father David,” Gabriel said, “and of his kingdom there shall be no end” (Luke 1:32–33).",
+      "“How can this be?” Mary asked. Gabriel explained that the Holy Spirit would come upon her, so the child would be called the Son of God. “For with God nothing shall be impossible.” Mary answered with a trusting heart: “Behold the handmaid of the Lord; be it unto me according to thy word.”",
+      "## Joseph’s Dream",
+      "When Joseph learned that Mary was expecting a baby, he was worried and did not know what to do. Then an angel spoke to him in a dream: the baby was from the Holy Spirit, and He would save His people from their sins. Joseph woke up, obeyed God, and took Mary to be his wife."
+     ],
+     "verse": "Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel",
+     "vref": "Isaiah 7:14",
+     "read": "Luke 1:26–38 · Matthew 1:18–25",
+     "notes": [
+      {
+       "h": "Before you begin",
+       "t": "Open in prayer, asking God to prepare the children’s hearts to be open and ready to receive understanding of today’s lesson."
+      },
+      {
+       "h": "“Son of David”",
+       "t": "Gabriel’s words point straight back to God’s promise to David. Ask: which promise from Reading 1 is coming true?"
+      },
+      {
+       "h": "Mary’s faith",
+       "t": "Mary did not understand everything, but she trusted God. Ask: When is it hard to trust God?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "This would not be the only time God would speak to Joseph through a dream! God spoke to him in four dreams in all (Matthew 1:20; 2:13; 2:19–20; 2:22).",
+       "The Hebrew word for salvation is ישועה (*yeshu’ah*), which means deliverance or rescue. It comes from the root ישע (Y-Sh-A), meaning to save or rescue. Listen closely: it sounds just like His name, *Yeshua*!"
+      ]
+     },
+     "art": {
+      "img": "l1_angel.jpg",
+      "cap": "Nazareth, Galilee",
+      "contain": false,
+      "page": 14
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "his-name-is-yeshua",
+     "title": "His Name Is Yeshua",
+     "kicker": "Lesson One · Reading 4",
+     "page": 17,
+     "paras": [
+      "In Bible times, a name was more than a label. It often told something about who a person was or what God would do through them. So when the angel told Joseph what to name the baby, the name carried a message.",
+      "To His family and friends, the baby was called *Yehoshua*, or in its shorter form, **Yeshua**. The name means “God is salvation” or “God saves.” Every time someone called His name, they were saying what He came to do: “He shall save his people from their sins.”",
+      "## A Hebrew Name",
+      "Mary and Joseph were Hebrews, so it was natural for them to give their son a Hebrew name. Later, when the good news spread to people who spoke Greek, His name was written *Iēsous*. From there it came into Latin and, many centuries later, into English as *Jesus*. In fact, the letter “J” was not used in English until about 500 years ago!",
+      "## Immanuel: God With Us",
+      "Matthew explains that all this happened to fulfill Isaiah’s prophecy: the virgin would have a son, and they would call Him *Immanuel*, which means “God with us” (Matthew 1:23). Yeshua is both. He is the God who saves, and the God who came to be with His people."
+     ],
+     "verse": "And she shall bring forth a son, and thou shalt call his name JESUS: for he shall save his people from their sins",
+     "vref": "Matthew 1:21",
+     "read": "Matthew 1:20–25 · Isaiah 49:6",
+     "notes": [
+      {
+       "h": "Name study",
+       "t": "*Yeshua* is the same name as *Joshua* in the Old Testament. Joshua led Israel into the Promised Land; Yeshua leads His people into God’s kingdom."
+      },
+      {
+       "h": "Joseph’s obedience",
+       "t": "Joseph “did as the angel of the Lord had bidden him” (Matt. 1:24). Ask: How did Joseph show faith?"
+      },
+      {
+       "h": "Activity tip",
+       "t": "Hebrew is read from right to left. Show the class before they try the writing page."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "The name *Yeshua* appears in Hebrew as ישוע. It is made from four Hebrew letters: Yod, Shin, Vav, and Ayin."
+      ]
+     },
+     "art": {
+      "img": "l1_dream.jpg",
+      "cap": "An angel speaks to Joseph in a dream",
+      "contain": false,
+      "page": 16
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "lets-write-yeshua-activity",
+     "title": "Let’s Write Yeshua!",
+     "kick": "Activity",
+     "ins": "Yeshua’s name in Hebrew is made of four letters. Remember: Hebrew is read from RIGHT to LEFT. Trace the gray letters, then try writing the name on your own.",
+     "page": 18,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "printed"
+      },
+      {
+       "k": "printed"
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "activity",
+     "slug": "names-of-the-king-activity",
+     "title": "Names of the King",
+     "kick": "Activity",
+     "ins": "Read Matthew 1:21–23, Luke 1:32, and Matthew 1:1. Draw a line from each name to its meaning. Then answer the question.",
+     "page": 19,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "Which name of the King is your favorite? Why?",
+       "lines": 2
+      },
+      {
+       "k": "box",
+       "label": "Draw a picture of the angel speaking to Joseph in his dream"
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_crown.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "life-in-nazareth",
+     "title": "Life in Nazareth",
+     "kicker": "Lesson One · Reading 5",
+     "page": 21,
+     "paras": [
+      "When Mary and Joseph were growing up, Nazareth was a small farming village in the hills of Galilee. Fewer than 200 people lived there. It was so small and unimportant that one man later asked, “Can there any good thing come out of Nazareth?” (John 1:46).",
+      "## Homes and Gardens",
+      "Most families in Nazareth had a strip of land where they grew vegetables. Their homes were built of mud brick or stone. A house usually had two or three rooms and an open courtyard. Life centered on the home. That is where families talked about the news, their faith, and the events of the day, often while they shared a meal.",
+      "## Mealtimes",
+      "Hebrew families usually ate two meals a day. The first was in the late morning or around midday, and the second was in the evening at home. Meals were simple: bread, lentil stew, fruit, and eggs. Families also enjoyed fish, goat meat, cheese, olives, and wine. Red meat was saved for special occasions. Instead of sitting on chairs at a table, people often reclined on cushions on the floor to eat.",
+      "## God Chose a Humble Place",
+      "God could have chosen a palace in Jerusalem. Instead, He chose a young woman from a tiny village and a carpenter who worked with his hands. God loves to do great things through humble people."
+     ],
+     "verse": "And he came and dwelt in a city called Nazareth: that it might be fulfilled which was spoken by the prophets, He shall be called a Nazarene",
+     "vref": "Matthew 2:23",
+     "read": "Luke 1:26 · Luke 2:39–40 · John 1:46",
+     "notes": [
+      {
+       "h": "Compare and share",
+       "t": "Ask children to compare a day in Nazareth with their own day: food, homes, chores."
+      },
+      {
+       "h": "“Nazarene”",
+       "t": "The name Nazareth may come from the Hebrew word *netzer*, “branch.” It connects to Isaiah 11:1, the Branch from Jesse!"
+      },
+      {
+       "h": "Galilee",
+       "t": "Nazareth was about 65 miles north of Jerusalem."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Archaeologists have found the remains of simple houses, olive presses, and stone water cisterns in Nazareth from the time of Yeshua."
+      ]
+     },
+     "art": {
+      "img": "l1_nazareth.jpg",
+      "cap": "The village of Nazareth",
+      "contain": false,
+      "page": 20
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "a-man-of-nazareth-coloring",
+     "title": "A Man of Nazareth",
+     "kick": "Color It!",
+     "img": "c_farmer.png",
+     "caption": "Most families in Nazareth grew their own vegetables on a small strip of land.",
+     "page": 22
+    },
+    {
+     "kind": "activity",
+     "slug": "nazareth-village-activity",
+     "title": "Nazareth Village",
+     "kick": "Activity",
+     "ins": "Read “Life in Nazareth” again, then answer the questions below.",
+     "page": 23,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "About how many people lived in Nazareth?",
+         "lines": 1
+        },
+        {
+         "text": "Where did Hebrew families grow their own food?",
+         "lines": 2
+        },
+        {
+         "text": "What were Hebrew homes made of?",
+         "lines": 1
+        },
+        {
+         "text": "What kinds of food did Hebrew families like to eat at mealtimes?",
+         "lines": 2
+        },
+        {
+         "text": "How did people sit when they ate a meal?",
+         "lines": 1
+        },
+        {
+         "text": "Why do you think God chose a small village like Nazareth?",
+         "lines": 2
+        }
+       ]
+      },
+      {
+       "k": "box",
+       "label": "Draw your favorite meal from Nazareth"
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_bread.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "a-hebrew-wedding",
+     "title": "A Hebrew Wedding",
+     "kicker": "Lesson One · Reading 6",
+     "page": 25,
+     "paras": [
+      "Weddings in ancient Israel were very different from weddings today. A Hebrew wedding happened in two big steps, often about a year apart.",
+      "## Step One: The Betrothal",
+      "In Hebrew tradition, the father of the groom often chose a bride for his son. The groom’s family and the bride’s father agreed on a bride price and signed a marriage contract called a **ketubah**. Once the ketubah was signed, the couple was legally husband and wife, but they did not live together yet. If they wanted to separate, they needed a divorce, and the groom would lose the price he had paid.",
+      "## Step Two: The Wedding Feast",
+      "During the waiting time, the groom prepared a home for his bride, often a room added onto his father’s house. When the groom’s father saw that everything was ready, he told his son to go and get his bride! The groom brought her home for a wedding feast that could last up to seven days. This final step was called the **nisuin**.",
+      "## Mary and Joseph",
+      "Mary and Joseph were in the first step, betrothed but not yet living together, when Mary was found to be expecting a baby. That is why Joseph was so troubled. After the angel explained God’s plan in a dream, Joseph took Mary to be his wife."
+     ],
+     "verse": "Then Joseph being raised from sleep did as the angel of the Lord had bidden him, and took unto him his wife",
+     "vref": "Matthew 1:24",
+     "read": "Matthew 1:18–25 · Luke 1:27",
+     "notes": [
+      {
+       "h": "A picture of Yeshua",
+       "t": "Yeshua used wedding pictures when He spoke of His return: “I go to prepare a place for you” (John 14:2–3). Like a groom, He is preparing a home for His people."
+      },
+      {
+       "h": "Key words",
+       "t": "*Ketubah:* marriage contract.\n*Nisuin:* the final wedding step when the bride is brought home."
+      },
+      {
+       "h": "Discuss",
+       "t": "Why was Joseph’s choice to obey God brave?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Joseph planned to end the betrothal quietly so Mary would not be shamed (Matthew 1:19). The Bible calls him “a just man.”"
+      ]
+     },
+     "art": {
+      "img": "l1_wedding.jpg",
+      "cap": "Signing the marriage contract",
+      "contain": false,
+      "page": 24
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "the-bride-and-groom-coloring",
+     "title": "The Bride and Groom",
+     "kick": "Color It!",
+     "img": "c_wedding.png",
+     "caption": "A Hebrew wedding feast could last up to seven days!",
+     "page": 26
+    },
+    {
+     "kind": "activity",
+     "slug": "a-hebrew-wedding-activity",
+     "title": "A Hebrew Wedding",
+     "kick": "Activity",
+     "ins": "Read “A Hebrew Wedding” and Matthew 1:18–25. Answer the questions below.",
+     "page": 27,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "Who usually selected a bride for a young man?",
+         "lines": 1
+        },
+        {
+         "text": "What was the marriage contract called?",
+         "lines": 1
+        },
+        {
+         "text": "What did the groom do while he waited for his wedding day?",
+         "lines": 2
+        },
+        {
+         "text": "What instruction did the groom’s father give when he saw everything was ready?",
+         "lines": 2
+        },
+        {
+         "text": "How long could a wedding feast last?",
+         "lines": 1
+        },
+        {
+         "text": "What did Joseph do after the angel spoke to him in a dream?",
+         "lines": 2
+        }
+       ]
+      },
+      {
+       "k": "q",
+       "text": "Yeshua said, “I go to prepare a place for you” (John 14:2). How is that like a Hebrew groom?",
+       "lines": 2
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_wedding.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "the-census",
+     "title": "The Census",
+     "kicker": "Lesson One · Reading 7",
+     "page": 29,
+     "paras": [
+      "Far away in the city of Rome, the emperor **Caesar Augustus** made a law. Everyone in the Roman Empire had to be counted in a census and registered for taxes. Each family had to go to its own hometown to sign up.",
+      "Joseph belonged to the family of King David, and David’s hometown was **Bethlehem** in Judea. So Joseph had to leave Nazareth and travel south to Bethlehem, and he took Mary with him, even though her baby would soon be born.",
+      "## A Long Journey",
+      "The trip from Nazareth to Bethlehem was about 90 miles. Traveling on foot, perhaps with a donkey to carry supplies, it would have taken about a week. Many travelers followed the road along the Jordan River valley and then climbed up through the hills past Jerusalem.",
+      "## God Was in Charge",
+      "Caesar Augustus thought he was in control of the whole world. But God was using even an emperor’s law to keep His promise! Seven hundred years earlier, the prophet Micah had written that the Ruler of Israel would be born in Bethlehem (Micah 5:2). The census brought Mary and Joseph to exactly the right town at exactly the right time.",
+      "As the fall season was about to begin, Mary and Joseph set out on the road to Bethlehem."
+     ],
+     "verse": "And it came to pass in those days, that there went out a decree from Caesar Augustus, that all the world should be taxed",
+     "vref": "Luke 2:1",
+     "read": "Luke 2:1–5 · Micah 5:2",
+     "notes": [
+      {
+       "h": "God’s timing",
+       "t": "Galatians 4:4 says God sent His Son “when the fulness of the time was come.” Ask: How did God use the census?"
+      },
+      {
+       "h": "Rulers",
+       "t": "Caesar Augustus ruled Rome from 27 BC to AD 14. Quirinius governed Syria (Luke 2:2)."
+      },
+      {
+       "h": "Map it",
+       "t": "Trace the route from Nazareth to Bethlehem on a map of Israel."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Bethlehem means “House of Bread.” The One who called Himself “the bread of life” (John 6:35) was born in the House of Bread!"
+      ]
+     },
+     "art": {
+      "img": "l1_census.jpg",
+      "cap": "A decree from Caesar Augustus",
+      "contain": false,
+      "page": 28
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "the-road-to-bethlehem-activity",
+     "title": "The Road to Bethlehem",
+     "kick": "Color and Trace",
+     "ins": "Mary and Joseph traveled about 90 miles from Nazareth to Bethlehem. Trace the dotted line with a crayon from START to FINISH to follow their journey. Color the water blue and the land green or brown. Then color Mary, Joseph, and the donkey!",
+     "page": 30,
+     "blocks": [
+      {
+       "k": "img",
+       "img": "map_journey.png"
+      }
+     ],
+     "printed": false
+    },
+    {
+     "kind": "activity",
+     "slug": "a-census-activity",
+     "title": "A Census",
+     "kick": "Activity",
+     "ins": "Open your Bible and read Luke 2:1–5. Answer the questions.",
+     "page": 31,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "Who was the Caesar who ordered a census? (verse 1)",
+         "lines": 1
+        },
+        {
+         "text": "Who was governor of Syria at this time? (verse 2)",
+         "lines": 1
+        },
+        {
+         "text": "Why did Joseph go to Bethlehem to register for the census? (verse 4)",
+         "lines": 2
+        },
+        {
+         "text": "Who did Joseph take with him? (verse 5)",
+         "lines": 1
+        },
+        {
+         "text": "About how far was it from Nazareth to Bethlehem?",
+         "lines": 1
+        },
+        {
+         "text": "Which prophet said the Ruler of Israel would be born in Bethlehem?",
+         "lines": 1
+        }
+       ]
+      },
+      {
+       "k": "img",
+       "img": "c_journey_fig.png"
+      }
+     ],
+     "printed": false
+    }
+   ],
+   "plan": {
+    "passages": "Matthew 1:1–25; Luke 1:26–38; Luke 2:1–5. Prophecies: Isaiah 7:14; Isaiah 11:1–2; Jeremiah 23:5–6",
+    "objectives": [
+     "Why Yeshua is called the “Son of David”",
+     "How Yeshua had both the legal right and the blood right to be King",
+     "How Mary and Joseph learned God’s plan",
+     "Why Mary and Joseph traveled to Bethlehem"
+    ],
+    "prayer": "Father God, thank You for keeping every promise You make. Open our ears and our hearts as we learn about the birth of Your Son, the King. In Yeshua’s name, amen.",
+    "materials": "Bibles, pencils, crayons or colored pencils, and copies of the Lesson 1 printable pages.",
+    "overview": "Long before Yeshua was born, God promised that a King would come from the family of David. The prophets Isaiah and Jeremiah wrote about this King hundreds of years ahead of time. In this lesson, children will discover how Yeshua belonged to David’s royal family through both Joseph and Mary. They will hear how the angel Gabriel visited Mary in the small village of Nazareth, how an angel spoke to Joseph in a dream, and why a Roman census sent the young couple on the road to Bethlehem, the city of David.",
+    "dyk": "Yeshua fulfilled more than 300 prophecies from the Old Testament! Isaiah and Micah told about His birth hundreds of years before it happened (Isaiah 7:14; Micah 5:2).",
+    "flow": [
+     [
+      "Read:",
+      "The Promised King"
+     ],
+     [
+      "Read:",
+      "Two Family Lines"
+     ],
+     [
+      "Activity:",
+      "Color King David · Yeshua’s Family Tree"
+     ],
+     [
+      "Read:",
+      "An Angel Visits Mary"
+     ],
+     [
+      "Read:",
+      "His Name Is Yeshua"
+     ],
+     [
+      "Activity:",
+      "Let’s Write Yeshua · Names of the King"
+     ],
+     [
+      "Read:",
+      "Life in Nazareth"
+     ],
+     [
+      "Activity:",
+      "Color a Man of Nazareth · Nazareth Village"
+     ],
+     [
+      "Read:",
+      "A Hebrew Wedding"
+     ],
+     [
+      "Activity:",
+      "Color the Bride and Groom · Wedding Questions"
+     ],
+     [
+      "Read:",
+      "The Census"
+     ],
+     [
+      "Activity:",
+      "Trace the Road to Bethlehem · A Census"
+     ]
+    ],
+    "page": 7
+   }
+  },
+  {
+   "num": 2,
+   "title": "A King Is Born",
+   "ref": "Luke 2:1–20 · Micah 4:8 · Micah 5:2",
+   "cover": "l2_open.jpg",
+   "page": 32,
+   "steps": [
+    {
+     "kind": "reading",
+     "slug": "migdal-eder-the-tower-of-the-flock",
+     "title": "Migdal Eder: The Tower of the Flock",
+     "kicker": "Lesson Two · Reading 1",
+     "page": 35,
+     "paras": [
+      "Right at the edge of Bethlehem, in the fields just outside the town, stood a stone watchtower called **Migdal Eder**. In Hebrew, *Migdal Eder* means “Tower of the Flock.” It was so close to Bethlehem that the shepherds who worked there could walk into town in a few minutes.",
+      "## Where Rachel Was Buried",
+      "The Tower of the Flock first appears in the story of Jacob. When Jacob’s wife Rachel died, she “was buried in the way to Ephrath, which is Bethlehem,” and Jacob set up a pillar on her grave (Genesis 35:19–20). The very next verse says Jacob “spread his tent beyond the tower of Edar” (Genesis 35:21). *Edar* is the same Hebrew word as *Eder*. So from Israel’s earliest days, the Tower of the Flock stood right beside Bethlehem.",
+      "## A Prophecy the Shepherds Knew",
+      "Hundreds of years later, the prophet Micah spoke to the Tower of the Flock: “Unto thee shall it come, even the first dominion” (Micah 4:8). A few verses later he announced that the Ruler of Israel would come from Bethlehem (Micah 5:2). The shepherds of Migdal Eder knew these prophecies about their own tower. So when the angel spoke, they knew exactly where to look for the Messiah: right there in Bethlehem, near the Tower of the Flock.",
+      "## Shepherd Language",
+      "The angel said, “Ye shall find the babe wrapped in swaddling clothes, lying in a manger” (Luke 2:12). That was shepherd language! These were the very words these shepherds used every lambing season. God gave them a sign that only shepherds like them would fully understand.",
+      "## What Was the Tower Like?",
+      "Watchtowers like this were usually two stories tall. From the top, shepherds watched for wolves and thieves. The lower level was a sheltered place where ewes gave birth to their lambs."
+     ],
+     "verse": "And thou, O tower of the flock, the strong hold of the daughter of Zion, unto thee shall it come, even the first dominion",
+     "vref": "Micah 4:8",
+     "read": "Genesis 35:19–21 · Micah 4:8 · Micah 5:2 · Luke 2:8–12",
+     "notes": [
+      {
+       "h": "Ancient sources",
+       "t": "The Mishnah (Shekalim 7:4) describes animals found in the area near Jerusalem as fit for temple offerings. The Targum on Genesis 35:21 calls Migdal Eder the place where “King Messiah will be revealed in the end of days.”"
+      },
+      {
+       "h": "Map it",
+       "t": "Migdal Eder was a shepherding site at the edge of Bethlehem, not a separate town. See the small map in Reading 3."
+      },
+      {
+       "h": "Ask",
+       "t": "Why would God reveal His Son first to shepherds in a field full of lambs?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Today the fields just east of Bethlehem, near the town of Beit Sahour, are still called “Shepherds’ Field.” Archaeologists have found ancient caves and tower ruins there."
+      ]
+     },
+     "art": {
+      "img": "l2_tower.jpg",
+      "cap": "Migdal Eder, the Tower of the Flock",
+      "contain": false,
+      "page": 34
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "the-shepherds-of-the-temple-flocks",
+     "title": "The Shepherds of the Temple Flocks",
+     "kicker": "Lesson Two · Reading 2",
+     "page": 37,
+     "paras": [
+      "The shepherds near Bethlehem were not ordinary shepherds. Many Bible teachers believe they were specially trained shepherds who raised lambs for the temple in Jerusalem, especially the Passover lambs. These lambs had to be *without blemish*: perfect, with no cuts, broken bones, or spots.",
+      "## Caring for a Newborn Lamb",
+      "When a ewe was ready to give birth, the shepherds brought her into the lower room of the tower. As soon as a lamb was born, they wrapped it snugly in strips of cloth, **swaddling cloths**, so it would not hurt itself. Then they laid it in a stone **manger** to keep it calm, safe, and spotless until it could be checked.",
+      "## “No Room in the Inn”",
+      "The Greek word translated “inn” in Luke 2:7 is *kataluma*. It means a **guest room**. Luke uses the same word for the upper room of the Last Supper (Luke 22:11). For a real roadside inn he used a different word, *pandocheion* (Luke 10:34). So there was no room in the crowded guest room in Bethlehem.",
+      "Where could a young mother go? Just at the edge of town stood a clean, sheltered birthing room made for spotless lambs, with a stone manger and swaddling cloths close at hand. This is one more reason many believe the lower room of Migdal Eder could be the place where Yeshua was born.",
+      "## The Lamb of God",
+      "Years later, John the Baptist saw Yeshua and cried out, “Behold the Lamb of God, which taketh away the sin of the world” (John 1:29). From His very first night, Yeshua’s mission was pointing to the cross."
+     ],
+     "verse": "She brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn",
+     "vref": "Luke 2:7",
+     "read": "Luke 2:6–12 · John 1:29 · Luke 22:11–12",
+     "notes": [
+      {
+       "h": "Word study",
+       "t": "*Kataluma:* guest room (Luke 2:7; 22:11).\n*Pandocheion:* roadside inn (Luke 10:34)."
+      },
+      {
+       "h": "Swaddling",
+       "t": "Swaddling cloths picture purity and protection, the same care given to temple lambs. The manger pictures humility."
+      },
+      {
+       "h": "Passover link",
+       "t": "Read Exodus 12:5 and 1 Peter 1:19 together: “a lamb without blemish and without spot.”"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Many mangers in Israel were carved from stone, not built of wood. Some ancient stone mangers can still be seen today."
+      ]
+     },
+     "art": {
+      "img": "l2_lamb.jpg",
+      "cap": "Wrapping a newborn temple lamb",
+      "contain": false,
+      "page": 36
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "lay-him-in-the-manger-activity",
+     "title": "Lay Him in the Manger",
+     "kick": "Cut and Paste",
+     "ins": "Color the hay in the stone manger yellow. Then color the figures at the bottom of the page, cut them out, and glue them into the picture. Who goes in the manger?",
+     "page": 38,
+     "blocks": [
+      {
+       "k": "img",
+       "img": "c_manger_scene.png"
+      },
+      {
+       "k": "printed"
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "activity",
+     "slug": "the-tower-of-the-flock-activity",
+     "title": "The Tower of the Flock",
+     "kick": "Activity",
+     "ins": "Read “Migdal Eder” and “The Shepherds of the Temple Flocks,” then answer the questions.",
+     "page": 39,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "What does *Migdal Eder* mean in English?",
+         "lines": 1
+        },
+        {
+         "text": "Which prophet spoke to the “tower of the flock”?",
+         "lines": 1
+        },
+        {
+         "text": "Where was Migdal Eder located?",
+         "lines": 1
+        },
+        {
+         "text": "What were the lambs near Bethlehem raised for?",
+         "lines": 1
+        },
+        {
+         "text": "What did the shepherds wrap newborn lambs in? Where did they lay them?",
+         "lines": 1
+        },
+        {
+         "text": "Why was the angel’s sign so special to the shepherds?",
+         "lines": 2
+        },
+        {
+         "text": "Luke 2:7 says there was no room in the *kataluma*. What does *kataluma* mean?",
+         "lines": 1
+        },
+        {
+         "text": "Why might the lower room of Migdal Eder have been the place where Yeshua was born?",
+         "lines": 2
+        },
+        {
+         "text": "What did John the Baptist call Yeshua? (John 1:29)",
+         "lines": 1
+        }
+       ]
+      }
+     ],
+     "printed": false,
+     "sketch": "c_tower.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "heavens-army-and-the-shepherds",
+     "title": "Heaven’s Army and the Shepherds",
+     "kicker": "Lesson Two · Reading 3",
+     "page": 41,
+     "paras": [
+      "The night was quiet in the fields near the Tower of the Flock. Suddenly an angel of the Lord stood before the shepherds, and God’s glory shone all around them. They were terrified! But the angel said, “Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people. For unto you is born this day in the city of David a Saviour, which is Christ the Lord.”",
+      "## The Heavenly Army",
+      "Then the sky filled with a *multitude of the heavenly host*. The word **host** means an army. Heaven’s army had come to honor their Commander, who had just entered the world as a baby! Together they were praising God with one voice: “Glory to God in the highest, and on earth peace, good will toward men.”",
+      "## Angels Are God’s Messengers",
+      "The word *angel* means “messenger.” In the Bible, angels deliver exactly the words God gives them. An angel announced John’s birth to Zechariah (Luke 1:11–17). Gabriel announced Yeshua’s birth to Mary (Luke 1:26–33). An angel announced His birth to the shepherds (Luke 2:9–14). And angels announced His resurrection at the empty tomb (Matthew 28:5–7).",
+      "Paul wrote that God was “manifest in the flesh … seen of angels” (1 Timothy 3:16). The angels who worship God in heaven now saw His glory in the face of a newborn baby."
+     ],
+     "verse": "And suddenly there was with the angel a multitude of the heavenly host praising God, and saying, Glory to God in the highest, and on earth peace, good will toward men",
+     "vref": "Luke 2:13–14",
+     "read": "Luke 2:8–20 · 1 Timothy 3:16",
+     "notes": [
+      {
+       "h": "Look closely",
+       "t": "Luke says the angels were “praising God, and saying, Glory to God in the highest, and on earth peace, good will toward men” (Luke 2:13–14). Ask: Does the Bible say the angels *sang*? (It says they spoke praise. Singing is possible, but not stated.)"
+      },
+      {
+       "h": "Good news",
+       "t": "The angel said the good news was “to all people”: a Saviour, Christ the Lord, born in the city of David (Luke 2:10–11). Ask: Who is this good news for? (Everyone, including you!)"
+      },
+      {
+       "h": "Commander",
+       "t": "Yeshua is the Lord of hosts, the commander of heaven’s armies. Even as a baby, He was their King."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Gabriel, the angel who visited Zechariah and Mary, had also brought God’s messages to the prophet Daniel hundreds of years earlier (Daniel 8:16; 9:21)."
+      ]
+     },
+     "art": {
+      "img": "l2_angels.jpg",
+      "cap": "“A multitude of the heavenly host”",
+      "contain": false,
+      "page": 40
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "the-shepherds-come-to-see",
+     "title": "The Shepherds Come to See",
+     "kicker": "Lesson Two · Reading 3, continued",
+     "page": 42,
+     "paras": [
+      "As soon as the angels went back into heaven, the shepherds said to one another, “Let us now go even unto Bethlehem, and see this thing which is come to pass.” They did not have far to go. They hurried into town and found Mary and Joseph, and the baby lying in a manger, just as the angel had said.",
+      "Then the shepherds told everyone what they had heard and seen, and all who heard it were amazed. Mary treasured these things and thought about them in her heart. The shepherds went back to their flocks, “glorifying and praising God.”",
+      "## The Setting Was Not an Accident",
+      "- **In Bethlehem,** the city of David, fulfilling the royal promise (Micah 5:2).",
+      "- **At Migdal Eder,** where spotless lambs were born and protected (Micah 4:8).",
+      "- **Announced first to shepherds** who knew what swaddling cloths and a manger meant (Luke 2:12).",
+      "> “That the Messiah was to be born in Bethlehem was a settled conviction. Equally so was the belief that He was to be revealed from Migdal Eder.” (Alfred Edersheim, 1883)"
+     ],
+     "notes": [
+      {
+       "h": "Summary chart",
+       "t": "**Born in Bethlehem:** Micah 5:2 → Luke 2:4–7\n**Tower of the Flock:** Micah 4:8 → Luke 2:8–12\n**Sign of the lamb:** Luke 2:7, 12\n**Sacrificial Lamb:** Exodus 12; Isaiah 53 → John 1:29"
+      },
+      {
+       "h": "Edersheim",
+       "t": "Alfred Edersheim was a 19th-century Jewish scholar who became a follower of Yeshua."
+      }
+     ],
+     "callout": {
+      "title": "Your Turn",
+      "body": [
+       "The shepherds could not keep the good news to themselves. Who can you tell about Yeshua this week?"
+      ]
+     },
+     "figs": [
+      {
+       "img": "l2_shepherds.jpg",
+       "cap": "The shepherds find the baby"
+      },
+      {
+       "img": "map_bethlehem.jpg",
+       "cap": "Bethlehem and Migdal Eder"
+      }
+     ],
+     "art": {
+      "img": "l2_shepherds.jpg",
+      "cap": "The shepherds find the baby",
+      "contain": false,
+      "page": 42
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "shepherds-hurry-to-bethlehem-activity",
+     "title": "Shepherds, Hurry to Bethlehem!",
+     "kick": "Maze",
+     "ins": "“Let us now go even unto Bethlehem, and see this thing which is come to pass” (Luke 2:15). Help the shepherds find the way from the fields to Bethlehem!",
+     "page": 43,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "Fill in the missing words: “For unto you is born this day in the city of ____________ a ____________, which is Christ the Lord.” (Luke 2:11)",
+       "lines": 0
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "reading",
+     "slug": "when-was-yeshua-born",
+     "title": "When Was Yeshua Born?",
+     "kicker": "Lesson Two · Reading 4",
+     "page": 45,
+     "paras": [
+      "The Bible does not give the date of Yeshua’s birth. But it does give clues, and Bible students have studied them for centuries. There are two main views.",
+      "## Clues for a Fall Birth",
+      "- **Shepherds in the fields.** In Judea, shepherds stayed out in the fields with their flocks at night from spring until early fall. The weather was mild enough to sleep outdoors.",
+      "- **Zechariah’s temple service.** Luke records that Zechariah served in the priestly “course of Abijah” (Luke 1:5). Using the Hebrew calendar, his service falls in midsummer, John the Baptist’s birth near Passover, and Yeshua’s birth six months later, in the early fall.",
+      "- **The feasts.** The fall feasts, Trumpets, the Day of Atonement, and Tabernacles (Sukkot), brought crowds of travelers. That would explain why there was no room! A Roman census would also make sense in a season when people were already traveling.",
+      "## Clues for a Spring Birth",
+      "- Some Bible scholars count Zechariah’s service differently, placing John’s birth in March and Yeshua’s around March or April.",
+      "- Spring is lambing season, when shepherds kept watch day and night.",
+      "- Some early Christian writers placed the birth in March or April.",
+      "## What Matters Most",
+      "Both views are possible, but calculations that use the Hebrew calendar point most strongly to the fall. What matters most is not the date, but that God kept His promise right on time."
+     ],
+     "verse": "And there were in the same country shepherds abiding in the field, keeping watch over their flock by night",
+     "vref": "Luke 2:8",
+     "read": "Luke 1:5, 24–36 · Luke 2:8 · Leviticus 23:23–43",
+     "notes": [
+      {
+       "h": "Hebrew calendar",
+       "t": "The Hebrew calendar follows the moon and adds leap months. The feasts fall on fixed Hebrew dates. Using the modern calendar can shift the calculations."
+      },
+      {
+       "h": "Tabernacles",
+       "t": "John 1:14 says the Word “dwelt” among us. The Greek word means “tabernacled”!"
+      },
+      {
+       "h": "Keep it friendly",
+       "t": "Let children hear both views. Christians who love the Bible hold either one."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "During Sukkot (the Feast of Tabernacles), families lived in leafy booths for seven days to remember how God cared for Israel in the wilderness."
+      ]
+     },
+     "art": {
+      "img": "l2_fall.jpg",
+      "cap": "Bethlehem in the fall feast season",
+      "contain": false,
+      "page": 44
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "lets-see-what-you-remember-activity",
+     "title": "Let’s See What You Remember",
+     "kick": "Review",
+     "ins": "Look back at Luke 2:1–20, Micah 5:2, and the Lesson 2 readings.",
+     "page": 46,
+     "blocks": [
+      {
+       "k": "part",
+       "text": "Part 1 · Circle the best answer"
+      },
+      {
+       "k": "mc",
+       "start": 1,
+       "items": [
+        {
+         "text": "Who ordered a census of the Roman Empire?",
+         "options": [
+          "King Herod",
+          "Caesar Augustus",
+          "Pontius Pilate",
+          "King David"
+         ]
+        },
+        {
+         "text": "Why did Mary and Joseph travel to Bethlehem?",
+         "options": [
+          "To visit friends",
+          "To register for the census",
+          "To escape King Herod",
+          "To buy a lamb"
+         ]
+        },
+        {
+         "text": "Which prophet said the Ruler of Israel would be born in Bethlehem?",
+         "options": [
+          "Isaiah",
+          "Daniel",
+          "Jeremiah",
+          "Micah"
+         ]
+        },
+        {
+         "text": "Where did Mary lay her baby after He was born?",
+         "options": [
+          "In a basket",
+          "In a manger",
+          "In a bed",
+          "In a boat"
+         ]
+        },
+        {
+         "text": "Who were the first people to hear the good news?",
+         "options": [
+          "Priests",
+          "Kings",
+          "Shepherds",
+          "Soldiers"
+         ]
+        },
+        {
+         "text": "What did Mary do with all these things? (Luke 2:19)",
+         "options": [
+          "Told everyone in town",
+          "Kept them and pondered them in her heart",
+          "Wrote them on a scroll"
+         ]
+        },
+        {
+         "text": "In Judea, shepherds stayed out in the fields at night …",
+         "options": [
+          "only in winter",
+          "from spring until early fall",
+          "only on feast days"
+         ]
+        },
+        {
+         "text": "During which feast did families live in leafy booths for seven days?",
+         "options": [
+          "Passover",
+          "Shavuot (Pentecost)",
+          "Sukkot (Tabernacles)"
+         ]
+        }
+       ]
+      },
+      {
+       "k": "part",
+       "text": "Part 2 · Write your answer"
+      },
+      {
+       "k": "mc",
+       "start": 9,
+       "items": [
+        {
+         "text": "What name did the angel Gabriel tell Mary to give her baby?",
+         "lines": 1
+        },
+        {
+         "text": "What did the angels say? (Luke 2:14)",
+         "lines": 2
+        },
+        {
+         "text": "What did the shepherds do after they saw the baby?",
+         "lines": 1
+        },
+        {
+         "text": "Name one clue that points to Yeshua being born in the fall.",
+         "lines": 1
+        },
+        {
+         "text": "What matters more than the exact date of Yeshua’s birth?",
+         "lines": 1
+        }
+       ]
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_star.png"
+    },
+    {
+     "kind": "activity",
+     "slug": "birth-of-the-king-activity",
+     "title": "Birth of the King",
+     "kick": "Activity",
+     "ins": "Use your imagination! Write or draw your answer in each box.",
+     "page": 47,
+     "blocks": [
+      {
+       "k": "grid4",
+       "cells": [
+        "Imagine you are a shepherd in the field. What would you say to the angel?",
+        "This miracle teaches that …",
+        "Draw a welcome sign for Bethlehem, the city of David.",
+        "If the story of Yeshua’s birth were a book, the cover would look like this …"
+       ]
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_quill.png"
+    }
+   ],
+   "plan": {
+    "passages": "Luke 2:1–20; Micah 4:8; Micah 5:2; Genesis 35:19–21; John 1:29",
+    "objectives": [
+     "Where Yeshua was born, and why Bethlehem mattered",
+     "What Migdal Eder, the Tower of the Flock, was, and why it may have been the place of His birth",
+     "How the shepherds learned of the Messiah’s birth",
+     "Why the swaddling cloths and manger were a special sign"
+    ],
+    "prayer": "Lord, thank You for sending Yeshua, the Lamb of God, to be our Savior. Help us listen like the shepherds did, and share the good news with joy. In Yeshua’s name, amen.",
+    "materials": "Bibles, pencils, crayons, scissors, glue, a map of Israel (optional), and copies of the Lesson 2 printable pages.",
+    "overview": "Mary traveled with Joseph to Bethlehem, the hometown of King David. The town was crowded, and there was no room in the guest room. Right at the edge of Bethlehem stood Migdal Eder, the Tower of the Flock, where special shepherds cared for the lambs raised for temple sacrifices. Yeshua was born and laid in a manger, wrapped in swaddling cloths. That same night an angel appeared to the shepherds with the good news: “The Messiah is born!” The shepherds knew exactly what the sign meant. They hurried to see the baby, just as the angel said, and praised God for their newborn Savior.",
+    "dyk": "Many Bible teachers believe Yeshua was born at a fall Appointed Time, possibly near the Day of Trumpets (Rosh Hashanah). In Israel, trumpets were blown when kings were announced!",
+    "flow": [
+     [
+      "Read:",
+      "Migdal Eder: The Tower of the Flock"
+     ],
+     [
+      "Read:",
+      "The Shepherds of the Temple Flocks"
+     ],
+     [
+      "Activity:",
+      "Lay Him in the Manger (Cut and Paste) · The Tower of the Flock"
+     ],
+     [
+      "Read:",
+      "Heaven’s Army and the Shepherds · The Shepherds Come to See"
+     ],
+     [
+      "Activity:",
+      "Shepherds’ Maze"
+     ],
+     [
+      "Read:",
+      "When Was Yeshua Born?"
+     ],
+     [
+      "Activity:",
+      "Let’s See What You Remember · Birth of the King"
+     ]
+    ],
+    "page": 33
+   }
+  },
+  {
+   "num": 3,
+   "title": "Star in the Sky",
+   "ref": "Matthew 2:1–8 · Numbers 24:17 · Micah 5:2",
+   "cover": "l3_open.jpg",
+   "page": 48,
+   "steps": [
+    {
+     "kind": "reading",
+     "slug": "who-were-the-magi",
+     "title": "Who Were the Magi?",
+     "kicker": "Lesson Three · Reading 1",
+     "page": 51,
+     "paras": [
+      "Many songs call them “three kings,” but the Bible never says they were kings. Matthew calls them *magoi*, or **Magi**, a well-known group of priest-scholars from the lands east of Israel.",
+      "## Priests, Scholars, and King-Makers",
+      "The Magi first came from the Medes and Persians. They were experts in the stars, astrologers, and students of dreams, ancient writings, and the business of kings. At the time Yeshua was born, Persia was part of the **Parthian Empire**, the great rival of Rome. In Parthia, Magi sat on the king’s council. Together with the nobles, they had so much power that they could help choose a new king, or remove one. People called them *king-makers*.",
+      "## Why Would They Care About a Jewish King?",
+      "Hundreds of years earlier, the Jews were carried away to Babylon. One of them, **Daniel**, became “chief of the governors over all the wise men of Babylon” (Daniel 2:48). Daniel’s writings included a timetable for the coming Messiah (Daniel 9:24–27).",
+      "Many Jewish families stayed in Babylon and Persia for centuries. They knew the prophecy of Balaam: “There shall come a Star out of Jacob, and a Sceptre shall rise out of Israel” (Numbers 24:17). For scholars who studied the sky, a prophecy about a star would catch their attention! Generations of Eastern scholars may have kept and passed on this knowledge."
+     ],
+     "verse": "Behold, there came wise men from the east to Jerusalem, saying, Where is he that is born King of the Jews? for we have seen his star in the east",
+     "vref": "Matthew 2:1–2",
+     "read": "Matthew 2:1–2 · Daniel 2:48 · Numbers 24:17",
+     "notes": [
+      {
+       "h": "Key word",
+       "t": "*Magi* (Greek *magoi*) is where the word “magic” comes from, but these men were not tricksters. They were respected priests and scholars.\n**Astronomy** is studying the sun, moon, stars, and planets as God made them. **Astrology** is the belief that the stars control or foretell people’s lives, which the Bible warns against (Deuteronomy 18:10–12). The Magi practiced both, yet God used the sky they studied to lead them to Yeshua."
+      },
+      {
+       "h": "Daniel’s legacy",
+       "t": "Daniel’s influence is a big reason many scholars believe Eastern Magi were expecting a Jewish King."
+      },
+      {
+       "h": "Ask",
+       "t": "The Magi traveled a long way to find Yeshua. What does that show about how much they wanted to see Him?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "The Parthian royal council was called the *Megistanes*. Its members included royal family members, nobles, and the Magi."
+      ]
+     },
+     "art": {
+      "img": "l3_magi.jpg",
+      "cap": "Magi of the Parthian court",
+      "contain": false,
+      "page": 50
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "a-wise-man-from-the-east-coloring",
+     "title": "A Wise Man from the East",
+     "kick": "Color It!",
+     "img": "c_magus.png",
+     "caption": "“We have seen his star in the east, and are come to worship him.” (Matthew 2:2)",
+     "page": 52
+    },
+    {
+     "kind": "activity",
+     "slug": "the-wise-men-activity",
+     "title": "The Wise Men",
+     "kick": "Activity",
+     "ins": "Open your Bible and read Matthew 2:1–8. Then read “Who Were the Magi?” and answer the questions.",
+     "page": 53,
+     "blocks": [
+      {
+       "k": "part",
+       "text": "Part 1 · Circle the best answer"
+      },
+      {
+       "k": "mc",
+       "start": 1,
+       "items": [
+        {
+         "text": "Who was king of Judea when Yeshua was born? (verse 1)",
+         "options": [
+          "Caesar",
+          "Herod",
+          "David",
+          "Pilate"
+         ]
+        },
+        {
+         "text": "From where did the Wise Men come? (verse 1)",
+         "options": [
+          "The west",
+          "Egypt",
+          "The east",
+          "Rome"
+         ]
+        },
+        {
+         "text": "What is another name for the Wise Men?",
+         "options": [
+          "Pharisees",
+          "Levites",
+          "Scribes",
+          "Magi"
+         ]
+        },
+        {
+         "text": "Which empire ruled Persia when Yeshua was born?",
+         "options": [
+          "The Parthian Empire",
+          "The Roman Empire",
+          "The Greek Empire"
+         ]
+        },
+        {
+         "text": "Which Hebrew prophet was chief over the wise men of Babylon?",
+         "options": [
+          "Isaiah",
+          "Daniel",
+          "Jonah",
+          "Elijah"
+         ]
+        }
+       ]
+      },
+      {
+       "k": "part",
+       "text": "Part 2 · Write your answer"
+      },
+      {
+       "k": "mc",
+       "start": 6,
+       "items": [
+        {
+         "text": "What did the Wise Men say when they arrived in Jerusalem? (verse 2)",
+         "lines": 2
+        },
+        {
+         "text": "Why were the Magi called “king-makers”?",
+         "lines": 2
+        },
+        {
+         "text": "What did Numbers 24:17 say would come out of Jacob?",
+         "lines": 1
+        }
+       ]
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_starmap.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "the-star-what-did-they-see",
+     "title": "The Star: What Did They See?",
+     "kicker": "Lesson Three · Reading 2",
+     "page": 55,
+     "paras": [
+      "What was the star the Magi saw? Matthew does not explain, but he does give some clues.",
+      "## What It Probably Was Not",
+      "It was probably not a comet, because no recorded comet matches the time. And it was not an ordinary star sitting still above one house. Matthew says the star “went before them” and then “stood over where the young child was.” That sounds like God’s own guidance. Many believe the Magi first noticed an important sign in the sky, and then God guided them by a special light, like the glory cloud that led Israel in the wilderness, for the last part of their journey.",
+      "## How Many Wise Men Were There?",
+      "The Bible never says there were three. The number three comes from the three gifts: gold, frankincense, and myrrh. Important visitors from Parthia would never travel in a group of three! A royal delegation traveled with a large caravan of servants, guards, camels, and horses, possibly 80 to 100 people or more.",
+      "## When Did They Come?",
+      "The Magi did not visit the manger on the night Yeshua was born. Matthew calls Him a *young child* (Greek *paidion*), not a newborn baby. The Magi found Him in a **house** (Matthew 2:11). And Herod later ordered the death of boys “two years old and under,” based on when the star first appeared (Matthew 2:16). The Magi most likely arrived when Yeshua was between six months and two years old."
+     ],
+     "verse": "And, lo, the star, which they saw in the east, went before them, till it came and stood over where the young child was",
+     "vref": "Matthew 2:9",
+     "read": "Matthew 2:1–11, 16",
+     "notes": [
+      {
+       "h": "Timeline",
+       "t": "Yeshua’s birth: most likely 5 or 4 BC.\nMagi arrive: likely 6 to 18 months later."
+      },
+      {
+       "h": "Nativity scenes",
+       "t": "It is fine to enjoy nativity scenes! Just help children notice what the Bible actually says."
+      },
+      {
+       "h": "Ask",
+       "t": "Why do you think God used a star to lead people who studied the stars?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "When the Magi saw the star again over Bethlehem, “they rejoiced with exceeding great joy” (Matthew 2:10). That is very great joy!"
+      ]
+     },
+     "art": {
+      "img": "l3_star.jpg",
+      "cap": "Following the star",
+      "contain": false,
+      "page": 54
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "the-parthian-empire",
+     "title": "The Parthian Empire",
+     "kicker": "Lesson Three · Reading 3",
+     "page": 56,
+     "paras": [
+      "Parthia was a vast empire that stretched across the lands now called Iran and Iraq, southeast of the Caspian Sea. The Parthians ruled the East at the same time the Romans ruled the lands around the Mediterranean Sea.",
+      "## Rome’s Great Rival",
+      "Rome started many wars with Parthia, but it never conquered it. In fact, the Parthians defeated Roman armies many times. In 53 BC they crushed a Roman army at the Battle of Carrhae. And from 40 to 37 BC, Parthian forces even took control of Judea and Jerusalem for a short time! After that, Rome wanted peace with Parthia, and Roman officials knew that starting another war could cost them their jobs, or their lives.",
+      "## The Magi’s Journey",
+      "The Magi likely set out from the Parthian capital, **Seleucia–Ctesiphon**, on the Tigris River. They would have followed the trade routes of the Silk Road along the Euphrates River, turned south through **Damascus**, and come down to **Jerusalem**. The trip was about 700 to 900 miles and could take two to four months.",
+      "So imagine the scene: a large group of powerful officials from Rome’s greatest enemy rides into Jerusalem asking, “Where is he that is born King of the Jews?” No wonder Herod was troubled!"
+     ],
+     "verse": "When Herod the king had heard these things, he was troubled, and all Jerusalem with him",
+     "vref": "Matthew 2:3",
+     "read": "Matthew 2:1–3",
+     "notes": [
+      {
+       "h": "Map it",
+       "t": "Use the map above. Trace the route with your finger from Seleucia–Ctesiphon to Bethlehem."
+      },
+      {
+       "h": "History",
+       "t": "Parthia lasted from about 247 BC to AD 224, when it was replaced by the Sassanid Persians."
+      },
+      {
+       "h": "Research",
+       "t": "Older students can research facts about the Parthian Empire for the activity page."
+      }
+     ],
+     "figs": [
+      {
+       "img": "map_magi_wide.png",
+       "cap": "The Magi’s likely route from Parthia"
+      }
+     ],
+     "art": {
+      "img": "map_magi_wide.png",
+      "cap": "The Magi’s likely route from Parthia",
+      "contain": false,
+      "page": 56
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "journey-to-jerusalem-activity",
+     "title": "Journey to Jerusalem",
+     "kick": "Activity",
+     "ins": "Read the story below, then answer the questions. Color the Wise Man and his camel!",
+     "page": 57,
+     "blocks": [
+      {
+       "k": "read",
+       "paras": [
+        "The Bible does not say how many Wise Men made the journey, but history suggests a large group of Parthian Magi traveled to Jerusalem to worship the Messiah. Before they left, they had to prepare gifts, take care of their business at home, load a caravan of camels and horses, and find soldiers to protect them. No wonder the long trip took months!",
+        "Why were these men from the East so interested in the Messiah? Daniel, a Hebrew prophet, had once been chief over the wise men of Babylon (Daniel 2:48). Many believe he shared God’s prophecies with them, and that later Magi passed this knowledge down for generations."
+       ]
+      },
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "What did the Magi need to do before they traveled to Judea?",
+         "lines": 2
+        },
+        {
+         "text": "Why do you think the Magi were interested in the Messiah?",
+         "lines": 2
+        },
+        {
+         "text": "What would you pack for a long journey to see the King?",
+         "lines": 2
+        }
+       ]
+      },
+      {
+       "k": "img",
+       "img": "c_camel.png"
+      }
+     ],
+     "printed": false
+    },
+    {
+     "kind": "reading",
+     "slug": "herod-is-troubled",
+     "title": "Herod Is Troubled",
+     "kicker": "Lesson Three · Reading 4",
+     "page": 59,
+     "paras": [
+      "King Herod was a very suspicious ruler. Rome had made him king over Judea, and he was always afraid that someone would take his throne away. He had good reason to worry about Parthia: only a few years before, Parthia had defeated Rome and held Judea for a time.",
+      "So when Parthian Magi arrived in Jerusalem asking for the one “born King of the Jews,” Herod heard it as a political threat. Were the Parthians planning to replace him with a new king? The Bible says Herod “was troubled, and all Jerusalem with him.”",
+      "## Where Will the Messiah Be Born?",
+      "Herod quickly called together the chief priests and teachers of the law. “Where should the Messiah be born?” he asked. They knew the answer from Micah’s prophecy: “In Bethlehem of Judaea.”",
+      "## A Secret Meeting",
+      "Then Herod met with the Magi secretly. He asked them exactly when the star had appeared. He sent them to Bethlehem and said, “Go and search diligently for the young child; and when ye have found him, bring me word again, that I may come and worship him also.”",
+      "But Herod did not want to worship Yeshua at all. He wanted to destroy Him. Herod pretended to be friendly, but God saw his heart, and God was already protecting His Son."
+     ],
+     "verse": "Go and search diligently for the young child; and when ye have found him, bring me word again, that I may come and worship him also",
+     "vref": "Matthew 2:8",
+     "read": "Matthew 2:3–8 · Micah 5:2",
+     "notes": [
+      {
+       "h": "Discuss",
+       "t": "The chief priests knew the Scripture, but they did not go to Bethlehem with the Magi. Ask: Is knowing about Yeshua the same as seeking Him?"
+      },
+      {
+       "h": "Herod’s fear",
+       "t": "Herod was not from David’s family. Rome gave him the title “King of the Jews.” A true heir of David was a threat to him."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Bethlehem is only about six miles south of Jerusalem. The Magi were almost at the end of their long journey!"
+      ]
+     },
+     "art": {
+      "img": "l3_herod.jpg",
+      "cap": "Herod meets the Magi",
+      "contain": false,
+      "page": 58
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "who-was-king-herod",
+     "title": "Who Was King Herod?",
+     "kicker": "Lesson Three · Reading 4, continued",
+     "page": 60,
+     "paras": [
+      "To understand why Herod was so troubled, it helps to know who he was. Here are the main points to remember:",
+      "- **Made king by Rome.** Herod, often called **Herod the Great**, was named king of Judea by the Roman Senate in 40 BC. He was not from David’s family.",
+      "- **A busy builder.** He built fortresses, palaces, theaters, and whole cities, including the port of **Caesarea**, the fortress-palace **Herodium**, and a palace on **Masada**. He also rebuilt the temple, partly to win the favor of the Jewish people.",
+      "- **A cruel and fearful king.** Herod was so afraid of losing his throne that he killed members of his own family.",
+      "- **“King of the Jews.”** Rome gave Herod this title. When Wise Men came asking for the one *born* King of the Jews, the old, sick king was not about to give it up.",
+      "- **His end.** Herod died in about 4 BC, not long after his cruel order in Bethlehem. His son **Archelaus** ruled Judea after him (Matthew 2:22)."
+     ],
+     "notes": [
+      {
+       "h": "Contrast",
+       "t": "Herod was given his title by Rome. Yeshua was born King (Matt. 2:2). Ask: What is the difference between the two kings?"
+      },
+      {
+       "h": "Herod’s family",
+       "t": "Herod’s family came from Idumea (Edom), and his mother was Arabian."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Herod was buried at Herodium, the fortress-palace he built near Bethlehem. Archaeologists found what is believed to be his tomb in 2007."
+      ]
+     },
+     "figs": [
+      {
+       "img": "l5_herod.jpg",
+       "cap": "King Herod, old and afraid"
+      }
+     ],
+     "art": {
+      "img": "l5_herod.jpg",
+      "cap": "King Herod, old and afraid",
+      "contain": false,
+      "page": 60
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "parthia-and-king-herod-activity",
+     "title": "Parthia and King Herod",
+     "kick": "Activity",
+     "ins": "Read “The Parthian Empire,” “Herod Is Troubled,” and “Who Was King Herod?” Then answer the questions.",
+     "page": 61,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "Why do you think King Herod was troubled when the Wise Men arrived in Jerusalem? (Matthew 2:1–8)",
+         "lines": 3
+        },
+        {
+         "text": "Where did the chief priests say the Messiah would be born? Which prophet wrote it?",
+         "lines": 1
+        },
+        {
+         "text": "Who made Herod king of Judea?",
+         "lines": 1
+        },
+        {
+         "text": "Name three things Herod built.",
+         "lines": 1
+        },
+        {
+         "text": "Who ruled Judea after Herod died? (Matthew 2:22)",
+         "lines": 1
+        },
+        {
+         "text": "How was Herod different from King Yeshua?",
+         "lines": 2
+        }
+       ]
+      },
+      {
+       "k": "q",
+       "text": "With an adult, use an atlas, encyclopedia, or the Internet to research the Parthian Empire. Write three facts below.",
+       "lines": 0
+      },
+      {
+       "k": "printed"
+      }
+     ],
+     "printed": true,
+     "sketch": "c_herod.png"
+    },
+    {
+     "kind": "activity",
+     "slug": "the-judea-times-activity",
+     "title": "The Judea Times",
+     "kick": "Be a Reporter",
+     "ins": "You are a reporter in Jerusalem! Read Matthew 2:1–8. Write two news stories about what happened. In the empty picture box, draw your own picture for the first story and write a caption under it. In the Interview Corner, write one question you would ask a Wise Man.",
+     "page": 62,
+     "blocks": [
+      {
+       "k": "printed"
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "activity",
+     "slug": "star-in-the-sky-word-search-activity",
+     "title": "Star in the Sky Word Search",
+     "kick": "Word Search",
+     "ins": "Find the words from Lesson 3 hidden in the puzzle. Words go across, down, or diagonally. Circle each one you find!",
+     "page": 63,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "Pick two words you found. Write a sentence about Lesson 3 using both words.",
+       "lines": 2
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_caravan.png"
+    }
+   ],
+   "plan": {
+    "passages": "Matthew 2:1–8; Numbers 24:17; Daniel 2:48; Daniel 9:24–27; Micah 5:2",
+    "objectives": [
+     "Who the Wise Men (Magi) were and where they came from",
+     "What the star may have been, and when the Magi came",
+     "Who King Herod was, and why he was troubled by the news",
+     "How the chief priests knew where the Messiah would be born"
+    ],
+    "prayer": "God of heaven and earth, You guided the Wise Men by a star and You guide us by Your Word. Help us seek Yeshua with our whole hearts. In His name, amen.",
+    "materials": "Bibles, pencils, crayons, a map or atlas, and copies of the Lesson 3 printable pages.",
+    "overview": "Far to the east, in the Parthian Empire, lived a group of powerful priest-scholars called Magi. They studied the stars and advised kings. When they saw a remarkable star rise, they knew the King of the Jews had been born, and they set out on a long journey to Jerusalem. King Herod was alarmed. He gathered the chief priests, learned that the Messiah would be born in Bethlehem, and secretly told the Magi to search for the child and report back. But God was already at work to protect His Son.",
+    "dyk": "From Susa, an old royal city of Persia, the Magi may have traveled around 1,200 miles to reach Bethlehem. From the Parthian capital at Ctesiphon, the trip was about 700 to 900 miles, two to four months each way!",
+    "flow": [
+     [
+      "Read:",
+      "Who Were the Magi?"
+     ],
+     [
+      "Activity:",
+      "Color the Wise Man · The Wise Men"
+     ],
+     [
+      "Read:",
+      "The Star: What Did They See?"
+     ],
+     [
+      "Read:",
+      "The Parthian Empire"
+     ],
+     [
+      "Activity:",
+      "Journey to Jerusalem"
+     ],
+     [
+      "Read:",
+      "Herod Is Troubled · Who Was King Herod?"
+     ],
+     [
+      "Activity:",
+      "Parthia and King Herod · The Judea Times · Word Search"
+     ]
+    ],
+    "page": 49
+   }
+  },
+  {
+   "num": 4,
+   "title": "The Wise Men Worship the King",
+   "ref": "Matthew 2:9–12 · Luke 2:21–38",
+   "cover": "l4_open.jpg",
+   "page": 64,
+   "steps": [
+    {
+     "kind": "reading",
+     "slug": "they-bowed-down-and-worshiped-him",
+     "title": "They Bowed Down and Worshiped Him",
+     "kicker": "Lesson Four · Reading 1",
+     "page": 67,
+     "paras": [
+      "The Wise Men left Herod’s palace and took the short road south to Bethlehem. Then they saw the star again, going ahead of them, until it stopped over the place where the young child was. “They rejoiced with exceeding great joy!”",
+      "## Kings Bow Before the King",
+      "Remember who these men were: powerful officials from the Parthian Empire, rich and important *king-makers* who could help put a ruler on the throne. Yet when they came into the simple house and saw the young child with His mother Mary, they **fell down and worshiped Him**. They knew they were in the presence of a King far greater than any king on earth.",
+      "## Treasures for a King",
+      "Then they opened their treasures. Eastern visitors brought rich gifts to great rulers: gold, fine cloth, carved vessels, rare spices. The Bible names three of their gifts: **gold, frankincense, and myrrh**. These gifts were worth a great fortune, and they likely paid for the family’s sudden journey to Egypt and their life there.",
+      "## Home Another Way",
+      "That night, God warned the Wise Men in a dream not to go back to Herod. So they obeyed God and “departed into their own country another way.” Herod’s plan had failed, and the young King was safe in God’s hands."
+     ],
+     "verse": "And when they were come into the house, they saw the young child with Mary his mother, and fell down, and worshipped him",
+     "vref": "Matthew 2:11",
+     "read": "Matthew 2:9–12 · Psalm 72:10–11",
+     "notes": [
+      {
+       "h": "Prophecy",
+       "t": "Psalm 72:11: “All kings shall fall down before him.” Isaiah 60:6: “They shall bring gold and incense.”"
+      },
+      {
+       "h": "Notice",
+       "t": "The Magi worshiped Yeshua, not Mary. Ask: What does it mean to worship?"
+      },
+      {
+       "h": "Obedience",
+       "t": "The Wise Men obeyed God rather than the king. Ask: Why was that brave?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Matthew says “the young child with Mary his mother.” Joseph may have been working that day, but God provided for the family through these gifts!"
+      ]
+     },
+     "art": {
+      "img": "l4_worship.jpg",
+      "cap": "“They saw the young child with Mary his mother”",
+      "contain": false,
+      "page": 66
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "the-gifts-gold-frankincense-and-myrrh",
+     "title": "The Gifts: Gold, Frankincense, and Myrrh",
+     "kicker": "Lesson Four · Reading 2",
+     "page": 69,
+     "paras": [
+      "When you look deeply into the gifts mentioned in Matthew 2, you quickly realize they were not simply offerings of honor, but a prophetic proclamation. *Gold. Frankincense. Myrrh.*",
+      "Matthew records that the Magi fell down and worshiped Him, and then, opening their treasures, they offered Him gifts. Each gift announced something essential about who Yeshua is and what His first coming would accomplish.",
+      "## Gold: The King",
+      "Gold has always spoken the language of royalty. Throughout Scripture it is linked with kingship, authority, and enduring worth (1 Kings 10:18–25; Psalm 21:3). By offering gold, the Magi proclaimed that Yeshua was born a King. Not one who would seize power later, but one who held authority from the very beginning. Even before Yeshua preached a sermon or performed a miracle, the gold declared what Pilate would later question and the cross would surprisingly affirm: “Jesus of Nazareth the King of the Jews” (John 19:19).",
+      "## Frankincense: The High Priest",
+      "Frankincense belonged to worship. In Israel it was reserved for sacred use, burned on the altar and mixed into the holy incense as an offering pleasing to the Lord (Exodus 30:34–38; Leviticus 2:1–2). The psalmist describes prayer rising to God “as incense” (Psalm 141:2), and Revelation links incense with the prayers of the saints before God’s throne (Revelation 5:8).",
+      "By offering frankincense, the Magi acknowledged that Yeshua was not only royal but holy, the One through whom true worship would be made possible (John 4:21–24). Frankincense quietly announces that He would be the **High Priest**, the One who stands between God and people (Hebrews 4:14–16)."
+     ],
+     "verse": "And when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh",
+     "vref": "Matthew 2:11",
+     "read": "Matthew 2:11 · Exodus 30:34–38 · Hebrews 4:14–16",
+     "notes": [
+      {
+       "h": "Show and tell",
+       "t": "If you can, let children smell frankincense. It is a hardened tree sap that smells sweet when burned."
+      },
+      {
+       "h": "Practical value",
+       "t": "These were standard royal gifts from the East. They likely funded the family’s escape to Egypt."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Frankincense and myrrh both come from the sap of small, thorny trees that grow in Arabia and East Africa."
+      ]
+     },
+     "art": {
+      "img": "l4_gifts.jpg",
+      "cap": "Gold, frankincense, and myrrh",
+      "contain": false,
+      "page": 68
+     }
+    },
+    {
+     "kind": "reading",
+     "slug": "myrrh-and-a-gift-worthy-of-the-king",
+     "title": "Myrrh, and a Gift Worthy of the King",
+     "kicker": "Lesson Four · Reading 2, continued",
+     "page": 70,
+     "paras": [
+      "## Myrrh: The Suffering Savior",
+      "Myrrh brings a quiet, serious note into the story. It was used as a medicine (Mark 15:23), but also, importantly, for burial. After Yeshua’s crucifixion, Nicodemus brought “a mixture of myrrh and aloes, about an hundred pound weight” to prepare His body for burial (John 19:39).",
+      "The presence of myrrh at Yeshua’s birth points ahead to His death. It is a reminder that His mission included suffering from the very beginning. Isaiah spoke of a Servant who would be “wounded for our transgressions” (Isaiah 53:5), and Yeshua said He came “to give his life a ransom for many” (Mark 10:45). Myrrh stands as a quiet witness that the cradle was always moving toward the cross.",
+      "## A Complete Testimony",
+      "Together, the gifts tell the whole story. **Gold** proclaims Him King. **Frankincense** proclaims Him Priest. **Myrrh** proclaims Him the Suffering Savior. The Magi did not preach sermons. They offered gifts, and those gifts spoke clearly.",
+      "## What Gift Is Worthy of the King?",
+      "This leads to a deeply personal question. If His first coming was marked by gifts that proclaimed who He is, what about His second coming? What gift could a person offer Him then? Would He be delighted by a life lived for Him: a life of serving, obeying, and submitting to His Word?",
+      "Perhaps the most meaningful offering anyone can bring is not something placed before Him, but a life faithfully lived for Him."
+     ],
+     "verse": "I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God",
+     "vref": "Romans 12:1",
+     "read": "Mark 15:23 · John 19:39 · Isaiah 53:3–5 · Mark 10:45",
+     "notes": [
+      {
+       "h": "Talk about it",
+       "t": "What are some ways children can give their lives to Yeshua this week? (Kindness, obedience, prayer, telling others.)"
+      },
+      {
+       "h": "Connect",
+       "t": "Romans 12:1 uses the same word *present* that Luke 2:22 uses for Yeshua at the temple (Reading 4)."
+      }
+     ],
+     "callout": {
+      "title": "Your Turn",
+      "body": [
+       "Use the “Your Gift to the King” page to write or draw the gift you want to give Yeshua with your life."
+      ]
+     },
+     "figs": [
+      {
+       "img": "l4_giftsstill.jpg",
+       "cap": "Gold, frankincense, and myrrh"
+      }
+     ],
+     "art": {
+      "img": "l4_giftsstill.jpg",
+      "cap": "Gold, frankincense, and myrrh",
+      "contain": false,
+      "page": 70
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "gifts-for-the-king-coloring",
+     "title": "Gifts for the King",
+     "kick": "Color It!",
+     "img": "c_gifts.png",
+     "caption": "“They presented unto him gifts; gold, and frankincense, and myrrh.” (Matthew 2:11)",
+     "page": 71
+    },
+    {
+     "kind": "activity",
+     "slug": "gifts-for-the-king-activity",
+     "title": "Gifts for the King",
+     "kick": "Activity",
+     "ins": "Draw a line from each gift to what it tells about Yeshua. Then answer the questions.",
+     "page": 72,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "What did the Wise Men do before they gave their gifts? (Matthew 2:11)",
+         "lines": 1
+        },
+        {
+         "text": "How might the gifts have helped Mary, Joseph, and Yeshua?",
+         "lines": 1
+        },
+        {
+         "text": "Myrrh was used for burial. What did it point to in Yeshua’s life?",
+         "lines": 1
+        }
+       ]
+      },
+      {
+       "k": "box",
+       "label": "Draw a gift you would bring to the King"
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_chest.png"
+    },
+    {
+     "kind": "activity",
+     "slug": "your-gift-to-the-king-activity",
+     "title": "Your Gift to the King",
+     "kick": "Activity",
+     "ins": "The Wise Men gave Yeshua treasures. The best gift anyone can give Him is a life lived for Him (Romans 12:1). Write or draw your answers.",
+     "page": 73,
+     "blocks": [
+      {
+       "k": "box",
+       "label": "Draw yourself bringing a gift to King Yeshua"
+      },
+      {
+       "k": "q",
+       "text": "Three ways you can serve Yeshua this week:",
+       "lines": 0
+      },
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "Write a short prayer giving your life to the King:",
+       "lines": 4
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_heartgift.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "the-temple-in-jerusalem",
+     "title": "The Temple in Jerusalem",
+     "kicker": "Lesson Four · Reading 3",
+     "page": 75,
+     "paras": [
+      "The temple in Jerusalem was the center of Hebrew life in Bible times. It was the place where God’s people came to worship, pray, and bring their offerings.",
+      "## Three Temples in One Place",
+      "King **Solomon**, David’s son, built the first temple in the tenth century BC to house the Ark of the Covenant. Hundreds of years later, the Babylonians destroyed it, stole its treasures, and burned what was left. When the Jews returned from exile, they built a second temple in the days of Zerubbabel and Ezra, and Nehemiah rebuilt the city walls.",
+      "## Herod’s Great Project",
+      "King Herod made the second temple much larger and more beautiful. One reason was to hold the huge crowds of pilgrims who came to Jerusalem for the three pilgrimage feasts: **Passover**, **Shavuot** (Pentecost), and **Sukkot** (Tabernacles). The historian Josephus says 10,000 workers labored on the project, and building the enormous retaining walls took years. The finished platform was as big as about two dozen football fields!",
+      "People could enter the temple courtyards, but only priests went inside the temple building itself. The temple was also the meeting place of the **Sanhedrin**, the highest Jewish court in the days of Roman rule. The Romans destroyed this temple in AD 70.",
+      "When the time came for the purification required by the Torah, Joseph and Mary brought baby Yeshua here to present Him to God."
+     ],
+     "verse": "And when the days of her purification according to the law of Moses were accomplished, they brought him to Jerusalem, to present him to the Lord",
+     "vref": "Luke 2:22",
+     "read": "Luke 2:22–24 · 1 Kings 6 · Ezra 3",
+     "notes": [
+      {
+       "h": "Set the scene",
+       "t": "Use this reading to help children picture where Mary and Joseph brought Yeshua in Luke 2:22–38."
+      },
+      {
+       "h": "Distance",
+       "t": "Bethlehem was only about six miles from the temple, an easy trip for Mary and Joseph."
+      },
+      {
+       "h": "Ask",
+       "t": "Why do you think God wanted His people to have one central place of worship?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Some of the massive stones in Herod’s retaining walls weigh hundreds of tons. You can still see them today at the Western Wall in Jerusalem."
+      ]
+     },
+     "art": {
+      "img": "l3_temple.jpg",
+      "cap": "Herod’s Temple in Jerusalem",
+      "contain": false,
+      "page": 74
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "the-temple-coloring",
+     "title": "The Temple",
+     "kick": "Color It!",
+     "img": "c_temple.png",
+     "caption": "Herod made the temple bigger and more beautiful than ever.",
+     "page": 76
+    },
+    {
+     "kind": "activity",
+     "slug": "temple-in-jerusalem-activity",
+     "title": "Temple in Jerusalem",
+     "kick": "Activity",
+     "ins": "Read “The Temple in Jerusalem,” then answer the questions.",
+     "page": 77,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "Which king built the first temple in Jerusalem?",
+         "lines": 1
+        },
+        {
+         "text": "What was the first temple built to house?",
+         "lines": 1
+        },
+        {
+         "text": "Who destroyed the first temple?",
+         "lines": 1
+        },
+        {
+         "text": "Name the three pilgrimage feasts that brought crowds to Jerusalem.",
+         "lines": 2
+        },
+        {
+         "text": "What was the Sanhedrin?",
+         "lines": 1
+        },
+        {
+         "text": "Who destroyed Herod’s temple, and in what year?",
+         "lines": 1
+        }
+       ]
+      },
+      {
+       "k": "box",
+       "label": "Draw something you would see at the temple"
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_menorah.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "presented-at-the-temple",
+     "title": "Presented at the Temple",
+     "kicker": "Lesson Four · Reading 4",
+     "page": 79,
+     "paras": [
+      "When Yeshua was eight days old, He was circumcised and officially given the name Yehoshua, or Yeshua. About forty days after His birth, Mary and Joseph took Him to the temple, obeying the Law of Moses. Every firstborn son belonged to the Lord (Exodus 13:2, 12), and Mary brought an offering for her purification: “a pair of turtledoves, or two young pigeons,” the gift of a family that could not afford a lamb (Leviticus 12:8).",
+      "## To “Present” Him",
+      "Luke says they came “to present him to the Lord.” To *present* means to fully hand over, to offer as a gift to God. Paul uses the same word in Romans 12:1: “present your bodies a living sacrifice.” Just as Yeshua was presented to God, every believer can be dedicated to Him, once and for all, forever!",
+      "## Simeon",
+      "Simeon was a righteous and devout man in Jerusalem, known for his deep knowledge of God and his gift of understanding the times. He was waiting for “the consolation of Israel.” *Consolation* means comfort, encouragement, and help. The Holy Spirit had promised Simeon he would see the Messiah before he died. When he took baby Yeshua in his arms, he blessed God: “Mine eyes have seen thy salvation!” Simeon said, “*Behold*,” a word full of wonder and amazement.",
+      "## Anna",
+      "Anna was a prophetess from the tribe of Asher. She was 84 years old, a widow who never left the temple grounds, worshiping God with fasting and prayer night and day. She gave thanks and told everyone who was waiting for redemption about the child."
+     ],
+     "verse": "For mine eyes have seen thy salvation, which thou hast prepared before the face of all people",
+     "vref": "Luke 2:30–31",
+     "read": "Luke 2:21–38 · Exodus 13:2, 12 · Romans 12:1",
+     "notes": [
+      {
+       "h": "Word study",
+       "t": "*Present* (Luke 2:22; Rom. 12:1): to hand over completely as an offering to God.\n*Behold:* shock, amazement, wonder.\n*Consolation:* comfort, encouragement, support."
+      },
+      {
+       "h": "Humble offering",
+       "t": "Two birds were the offering of the poor. The King of kings grew up in a humble family."
+      },
+      {
+       "h": "Apply",
+       "t": "Romans 12:1: what does it look like for a person to be given fully to God?"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Simeon’s name comes from the Hebrew word *shama*, “to hear.” Simeon listened to the Holy Spirit and was in the right place at the right time."
+      ]
+     },
+     "art": {
+      "img": "l3_simeon.jpg",
+      "cap": "Simeon and Anna meet the Messiah",
+      "contain": false,
+      "page": 78
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "simeon-and-anna-coloring",
+     "title": "Simeon and Anna",
+     "kick": "Color It!",
+     "img": "c_simeon.png",
+     "caption": "“Mine eyes have seen thy salvation.” (Luke 2:30)",
+     "page": 80
+    },
+    {
+     "kind": "activity",
+     "slug": "presentation-at-the-temple-activity",
+     "title": "Presentation at the Temple",
+     "kick": "Activity",
+     "ins": "Read Exodus 13:2, 12 and Luke 2:21–38. Draw a line from each name to the right clue. Then circle the best answer for each question.",
+     "page": 81,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "mc",
+       "start": 1,
+       "items": [
+        {
+         "text": "On which day was Yeshua circumcised?",
+         "options": [
+          "The first day",
+          "The third day",
+          "The eighth day",
+          "The fortieth day"
+         ]
+        },
+        {
+         "text": "Why did Mary and Joseph present Yeshua at the temple?",
+         "options": [
+          "Every firstborn son belonged to the Lord",
+          "To pay a Roman tax",
+          "To make Him a priest"
+         ]
+        },
+        {
+         "text": "What had the Holy Spirit promised Simeon?",
+         "options": [
+          "He would be high priest",
+          "He would see the Lord’s Christ before he died",
+          "He would visit Bethlehem"
+         ]
+        },
+        {
+         "text": "What did Anna do at the temple?",
+         "options": [
+          "Sold doves",
+          "Worshiped with fasting and prayer night and day",
+          "Guarded the gate"
+         ]
+        },
+        {
+         "text": "What does it mean to “present” yourself to God? (Romans 12:1)",
+         "options": [
+          "To give yourself completely to Him as a living sacrifice",
+          "To dress up for church",
+          "To bring Him money"
+         ]
+        }
+       ]
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_doves.png"
+    }
+   ],
+   "plan": {
+    "passages": "Matthew 2:9–12; Psalm 72:10–11; Isaiah 60:6; John 19:39; Hebrews 4:14–16; Romans 12:1; Luke 2:21–38; Exodus 13:2, 12; Leviticus 12",
+    "objectives": [
+     "What happened when the Wise Men met Yeshua",
+     "What the gifts of gold, frankincense, and myrrh mean",
+     "Why the Wise Men did not go back to King Herod",
+     "What gift a person can bring to the King",
+     "How Yeshua was presented at the temple, and who Simeon and Anna were"
+    ],
+    "prayer": "King Yeshua, the Wise Men bowed down and worshiped You. We want to worship You too. Show us how to give You our very best, our hearts and our lives. Amen.",
+    "materials": "Bibles, pencils, crayons, and copies of the Lesson 4 printable pages. Optional: a small piece of gold-colored jewelry, frankincense, or myrrh to show the class.",
+    "overview": "The Wise Men left King Herod and followed the star to Bethlehem. When they saw it stop over the place where the young child was, they were filled with joy. Entering the house, they saw Yeshua with His mother Mary, and they bowed down and worshiped Him. Opening their treasures, they gave Him gifts of gold, frankincense, and myrrh, gifts that announced who He is: King, High Priest, and Suffering Savior. But God warned the Wise Men in a dream not to return to Herod, so they went home to their own country another way. The lesson closes at the temple in Jerusalem, where Mary and Joseph presented Yeshua to the Lord, and faithful Simeon and Anna recognized Him as the promised Savior.",
+    "dyk": "Herod’s family came from Idumea (the land of Edom), and his mother was an Arabian princess. He was not from David’s family. Rome gave him the title “King of the Jews,” not the Jewish people.",
+    "flow": [
+     [
+      "Read:",
+      "They Bowed Down and Worshiped Him"
+     ],
+     [
+      "Read:",
+      "The Gifts: Gold, Frankincense, and Myrrh"
+     ],
+     [
+      "Activity:",
+      "Color the Gifts · Gifts for the King · Your Gift to the King"
+     ],
+     [
+      "Read:",
+      "The Temple in Jerusalem"
+     ],
+     [
+      "Activity:",
+      "Color the Temple · Temple in Jerusalem"
+     ],
+     [
+      "Read:",
+      "Presented at the Temple"
+     ],
+     [
+      "Activity:",
+      "Color Simeon and Anna · Presentation at the Temple"
+     ]
+    ],
+    "page": 65
+   }
+  },
+  {
+   "num": 5,
+   "title": "Escape to Egypt",
+   "ref": "Matthew 2:13–23 · Hosea 11:1",
+   "cover": "l5_open.jpg",
+   "page": 82,
+   "steps": [
+    {
+     "kind": "reading",
+     "slug": "an-israelite-house",
+     "title": "An Israelite House",
+     "kicker": "Lesson Five · Reading 1",
+     "page": 85,
+     "paras": [
+      "When the Wise Men arrived in Bethlehem, Matthew says they came “into the house.” By then Yeshua was no longer a newborn in a manger. He was a young child living with His family in a home. What might that home have looked like?",
+      "## Small and Simple",
+      "At the time of Yeshua, most Israelite homes were small and plain. Walls were built of mud brick or stone. The roof was flat, made of wooden beams covered with branches or straw and then packed with clay. Families climbed up to the roof to dry fruit, sleep on hot nights, or pray. God’s law even said a roof needed a short wall around it, so no one would fall (Deuteronomy 22:8)!",
+      "## Rooms for Everyone",
+      "- **Upstairs living space:** a room for sleeping and for guests.",
+      "- **Kitchen:** often with a clay oven for baking bread.",
+      "- **Stable area:** at night, the family’s animals came inside to stay safe from wild animals and robbers. Stone mangers held their food.",
+      "- **Courtyard:** an open space for cooking, working, and visiting with neighbors.",
+      "## Was This Yeshua’s Home?",
+      "The Bible does not describe the house where the Magi found Yeshua. But it was probably very much like this: a simple home in Bethlehem, where the King of kings lived as a little child with Mary and Joseph."
+     ],
+     "verse": "And when they were come into the house, they saw the young child with Mary his mother",
+     "vref": "Matthew 2:11",
+     "read": "Matthew 2:11 · Luke 2:7 · Deuteronomy 22:8",
+     "notes": [
+      {
+       "h": "Compare",
+       "t": "Remember the guest room (*kataluma*) from Lesson 2. Ask: Which room in this house might have been the guest room?"
+      },
+      {
+       "h": "Roofs",
+       "t": "In Mark 2:4 friends opened a roof like this to lower a man down to Yeshua!"
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Clay roofs had to be rolled flat with a stone roller after the rains so they would not leak."
+      ]
+     },
+     "art": {
+      "img": "l5_house.jpg",
+      "cap": "Inside an Israelite house",
+      "contain": false,
+      "page": 84
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "an-israelite-house-coloring",
+     "title": "An Israelite House",
+     "kick": "Color It!",
+     "img": "c_house.png",
+     "caption": "Color the house. Then label its parts on the next page.",
+     "page": 86
+    },
+    {
+     "kind": "activity",
+     "slug": "label-the-house-activity",
+     "title": "Label the House",
+     "kick": "Activity",
+     "ins": "Read “An Israelite House.” Write the name of each part of the house next to its description. Then answer the questions.",
+     "page": 87,
+     "blocks": [
+      {
+       "k": "bank",
+       "words": [
+        "straw-covered roof",
+        "upstairs living space",
+        "kitchen",
+        "stable",
+        "courtyard"
+       ]
+      },
+      {
+       "k": "printed"
+      },
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "Why did families bring their animals inside at night?",
+         "lines": 2
+        },
+        {
+         "text": "Where did the Wise Men find Yeshua? (Matthew 2:11)",
+         "lines": 1
+        },
+        {
+         "text": "How is this house like your home? How is it different?",
+         "lines": 2
+        }
+       ]
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_oven.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "flight-to-egypt",
+     "title": "Flight to Egypt",
+     "kicker": "Lesson Five · Reading 2",
+     "page": 89,
+     "paras": [
+      "After the Wise Men left, an angel of the Lord appeared to Joseph in a dream. “Arise, and take the young child and his mother, and flee into Egypt, and be thou there until I bring thee word: for Herod will seek the young child to destroy him.”",
+      "Joseph did not wait until morning. He got up, took Yeshua and Mary, and left **that very night**. This was the third time Joseph obeyed God’s message in a dream, and each time he obeyed right away.",
+      "## Why Egypt?",
+      "Egypt was outside Herod’s kingdom, so Herod could not reach them there. It was also home to many Jewish families, especially in the great city of Alexandria. And God had a reason in His Word: the prophet Hosea had written, “Out of Egypt have I called my son” (Hosea 11:1). Long ago, God brought Israel out of Egypt. Now His own Son would come out of Egypt too.",
+      "## Herod’s Anger",
+      "When Herod realized the Wise Men had tricked him, he became furious. He ordered his soldiers to kill all the boys in Bethlehem and the nearby area who were two years old and under. It was a terrible and cruel act, and Matthew says it fulfilled Jeremiah’s words about Rachel weeping for her children (Jeremiah 31:15).",
+      "But Herod could not stop God’s plan. The young King was already safe in Egypt, protected by His Father in heaven."
+     ],
+     "verse": "When he arose, he took the young child and his mother by night, and departed into Egypt",
+     "vref": "Matthew 2:14",
+     "read": "Matthew 2:13–18 · Hosea 11:1 · Jeremiah 31:15",
+     "notes": [
+      {
+       "h": "Handle with care",
+       "t": "Be gentle when sharing Herod’s cruelty with young children. Focus on God’s protection and Joseph’s obedience."
+      },
+      {
+       "h": "Provision",
+       "t": "The gifts of the Magi likely paid for the trip and for living in Egypt. God provided before they even knew they needed it!"
+      },
+      {
+       "h": "Distance",
+       "t": "From Bethlehem to the Nile delta was about 250 to 300 miles, a journey of two weeks or more."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Joseph is never quoted saying a single word in the Bible. But his actions showed great faith!"
+      ]
+     },
+     "art": {
+      "img": "l5_flight.jpg",
+      "cap": "The flight to Egypt",
+      "contain": false,
+      "page": 88
+     }
+    },
+    {
+     "kind": "color",
+     "slug": "the-escape-to-egypt-coloring",
+     "title": "The Escape to Egypt",
+     "kick": "Color It!",
+     "img": "c_flight.png",
+     "caption": "“He took the young child and his mother by night, and departed into Egypt.” (Matthew 2:14)",
+     "page": 90
+    },
+    {
+     "kind": "activity",
+     "slug": "escape-to-egypt-activity",
+     "title": "Escape to Egypt",
+     "kick": "Activity",
+     "ins": "Open your Bible and read Matthew 2:13–23. Answer the questions.",
+     "page": 91,
+     "blocks": [
+      {
+       "k": "qs",
+       "items": [
+        {
+         "text": "Who appeared to Joseph in a dream? (verse 13)",
+         "lines": 1
+        },
+        {
+         "text": "To which country was Joseph told to go? (verse 13)",
+         "lines": 1
+        },
+        {
+         "text": "When did Joseph leave? (verse 14)",
+         "lines": 1
+        },
+        {
+         "text": "How long did Joseph and his family stay in Egypt? (verse 15)",
+         "lines": 1
+        },
+        {
+         "text": "Which prophet wrote, “Out of Egypt have I called my son”?",
+         "lines": 1
+        },
+        {
+         "text": "What did Herod do when he found out the Magi had tricked him? (verse 16)",
+         "lines": 2
+        },
+        {
+         "text": "Where did the family live when they came back? (verse 23)",
+         "lines": 1
+        }
+       ]
+      },
+      {
+       "k": "box",
+       "label": "Draw how God kept Yeshua safe"
+      }
+     ],
+     "printed": false,
+     "sketch": "sk_pyramids.png"
+    },
+    {
+     "kind": "activity",
+     "slug": "where-is-egypt-activity",
+     "title": "Where Is Egypt?",
+     "kick": "Activity",
+     "ins": "Use an atlas or a globe to find these places. Follow the instructions below.",
+     "page": 92,
+     "blocks": [
+      {
+       "k": "img",
+       "img": "map_africa.png"
+      },
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "Name four Bible people who lived in Egypt:",
+       "lines": 2
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "activity",
+     "slug": "josephs-four-dreams-activity",
+     "title": "Joseph’s Four Dreams",
+     "kick": "Activity",
+     "ins": "God spoke to Joseph in four dreams, and Joseph obeyed every time! Look up each verse. Draw a line from the verse to what God told Joseph.",
+     "page": 93,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "q",
+       "text": "How did Joseph respond every time God spoke to him?",
+       "lines": 2
+      },
+      {
+       "k": "box",
+       "label": "Draw one of Joseph’s dreams"
+      }
+     ],
+     "printed": true,
+     "sketch": "sk_dream.png"
+    },
+    {
+     "kind": "reading",
+     "slug": "safe-in-egypt-home-to-nazareth",
+     "title": "Safe in Egypt, Home to Nazareth",
+     "kicker": "Lesson Five · Reading 3",
+     "page": 95,
+     "paras": [
+      "Mary, Joseph, and young Yeshua stayed in Egypt until Herod died. Then, once again, an angel of the Lord appeared to Joseph in a dream: “Arise, and take the young child and his mother, and go into the land of Israel: for they are dead which sought the young child’s life.”",
+      "Joseph got up and brought his family back. But when he heard that Herod’s son Archelaus was ruling Judea, he was afraid to go there. God warned him in another dream, so Joseph took the family north to Galilee, to their old hometown of **Nazareth**.",
+      "## The Branch Grows Up",
+      "Remember Isaiah’s promise of a *Branch* growing from the stump of Jesse? The name Nazareth may come from the Hebrew word *netzer*, “branch.” The promised Branch from David’s family grew up in the “Branch Town”! Luke says “the child grew, and waxed strong in spirit, filled with wisdom: and the grace of God was upon him” (Luke 2:40).",
+      "## The King Has Come",
+      "Look back at the whole story. God promised a King from David’s line. He sent Gabriel to Mary and an angel to Joseph. He used an emperor’s census to bring them to Bethlehem. He revealed the Lamb of God to shepherds at the Tower of the Flock, and led Wise Men from Parthia by a star. And He protected His Son from a jealous king.",
+      "Every promise came true. The King has come, and He invites everyone to follow Him."
+     ],
+     "verse": "And he came and dwelt in a city called Nazareth: that it might be fulfilled which was spoken by the prophets, He shall be called a Nazarene",
+     "vref": "Matthew 2:23",
+     "read": "Matthew 2:19–23 · Luke 2:39–40",
+     "notes": [
+      {
+       "h": "Review",
+       "t": "Use the “Put the Story in Order” page to review all five lessons."
+      },
+      {
+       "h": "Response",
+       "t": "Give children a chance to pray and thank God for sending Yeshua. Invite anyone who wants to follow Yeshua to talk with you."
+      }
+     ],
+     "callout": {
+      "title": "Did You Know?",
+      "body": [
+       "Joseph received four messages from God in dreams: Matthew 1:20; 2:13; 2:19–20; and 2:22. He obeyed every one!"
+      ]
+     },
+     "art": {
+      "img": "l5_egypt.jpg",
+      "cap": "Safe beside the Nile",
+      "contain": false,
+      "page": 94
+     }
+    },
+    {
+     "kind": "activity",
+     "slug": "the-escape-route-activity",
+     "title": "The Escape Route",
+     "kick": "Map It",
+     "ins": "Read Matthew 2:13–23. Each dot on the map is a place on the family’s journey. Write the name of each place on the line next to its number. Then connect the dots: draw a line from 1 to 2 to 3 for the escape to Egypt. For the trip home, use another color and go from 3 back to 2, then on to 4, 5, and 6.",
+     "page": 96,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "img",
+       "img": "map_escape_sheet.png"
+      },
+      {
+       "k": "printed"
+      }
+     ],
+     "printed": true
+    },
+    {
+     "kind": "activity",
+     "slug": "put-the-story-in-order-activity",
+     "title": "Put the Story in Order",
+     "kick": "Activity",
+     "ins": "Read Matthew 1–2 and Luke 1–2. Number the events from 1 to 10 in the order they happened.",
+     "page": 97,
+     "blocks": [
+      {
+       "k": "printed"
+      },
+      {
+       "k": "box",
+       "label": "Draw your favorite part of the whole story"
+      }
+     ],
+     "printed": true
+    }
+   ],
+   "plan": {
+    "passages": "Matthew 2:13–23; Hosea 11:1; Jeremiah 31:15; Isaiah 11:1",
+    "objectives": [
+     "What an Israelite house was like",
+     "Why Joseph took his family to Egypt",
+     "How King Herod tried to harm Yeshua",
+     "How God protected Yeshua and brought the family home to Nazareth"
+    ],
+    "prayer": "Heavenly Father, thank You for watching over Yeshua and His family. Thank You that You watch over us too. Help us trust You and obey You quickly, like Joseph did. In Yeshua’s name, amen.",
+    "materials": "Bibles, pencils, crayons, an atlas or globe, and copies of the Lesson 5 printable pages.",
+    "overview": "One night an angel came to Joseph in a dream. “Get up! Take the young child and His mother and escape to Egypt. Herod is going to search for the child to destroy Him. Stay there until I tell you.” Joseph obeyed right away and left in the night. When Herod discovered the Magi had not come back, he was furious and ordered the death of all the boys in Bethlehem two years old and under. But Mary, Joseph, and Yeshua were safe in Egypt. After Herod died, the angel told Joseph to return, and the family made their home in Nazareth.",
+    "dyk": "The only Scriptures people had when Yeshua was a child were the books now called the Old Testament. Yeshua learned them as a boy, and the New Testament had not been written yet!",
+    "flow": [
+     [
+      "Read:",
+      "An Israelite House"
+     ],
+     [
+      "Activity:",
+      "Color and Label an Israelite House"
+     ],
+     [
+      "Read:",
+      "Flight to Egypt"
+     ],
+     [
+      "Activity:",
+      "Color the Escape · Escape to Egypt"
+     ],
+     [
+      "Activity:",
+      "Where Is Egypt? · Joseph’s Four Dreams"
+     ],
+     [
+      "Read:",
+      "Safe in Egypt, Home to Nazareth"
+     ],
+     [
+      "Activity:",
+      "Map: The Escape Route · Put the Story in Order"
+     ]
+    ],
+    "page": 83
+   }
+  }
+ ],
+ "keys": [
+  {
+   "lesson": 1,
+   "title": "Yeshua’s Family Tree",
+   "answers": [
+    "Abraham’s son: Isaac. Ruth’s husband: Boaz. David’s father: Jesse.",
+    "Matthew: Solomon → Joseph (legal father). Luke: Nathan → Mary (mother).",
+    "Joseph’s line came through Solomon."
+   ]
+  },
+  {
+   "lesson": 1,
+   "title": "Names of the King",
+   "answers": [
+    "Yeshua: God saves",
+    "Immanuel: God with us",
+    "Son of David: the King from David’s royal family",
+    "Messiah (Christ): the Anointed One, the chosen King",
+    "Son of the Most High: the Son of God",
+    "Answers will vary."
+   ]
+  },
+  {
+   "lesson": 1,
+   "title": "Nazareth Village",
+   "answers": [
+    "Fewer than 200 people",
+    "On a strip of land near their homes",
+    "Mud brick or stone",
+    "Bread, lentil stew, fruit, eggs, fish, goat meat, cheese, olives (red meat on special occasions)",
+    "They reclined on cushions on the floor",
+    "Answers will vary (God uses humble people and places)."
+   ]
+  },
+  {
+   "lesson": 1,
+   "title": "A Hebrew Wedding",
+   "answers": [
+    "The groom’s father",
+    "A ketubah",
+    "He prepared a home (room) for his bride",
+    "To go and bring his bride home for the wedding feast",
+    "Up to seven days",
+    "He took Mary to be his wife",
+    "Like a groom, Yeshua is preparing a place for His people."
+   ]
+  },
+  {
+   "lesson": 1,
+   "title": "A Census",
+   "answers": [
+    "Caesar Augustus",
+    "Cyrenius (Quirinius)",
+    "He was of the house and lineage of David, and Bethlehem was David’s city",
+    "Mary, his espoused wife",
+    "About 90 miles",
+    "Micah (Micah 5:2)"
+   ]
+  },
+  {
+   "lesson": 1,
+   "title": "The Road to Bethlehem",
+   "answers": [
+    "Route: Nazareth → Jordan valley → Jericho → Jerusalem → Bethlehem (about 90 miles)."
+   ]
+  },
+  {
+   "lesson": 2,
+   "title": "The Tower of the Flock",
+   "answers": [
+    "Tower of the Flock",
+    "Micah (4:8)",
+    "At the edge of Bethlehem, in the shepherds’ fields just outside town",
+    "Sacrifices at the temple, especially Passover lambs",
+    "Swaddling cloths; a stone manger",
+    "Those were the signs of a perfect sacrificial lamb; it was “shepherd language” they understood",
+    "Guest room",
+    "There was no room in the guest room, and the tower’s lower room was a clean birthing place with a manger and swaddling cloths close at hand",
+    "“The Lamb of God, which taketh away the sin of the world”"
+   ]
+  },
+  {
+   "lesson": 2,
+   "title": "Cut and Paste, Maze",
+   "answers": [
+    "Baby Yeshua goes in the manger. Luke 2:11: “David” · “Saviour.”"
+   ]
+  },
+  {
+   "lesson": 2,
+   "title": "Let’s See What You Remember",
+   "answers": [
+    "B. Caesar Augustus",
+    "B. To register for the census",
+    "D. Micah",
+    "B. In a manger",
+    "C. Shepherds",
+    "B. Kept them and pondered them in her heart",
+    "B. From spring until early fall",
+    "C. Sukkot (Tabernacles)",
+    "Yeshua (Jesus)",
+    "“Glory to God in the highest, and on earth peace, good will toward men”",
+    "Told everyone what they had seen and heard, and praised God",
+    "Shepherds in the fields at night, Zechariah’s temple service, or the crowds of the fall feasts",
+    "That God kept His promise right on time"
+   ]
+  },
+  {
+   "lesson": 3,
+   "title": "The Wise Men",
+   "answers": [
+    "B. Herod",
+    "C. The east",
+    "D. Magi",
+    "A. The Parthian Empire",
+    "B. Daniel",
+    "“Where is he that is born King of the Jews? for we have seen his star in the east, and are come to worship him.”",
+    "They had the power to help choose or remove a king",
+    "A Star (and a Sceptre)"
+   ]
+  },
+  {
+   "lesson": 3,
+   "title": "Journey to Jerusalem",
+   "answers": [
+    "Prepare gifts, settle business, load a caravan, find soldiers for protection",
+    "Answers will vary (Daniel’s prophecies passed down; the star prophecy).",
+    "Answers will vary."
+   ]
+  },
+  {
+   "lesson": 3,
+   "title": "Parthia and King Herod",
+   "answers": [
+    "Answers will vary: Parthia was Rome’s powerful enemy; Parthian officials asking for a new king seemed like a threat to Herod’s throne.",
+    "In Bethlehem of Judea; the prophet Micah",
+    "Rome (the Roman Senate)",
+    "Caesarea, Herodium, Masada, the temple, fortresses, palaces, theaters",
+    "Archelaus",
+    "Answers will vary (Herod was made king by Rome and ruled by fear; Yeshua was born King and rules with love).",
+    "Research: e.g., Parthia lasted about 247 BC–AD 224; its capital was Ctesiphon; it defeated Rome at Carrhae; it was famous for horse archers."
+   ]
+  },
+  {
+   "lesson": 3,
+   "title": "Word Search",
+   "answers": [
+    "Words: Magi, Star, Herod, Bethlehem, Parthia, Camel, Caravan, Scribes, Prophet, Jerusalem, Daniel, Micah, King, East."
+   ]
+  },
+  {
+   "lesson": 3,
+   "title": "The Judea Times",
+   "answers": [
+    "Answers will vary. Look for the main events of Matthew 2:1–8: the star, the Magi in Jerusalem, Herod troubled, the chief priests and Micah 5:2, Herod’s secret meeting."
+   ]
+  },
+  {
+   "lesson": 4,
+   "title": "Gifts for the King",
+   "answers": [
+    "Gold: a treasure fit for royalty (Yeshua is King)",
+    "Frankincense: burned in worship (Yeshua is the High Priest)",
+    "Myrrh: used in burial (Yeshua’s death for sin)",
+    "They fell down and worshiped Him",
+    "They likely paid for the trip to Egypt and life there",
+    "His suffering and death for sin (the cross and His burial)"
+   ]
+  },
+  {
+   "lesson": 4,
+   "title": "Temple in Jerusalem",
+   "answers": [
+    "King Solomon",
+    "The Ark of the Covenant",
+    "The Babylonians",
+    "Passover, Shavuot (Pentecost), and Sukkot (Tabernacles)",
+    "The highest Jewish court",
+    "The Romans, in AD 70"
+   ]
+  },
+  {
+   "lesson": 4,
+   "title": "Presentation at the Temple",
+   "answers": [
+    "Matching: 1 Gabriel: told Mary to name her son Yeshua · 2 Simeon: “Mine eyes have seen thy salvation” · 3 Anna: prophetess, 84, tribe of Asher · 4 Two turtledoves: offering of a family who could not afford a lamb · 5 Jerusalem: city where the temple stood",
+    "C. The eighth day",
+    "A. Every firstborn son belonged to the Lord",
+    "B. He would see the Lord’s Christ before he died",
+    "B. Worshiped with fasting and prayer night and day",
+    "A. To give yourself completely to Him as a living sacrifice"
+   ]
+  },
+  {
+   "lesson": 5,
+   "title": "Label the House",
+   "answers": [
+    "Upstairs living space",
+    "Straw-covered roof",
+    "Kitchen",
+    "Stable",
+    "Courtyard",
+    "To keep them safe from wild animals and robbers",
+    "In a house",
+    "Answers will vary."
+   ]
+  },
+  {
+   "lesson": 5,
+   "title": "Escape to Egypt",
+   "answers": [
+    "The angel of the Lord",
+    "Egypt",
+    "By night",
+    "Until Herod died",
+    "Hosea",
+    "Ordered the death of all the boys in Bethlehem two years old and under",
+    "Nazareth"
+   ]
+  },
+  {
+   "lesson": 5,
+   "title": "Joseph’s Four Dreams",
+   "answers": [
+    "1 Matthew 1:20: “Fear not to take unto thee Mary thy wife” · 2 Matthew 2:13: “Flee into Egypt” · 3 Matthew 2:19–20: “Go into the land of Israel” · 4 Matthew 2:22: Go to Galilee, not Judea",
+    "He obeyed right away."
+   ]
+  },
+  {
+   "lesson": 5,
+   "title": "Where Is Egypt?",
+   "answers": [
+    "Possible answers: Abraham, Joseph, Jacob, Moses, Aaron, Miriam, Jeremiah, Mary, Joseph, and Yeshua."
+   ]
+  },
+  {
+   "lesson": 5,
+   "title": "The Escape Route",
+   "answers": [
+    "1 Bethlehem, 2 Gaza, 3 Egypt, 4 Joppa, 5 Caesarea, 6 Nazareth. Escape: 1 → 2 → 3. Trip home: 3 → 2 → 4 → 5 → 6. See the answer map."
+   ]
+  },
+  {
+   "lesson": 5,
+   "title": "Put the Story in Order",
+   "answers": [
+    "A 5, B 9, C 2, D 10, E 4, F 1, G 3, H 8, I 6, J 7"
+   ]
+  }
+ ],
+ "pageCount": 102
+}
