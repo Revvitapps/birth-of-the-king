@@ -34,7 +34,7 @@ dict(t='text', kicker='Lesson Five · Reading 1', title='Who Were the Magi?', bi
   "Many Jewish families stayed in Babylon and Persia for centuries. They knew the prophecy of Balaam: “There shall come a Star out of Jacob, and a Sceptre shall rise out of Israel” (Numbers 24:17). For scholars who studied the sky, a prophecy about a star would catch their attention! Generations of Eastern scholars may have kept and passed on this knowledge."],
  notes=[('Key word', '*Magi* (Greek *magoi*) is where the word “magic” comes from, but these men were not tricksters. They were respected priests and scholars.\n**Astronomy** is studying the sun, moon, stars, and planets as God made them. **Astrology** is the belief that the stars control or foretell people’s lives, which the Bible warns against (Deuteronomy 18:10–12). The Magi practiced both, yet God used the sky they studied to lead them to Yeshua.'),
         ('Daniel’s legacy', 'Daniel’s influence is a big reason many scholars believe Eastern Magi were expecting a Jewish King.'),
-        ('Ask', 'The Magi traveled a long way to find Yeshua. What does that show about how much they wanted to see Him?')],
+        ('Ask', 'The journey from the East took the Wise Men many weeks. What does that show about how much they wanted to see Him?')],
  callout=('Did You Know?', 'The Parthian royal council was called the *Megistanes*. Its members included royal family members, nobles, and the Magi.')),
 
 dict(t='color', lesson=5, title='A Wise Man from the East', img='c_magus', caption='“We have seen his star in the east, and are come to worship him.” (Matthew 2:2)'),

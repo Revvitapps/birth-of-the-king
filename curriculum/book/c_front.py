@@ -31,7 +31,7 @@ dict(t='toc', title='What’s Inside', bignum='', rows_src=[
  ('Reading 1–2', 'Who Were the Magi? · The Star', 'Who Were the Magi?'),
  ('Reading 3–4', 'Parthia: The Empire Rome Could Not Beat · Herod Is Troubled', 'Parthia: The Empire Rome Could Not Beat'),
  ('', 'Lesson 6 · Gifts for the King', 'Gifts for the King'),
- ('Reading 1–2', 'They Bowed Down and Worshiped Him · The Gifts', 'They Bowed Down and Worshiped Him'),
+ ('Reading 1–2', 'They Fell Down and Worshipped Him · The Gifts', 'They Fell Down and Worshipped Him'),
  ('Reading 3', 'Under an Israelite Roof', 'Under an Israelite Roof'),
  ('', 'Lesson 7 · Out of Egypt, Home to Nazareth', 'Out of Egypt, Home to Nazareth'),
  ('Reading 1–2', 'Flight to Egypt · Safe in Egypt, Home to Nazareth', 'Flight to Egypt'),

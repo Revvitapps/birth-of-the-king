@@ -35,7 +35,7 @@ dict(t='text', kicker='Lesson Seven · Reading 1', title='Flight to Egypt', bign
   "## Why Egypt?",
   "Egypt was outside Herod’s kingdom, so Herod could not reach them there. It was also home to many Jewish families, especially in the great city of Alexandria. And God had a reason in His Word: the prophet Hosea had written, “Out of Egypt have I called my son” (Hosea 11:1). Long ago, God brought Israel out of Egypt. Now His own Son would come out of Egypt too.",
   "## Herod’s Anger",
-  "When Herod realized the Wise Men had tricked him, he became furious. He ordered his soldiers to kill all the boys in Bethlehem and the nearby area who were two years old and under. It was a terrible and cruel act, and Matthew says it fulfilled Jeremiah’s words about Rachel weeping for her children (Jeremiah 31:15).",
+  "When Herod realized the Wise Men had tricked him, he became furious. He ordered his soldiers to put to death every boy in and around Bethlehem who was two years old or younger. It was a terrible and cruel act, and Matthew says it fulfilled Jeremiah’s words about Rachel weeping for her children (Jeremiah 31:15).",
   "But Herod could not stop God’s plan. The young King was already safe in Egypt, protected by His Father in heaven."],
  notes=[('Handle with care', 'Be gentle when sharing Herod’s cruelty with young children. Focus on God’s protection and Joseph’s obedience.'),
         ('Provision', 'The gifts of the Magi likely paid for the trip and for living in Egypt. God provided before they even knew they needed it!'),
