@@ -7,17 +7,17 @@
 - 2026-11-18: First working version built on branch `claude/project-thread-3xe8zs` (draft PR). Next.js 16 PWA in `site/`, following the Revvit PWA plan.
 - The printed book is the single source of truth. `scripts/export_book.py` turns `curriculum/book/c_*.py` into `data/book.json`; `scripts/sync-assets.mjs` copies the art and printed page images into `public/` before dev and build (they are gitignored here).
 - Brand comes from the book's own stylesheet (navy #1f2f5c, gold #c9a24a, cream #fbf8f1, Inter + Caladea). Gold text on light grounds uses `--gold-deep` #82621c for contrast.
+- 2026-11-18, decided by Matthew: Lesson 1 free, Lessons 2 to 5 for buyers only. Set `ACCESS_CODE` in Vercel (never in git) on every deployment people can reach; buyers get the code with their purchase receipt.
 - Access: Lesson 1 is always free. Lessons 2 to 5 lock only when `ACCESS_CODE` is set (buyers get the code on their receipt). Unset means everything is open (prototype).
 - Only the Lesson 1 student pack is published as a download. The other paid PDFs are never copied into `public/`.
 - Prototype stays noindexed until `SITE_INDEXING=on`.
 - Author's standing book rules also apply to any new site copy: no first person (I/me/we/us/our) in lessons or worksheets.
 
 ### Open questions for Matthew
-1. Free vs paid: keep the whole site open as a companion, or lock Lessons 2 to 5 behind the book purchase (set `ACCESS_CODE`)?
-2. Prices for each format and the store link (`NEXT_PUBLIC_BUY_URL`).
-3. Contact email for the site.
-4. Videos: who records them, and where they are hosted (YouTube/Vimeo embed or mp4 on Vercel Blob/R2). Add them in `data/media.ts`.
-5. Domain: `birth-of-the-king.revvit.io` for the prototype, then a real domain at launch?
+1. Prices for each format and the store link (`NEXT_PUBLIC_BUY_URL`).
+2. Contact email for the site.
+3. Videos: who records them, and where they are hosted (YouTube/Vimeo embed or mp4 on Vercel Blob/R2). Add them in `data/media.ts`.
+4. Domain: `birth-of-the-king.revvit.io` for the prototype, then a real domain at launch?
 
 ## 1. Brief
 
