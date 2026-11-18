@@ -42,7 +42,7 @@ dict(t='text', kicker='Lesson Six · Reading 1', title='They Fell Down and Worsh
         ('Obedience', 'The Wise Men obeyed God rather than the king. Ask: Why was that brave?')],
  callout=('Did You Know?', 'Matthew says “the young child with Mary his mother.” Joseph may have been working that day, but God provided for the family through these gifts!')),
 
-dict(t='illus', img='l4_gifts', cap='Gold, frankincense, and myrrh'),
+dict(t='illus', img='l4_gifts', pos='top', capb=True, cap='Gold, frankincense, and myrrh'),
 dict(t='text', kicker='Lesson Six · Reading 2', title='The Gifts: Gold, Frankincense, and Myrrh', bignum='6', foot=F,
  verse='And when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh', vref='Matthew 2:11',
  read='Matthew 2:11 · Exodus 30:34–38 · Hebrews 4:14–16',

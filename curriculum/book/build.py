@@ -36,7 +36,10 @@ def pg_illus(p):
     cap = f'<div class="pill">{md(p["cap"])}</div>' if p.get('cap') else ''
     fit = 'contain' if p.get('contain') else 'cover'
     extra = ' map' if p.get('contain') else ''
-    return f'<section class="page art{extra}"><img src="{src(p["img"])}" style="object-fit:{fit}">{cap}<div class="edge"></div></section>'
+    # pos: which part of a tall painting to keep when it is cropped to the page ("top" keeps heads). capb: caption pill at the bottom.
+    pos = f';object-position:center {p["pos"]}' if p.get('pos') else ''
+    if p.get('capb'): cap = cap.replace('class="pill"', 'class="pill" style="top:auto;bottom:0.45in"')
+    return f'<section class="page art{extra}"><img src="{src(p["img"])}" style="object-fit:{fit}{pos}">{cap}<div class="edge"></div></section>'
 
 def copy_html():
     return f'<div class="cpy"><div class="cpy-t">{TITLE}</div><div class="cpy-s">{SUBTITLE}</div><p class="cpy-c">{html.escape(COPYRIGHT[0])}</p><p>{html.escape(COPYRIGHT[1])}</p></div>'
