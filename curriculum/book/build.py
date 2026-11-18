@@ -36,12 +36,14 @@ def pg_illus(p):
     cap = f'<div class="pill">{md(p["cap"])}</div>' if p.get('cap') else ''
     fit = 'contain' if p.get('contain') else 'cover'
     extra = ' map' if p.get('contain') else ''
-    if p.get('copy'):
-        return f'<section class="page art copy"><img src="{src(p["img"])}" style="object-fit:cover">{copy_html()}<div class="edge"></div></section>'
     return f'<section class="page art{extra}"><img src="{src(p["img"])}" style="object-fit:{fit}">{cap}<div class="edge"></div></section>'
 
 def copy_html():
     return f'<div class="cpy"><div class="cpy-t">{TITLE}</div><div class="cpy-s">{SUBTITLE}</div><p class="cpy-c">{html.escape(COPYRIGHT[0])}</p><p>{html.escape(COPYRIGHT[1])}</p></div>'
+
+def pg_title(p):
+    return f'''<section class="page titlepg"><div class="tp-in"><div class="tp-k">An In-Depth Bible Curriculum</div><h1>Beyond<br>the Manger</h1><div class="tp-bar"></div>
+<div class="tp-s">{SUBTITLE}</div><div class="tp-r">Matthew 1–2 · Luke 1–2</div><div class="tp-e">Teacher Edition with Student Activity Pages</div><div class="tp-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
 
 def pg_copy(p):
     return f'<section class="page copyonly">{copy_html()}</section>'
@@ -203,7 +205,7 @@ def pg_back(p):
 <p class="bk-r">Isaiah 9:6</p><p class="bk-t">Beyond the Manger</p><p class="bk-s">A Detailed Look into the Story of the Promised King</p><div class="bk-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
 
 R = dict(cover=pg_cover, illus=pg_illus, opener=pg_opener, text=pg_text, plan=pg_plan, work=pg_work,
-         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back, copy=pg_copy)
+         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back, copy=pg_copy, title=pg_title)
 
 def load_pages():
     pages = []

@@ -15,7 +15,7 @@ const answers = [
   { href: "/activities#coloring", icon: Palette, title: "Something to color", note: "Tap-to-fill coloring pages from the book" },
   { href: "/activities", icon: Sparkles, title: "Activities and quizzes", note: "Answer on screen or print them out" },
   { href: "/book#sample", icon: Printer, title: "Printable student pages", note: "Lesson 1 pack free, all seven with the book" },
-  { href: "/book", icon: Crown, title: "Get the whole book", note: "108 pages, teacher edition" },
+  { href: "/book", icon: Crown, title: "Get the whole book", note: "110 pages, teacher edition" },
 ];
 
 export default function Home() {
@@ -90,7 +90,7 @@ export default function Home() {
       <section id="sample" className="px-site mx-auto max-w-6xl py-14" aria-labelledby="free">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.2fr]">
           <div className="relative mx-auto aspect-[17/22] w-full max-w-sm overflow-hidden rounded-xl border border-line bg-white shadow-xl">
-            <Image src="/pages/p013.jpg" alt="A student page from Lesson 1" fill sizes="(min-width: 1024px) 380px, 80vw" className="object-cover" />
+            <Image src="/pages/p015.jpg" alt="A student page from Lesson 1" fill sizes="(min-width: 1024px) 380px, 80vw" className="object-cover" />
           </div>
           <div>
             <p className="kicker text-gold-deep">Free sample</p>

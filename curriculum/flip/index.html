@@ -69,23 +69,23 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
   <button id="next" aria-label="Next page">Turn page →</button>
   <select id="jump" aria-label="Go to section">
     <option value="1">Cover</option>
-    <option value="3">How to Use This Book</option>
-    <option value="4">Contents</option>
-    <option value="6">Lesson 1 · The Promised King</option>
-    <option value="14">Lesson 2 · The Announcement</option>
-    <option value="26">Lesson 3 · The Lamb in the Manger</option>
-    <option value="44">Lesson 4 · Forty Days Old</option>
-    <option value="58">Lesson 5 · Wise Men from the East</option>
-    <option value="74">Lesson 6 · Gifts for the King</option>
-    <option value="88">Lesson 7 · Out of Egypt, Home to Nazareth</option>
-    <option value="105">Answer Key</option>
-    <option value="108">Back Cover</option>
+    <option value="5">How to Use This Book</option>
+    <option value="6">Contents</option>
+    <option value="8">Lesson 1 · The Promised King</option>
+    <option value="16">Lesson 2 · The Announcement</option>
+    <option value="28">Lesson 3 · The Lamb in the Manger</option>
+    <option value="46">Lesson 4 · Forty Days Old</option>
+    <option value="60">Lesson 5 · Wise Men from the East</option>
+    <option value="76">Lesson 6 · Gifts for the King</option>
+    <option value="90">Lesson 7 · Out of Egypt, Home to Nazareth</option>
+    <option value="107">Answer Key</option>
+    <option value="110">Back Cover</option>
   </select>
 </nav>
 
 <script>
 (function(){
-  var N = 108, L = Math.ceil(N/2), RATIO = 11/8.5;
+  var N = 110, L = Math.ceil(N/2), RATIO = 11/8.5;
   var book = document.getElementById('book'), stage = document.getElementById('stage');
   var src = function(n){ return 'pages/p' + String(n).padStart(3,'0') + '.jpg'; };
   var leaves = [], imgs = {}, cur = 0, single = 1, narrow = false;

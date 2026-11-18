@@ -29,7 +29,7 @@ export default function BookPage() {
             <p className="kicker text-gold">Teacher Edition with Student Activity Pages</p>
             <h1 className="display mt-2 text-[clamp(2.6rem,8vw,4.8rem)]">Get the Book</h1>
             <p className="mt-4 max-w-xl font-serif text-xl text-white/90">
-              {lessons.length} lessons and 108 pages on the birth of Yeshua the Messiah, from the promises of the prophets to the family’s journey home to Nazareth.
+              {lessons.length} lessons and 110 pages on the birth of Yeshua the Messiah, from the promises of the prophets to the family’s journey home to Nazareth.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <BuyButton />

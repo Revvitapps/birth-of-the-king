@@ -17,7 +17,7 @@ export const formats = [
   {
     id: "digital",
     name: "Complete Digital Curriculum",
-    detail: "The full 108-page teacher book as a PDF, plus printable student packs for all seven lessons.",
+    detail: "The full 110-page teacher book as a PDF, plus printable student packs for all seven lessons.",
     price: "[PLACEHOLDER price]",
     primary: true,
   },

@@ -4,7 +4,7 @@
 
 ## 0. Status and decisions (living, update first)
 
-- 2026-11-18: The book was renamed "Beyond the Manger: A Detailed Look into the Story of the Promised King" and regrouped into SEVEN lessons (108 pages). The site follows: Lesson 1 free, Lessons 2 to 7 for buyers. The word "Christmas" is never used anywhere in the curriculum or the site. Repo, Vercel project and `botk` storage keys keep their old names on purpose.
+- 2026-11-18: The book was renamed "Beyond the Manger: A Detailed Look into the Story of the Promised King" and regrouped into SEVEN lessons (110 pages). The site follows: Lesson 1 free, Lessons 2 to 7 for buyers. The word "Christmas" is never used anywhere in the curriculum or the site. Repo, Vercel project and `botk` storage keys keep their old names on purpose.
 
 - 2026-11-18: First working version built on branch `claude/project-thread-3xe8zs` (draft PR). Next.js 16 PWA in `site/`, following the Revvit PWA plan.
 - The printed book is the single source of truth. `scripts/export_book.py` turns `curriculum/book/c_*.py` into `data/book.json`; `scripts/sync-assets.mjs` copies the art and printed page images into `public/` before dev and build (they are gitignored here).

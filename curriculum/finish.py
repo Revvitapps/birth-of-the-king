@@ -9,7 +9,7 @@ r = PdfReader(RAW); sc = PdfReader(SCOVER)
 w = PdfWriter(clone_from=r)
 w._root_object[NameObject('/PageLayout')] = NameObject('/TwoPageRight')
 w.add_metadata({'/Title': T + ': A Detailed Look into the Story of the Promised King - Teacher Edition', '/Author': 'For His Kingdom'})
-w.add_outline_item('Cover', 0); w.add_outline_item('How to Use This Book', 2); w.add_outline_item('Contents', 3)
+w.add_outline_item('Cover', 0); w.add_outline_item('How to Use This Book', 4); w.add_outline_item('Contents', 5)
 L = 0
 for p in pages:
     if p['t'] == 'opener':
