@@ -9,16 +9,18 @@ r = PdfReader(RAW); sc = PdfReader(SCOVER)
 w = PdfWriter(clone_from=r)
 w._root_object[NameObject('/PageLayout')] = NameObject('/TwoPageRight')
 w.add_metadata({'/Title': T + ': A Detailed Look into the Story of the Promised King - Teacher Edition', '/Author': 'For His Kingdom'})
-names = {'l1': 'Lesson 1', 'l2': 'Lesson 2', 'l3': 'Lesson 3', 'l4': 'Lesson 4', 'l5': 'Lesson 5', 'key': 'Teacher Answer Key'}
 w.add_outline_item('Cover', 0); w.add_outline_item('How to Use This Book', 2); w.add_outline_item('Contents', 3)
+L = 0
 for p in pages:
-    if p.get('id') in names:
-        w.add_outline_item(names[p['id']] + (' · ' + p['title'] if p.get('title') and p['id'] != 'key' else ''), p['n'] - 1)
+    if p['t'] == 'opener':
+        L += 1; w.add_outline_item(f"Lesson {L} · {p['title']}", p['n'] - 1)
+    if p.get('id') == 'key': w.add_outline_item('Teacher Answer Key', p['n'] - 1)
+LESSONS = L
 w.write(OUT + 'Beyond-the-Manger-Flip-Book.pdf')
 cw = PdfWriter(); cw.add_page(r.pages[0]); cw.write(OUT + 'Front-Cover-8.5x11.pdf')
 cw = PdfWriter(); cw.add_page(sc.pages[0]); cw.write(OUT + 'Student-Workbook-Cover-8.5x11.pdf')
 allw = PdfWriter(); allw.add_page(sc.pages[0])
-for L in range(1, 6):
+for L in range(1, LESSONS + 1):
     pw = PdfWriter(); idx = [p['n'] - 1 for p in pages if p['t'] in ('color', 'work') and p.get('lesson') == L]
     for i in idx:
         pw.add_page(r.pages[i]); allw.add_page(r.pages[i])

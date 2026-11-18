@@ -150,8 +150,9 @@ def block_html(b):
 def wband(p, kick):
     L = p["lesson"]
     return f'''<img class="wm" src="imgc/fhk_watermark.png"><div class="wband"><div class="wk">{kick} · Lesson {L}</div>
-<div class="wname">Name: ____________________</div><div class="wart"><img class="spot" src="imgc/spot_l{L}.png"><img class="logo" src="imgc/fhk_logo.png"></div><h1>{md(p["title"])}</h1></div>'''
+<div class="wname">Name: ____________________</div><div class="wart"><img class="spot" src="imgc/spot_l{SPOT[L]}.png"><img class="logo" src="imgc/fhk_logo.png"></div><h1>{md(p["title"])}</h1></div>'''
 
+SPOT = {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 4, 7: 5}  # header spot art per lesson
 SFOOT = TITLE + " · © For His Kingdom"
 
 def pg_work(p):
@@ -194,7 +195,7 @@ R = dict(cover=pg_cover, illus=pg_illus, opener=pg_opener, text=pg_text, plan=pg
 
 def load_pages():
     pages = []
-    for mod in ['c_front', 'c_l1', 'c_l2', 'c_l3', 'c_l4', 'c_l5', 'c_back']:
+    for mod in ['c_front', 'c_l1', 'c_l2', 'c_l3', 'c_l4', 'c_l5', 'c_l6', 'c_l7', 'c_back']:
         m = importlib.import_module(mod)
         pages += m.PAGES
     for i, p in enumerate(pages):
@@ -213,7 +214,7 @@ if __name__ == '__main__':
         if p['t'] == 'toc':
             def find(key):
                 for q in pages:
-                    if q.get('id') == key: return q['n']
+                    if q.get('id') == key or (q['t'] in ('opener', 'text') and q.get('title') == key): return q['n']
                 return ''
             p['rows'] = [(a, b, find(c)) for a, b, c in p['rows_src']]
     build(pages, 'book.html')
