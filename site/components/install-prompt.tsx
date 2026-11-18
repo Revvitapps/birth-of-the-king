@@ -58,7 +58,7 @@ export function InstallPrompt() {
         <X size={18} />
       </button>
       <p className="font-sans text-sm font-extrabold uppercase tracking-[0.18em] text-gold">Keep it on your phone</p>
-      <p className="mt-1 pr-8 font-serif text-base">Add Birth of the King to your home screen. Lessons open fast, even with no signal at church.</p>
+      <p className="mt-1 pr-8 font-serif text-base">Add Beyond the Manger to your home screen. Lessons open fast, even with no signal at church.</p>
       {evt ? (
         <button
           onClick={async () => { await evt.prompt(); close(); }}

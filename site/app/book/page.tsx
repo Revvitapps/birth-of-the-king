@@ -23,13 +23,13 @@ export default function BookPage() {
       <section className="bg-night text-white">
         <div className="px-site mx-auto grid max-w-6xl items-center gap-10 py-14 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="relative mx-auto aspect-[17/22] w-full max-w-sm overflow-hidden rounded-r-xl rounded-l-sm shadow-[12px_12px_0_0_rgba(201,162,74,0.35)]">
-            <Image src="/pages/p001.jpg" alt="Front cover of Birth of the King" fill priority sizes="(min-width: 1024px) 380px, 80vw" className="object-cover" />
+            <Image src="/pages/p001.jpg" alt="Front cover of Beyond the Manger" fill priority sizes="(min-width: 1024px) 380px, 80vw" className="object-cover" />
           </div>
           <div>
             <p className="kicker text-gold">Teacher Edition with Student Activity Pages</p>
             <h1 className="display mt-2 text-[clamp(2.6rem,8vw,4.8rem)]">Get the Book</h1>
             <p className="mt-4 max-w-xl font-serif text-xl text-white/90">
-              {lessons.length} lessons and 102 pages on the birth of Yeshua the Messiah, from the promises of the prophets to the family’s escape to Egypt.
+              {lessons.length} lessons and 108 pages on the birth of Yeshua the Messiah, from the promises of the prophets to the family’s journey home to Nazareth.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <BuyButton />
@@ -67,7 +67,7 @@ export default function BookPage() {
               </li>
             ))}
           </ul>
-          <ol className="mt-10 grid gap-3 sm:grid-cols-5">
+          <ol className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {lessons.map((l) => (
               <li key={l.num} className="rounded-xl bg-navy p-4 text-white">
                 <span className="kicker text-gold">Lesson {l.num}</span>

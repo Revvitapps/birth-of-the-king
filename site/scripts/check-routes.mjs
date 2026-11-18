@@ -3,7 +3,7 @@
 const BASE = process.env.BASE || "http://localhost:3000";
 const xml = await (await fetch(`${BASE}/sitemap.xml`)).text();
 const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
-const extra = ["/manifest.webmanifest", "/sw.js", "/offline.html", "/robots.txt", "/pwa/icon-512.png", "/downloads/Birth-of-the-King-Lesson-1-Free-Sample.pdf"];
+const extra = ["/manifest.webmanifest", "/sw.js", "/offline.html", "/robots.txt", "/pwa/icon-512.png", "/downloads/Beyond-the-Manger-Lesson-1-Free-Sample.pdf"];
 let bad = 0;
 for (const p of [...urls, ...extra]) {
   const r = await fetch(BASE + p);

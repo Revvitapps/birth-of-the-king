@@ -3,9 +3,9 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: "/",
-    name: "Birth of the King",
-    short_name: "Birth of the King",
-    description: "Five lessons on the birth of Yeshua: readings, Teaching Nuggets, coloring and activities.",
+    name: "Beyond the Manger",
+    short_name: "Beyond the Manger",
+    description: "Seven lessons on the birth of Yeshua: readings, Teaching Nuggets, coloring and activities.",
     start_url: "/?source=pwa",
     scope: "/",
     display: "standalone",

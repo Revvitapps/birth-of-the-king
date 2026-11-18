@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export the Birth of the King book source (curriculum/book/c_*.py) into
+"""Export the Beyond the Manger book source (curriculum/book/c_*.py) into
 site/data/book.json. Images are copied by scripts/sync-assets.mjs.
 
 The book stays the single source of truth: edit the c_*.py files, rebuild the
@@ -20,7 +20,11 @@ BOOK = os.path.join(REPO, 'curriculum', 'book')
 FLIP = os.path.join(REPO, 'curriculum', 'flip', 'pages')
 OUT = os.path.join(REPO, 'output')
 
-MODULES = ['c_front', 'c_l1', 'c_l2', 'c_l3', 'c_l4', 'c_l5', 'c_back']
+MODULES = ['c_front', 'c_l1', 'c_l2', 'c_l3', 'c_l4', 'c_l5', 'c_l6', 'c_l7', 'c_back']
+
+
+# The lesson files share helpers in c_common.py. Appended, so nothing there can shadow the stdlib.
+sys.path.append(BOOK)
 
 
 def load(name):
@@ -87,7 +91,7 @@ def block(b):
         if 'class="match"' in h:
             cols = re.findall(r'<div class="mc">(.*?)</div>\s*(?=<div class="mc">|</div>$)', h, re.S)
             mis = re.findall(r'<div class="mi">(.*?)</div>', h, re.S)
-            left = [re.sub(r'<b>\d+</b>\s*', '', x).strip() for x in mis if x.startswith('<b>')]
+            left = [re.sub(r'<[^>]+>', '', re.sub(r'<b>\d+</b>\s*', '', x)).strip() for x in mis if x.startswith('<b>')]
             right = [x.strip() for x in mis if not x.startswith('<b>')]
             return {'k': 'match', 'left': left, 'right': right}
         if 'class="seqrow"' in h:
@@ -103,14 +107,29 @@ def block(b):
             return {'k': 'trace', 'text': texts[0], 'rtl': bool(re.search(r'[\u0590-\u05ff]', texts[0])), 'rows': len(re.findall(r'class="hw"', h)), 'lead': lead[0] if lead else ''}
         if 'class="letters"' in h:
             return {'k': 'letters', 'items': [{'char': c, 'name': n} for c, n in re.findall(r'<div class="hl">(.*?)</div><div class="nm">(.*?)</div>', h)]}
-        # Hand-laid print layouts (mazes, trees, word searches, handwriting rows).
-        # The site shows the printed page for these.
+        strip = lambda x: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', x)).strip()
+        if h.startswith('<ol class="qs">'):
+            return {'k': 'qs', 'items': [{'text': strip(''.join(re.findall(r'<div class="qt"[^>]*>(.*?)</div>', li, re.S))),
+                                          'lines': max(1, li.count('class="ln"'))} for li in re.findall(r'<li>(.*?)</li>', h, re.S)]}
+        if 'class="seq"' in h:
+            lead = tag(r'<div class="qt"[^>]*>(.*?)</div>')
+            names = [strip(x) for x in re.findall(r'<div class="bx"></div>(.*?)</div>', h, re.S)]
+            return {'k': 'order', 'lead': lead[0] if lead else '', 'items': [{'letter': chr(65 + i), 'text': t} for i, t in enumerate(names)]}
+        if 'class="readbox"' in h:
+            return {'k': 'read', 'paras': [re.sub(r'</?b>', '**', x).strip() for x in re.findall(r'<p>(.*?)</p>', h, re.S)]}
+        if 'class="drawbox"' in h and 'class="qt"' in h:
+            return {'k': 'q', 'text': tag(r'<div class="qt"[^>]*>(.*?)</div>')[0], 'lines': h.count('class="ln"'), 'draw': strip(re.search(r'<span>(.*?)</span>', h).group(1))}
+        if h.startswith('<div class="q"><div class="qt">'):
+            return {'k': 'q', 'text': re.sub(r'_{3,}', '____', tag(r'<div class="qt"[^>]*>(.*?)</div>')[0]), 'lines': max(1, h.count('class="ln"'))}
+        if 'Map link:' in h:
+            return {'k': 'read', 'paras': [re.sub(r'</?b>', '**', re.sub(r'<div[^>]*>|</div>|☐ ', '', h)).strip()]}
+        # Hand-laid print layouts (cut-outs, labelled maps). The site shows the printed page for these.
         return {'k': 'printed'}
     raise ValueError(k)
 
 
 def _words(t):
-    return set(w for w in re.findall(r"[a-z]+", t.lower()) if len(w) > 2)
+    return set(w for w in re.findall(r"[a-z]{3,}|\d+", t.lower()))
 
 
 def attach_answers(lessons, keys):
@@ -145,12 +164,23 @@ def attach_answers(lessons, keys):
                     if len(set(out)) == len(out):
                         b['answer'] = out
                 if b['k'] == 'order':
-                    m = dict(re.findall(r'([A-J]) (\d+)', ans[0]))
+                    m = dict(re.findall(r'\b([A-Z]) (\d+)', ans[0]))
                     if len(m) == len(b['items']):
                         b['answer'] = [int(m[it['letter']]) for it in b['items']]
+                    else:
+                        # stops named in the key in order: "Damascus 3, Jerusalem 4"
+                        named = re.findall(r'([^,]+?) (\d+)(?:,|$)', ans[0])
+                        out = []
+                        for it in b['items']:
+                            best = max(named, key=lambda x: len(_words(x[0]) & _words(it['text'])), default=None)
+                            out.append(int(best[1]) if best and _words(best[0]) & _words(it['text']) else 0)
+                        if sorted(out) == list(range(1, len(out) + 1)):
+                            b['answer'] = out
                 if b['k'] == 'fill':
                     bank = next((x['words'] for x in st['blocks'] if x['k'] == 'bank'), [])
                     want = [a.lower() for a in ans[:len(b['rows'])]]
+                    if ans and ans[0].startswith('Table: '):
+                        want = [a.strip().lower() for a in ans[0][7:].split(',')]
                     if all(w in [x.lower() for x in bank] for w in want):
                         b['answer'] = want
                         b['bank'] = bank
@@ -261,7 +291,7 @@ def main():
             continue
         raise ValueError(t)
 
-    # the escape-route map sits in the back matter; it is the answer map for Lesson 5
+    # the escape-route map sits in the back matter; it is the answer map for Lesson 7
     attach_answers(lessons, keys)
     data = {'front': front, 'lessons': lessons, 'keys': keys, 'pageCount': len(pages)}
     os.makedirs(os.path.join(SITE, 'data'), exist_ok=True)

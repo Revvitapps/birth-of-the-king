@@ -12,7 +12,7 @@ export default function Lessons() {
       <header className="bg-navy pb-10 pt-14 text-white">
         <div className="px-site mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="kicker text-gold">Birth of the King</p>
+            <p className="kicker text-gold">Beyond the Manger</p>
             <h1 className="display mt-2 text-4xl sm:text-5xl">The Lessons</h1>
             <p className="mt-3 max-w-xl font-serif text-lg text-white/85">Teach them in order. Each one opens with a plan, then the readings and activities in the order the book places them.</p>
           </div>

@@ -7,7 +7,7 @@ export type Fig = { img: string; cap: string };
 export type Nugget = { h: string; t: string };
 
 export type Block =
-  | { k: "q"; text: string; lines: number }
+  | { k: "q"; text: string; lines: number; draw?: string }
   | { k: "qs"; items: { text: string; lines: number }[] }
   | { k: "mc"; start: number; items: { text: string; options?: string[]; lines?: number; answer?: number }[] }
   | { k: "read"; paras: string[] }
@@ -21,7 +21,7 @@ export type Block =
   | { k: "wordsearch"; grid: string[][]; words: string[] }
   | { k: "maze"; svg: string }
   | { k: "match"; left: string[]; right: string[]; answer?: number[] }
-  | { k: "order"; items: { letter: string; text: string }[]; answer?: number[] }
+  | { k: "order"; lead?: string; items: { letter: string; text: string }[]; answer?: number[] }
   | { k: "fill"; rows: string[]; answer?: string[]; bank?: string[] }
   | { k: "tree"; slots?: { label: string; answer: string }[]; bank?: string[] }
   | { k: "trace"; text: string; rtl: boolean; rows: number; lead: string }
@@ -91,7 +91,7 @@ export const img = (name: string) => `/images/book/${name}`;
 export const pageImg = (n: number) => `/pages/p${String(n).padStart(3, "0")}.jpg`;
 export const stepHref = (num: number, slug: string) => `/lessons/${num}/${slug}`;
 
-export const lessonWeeks = ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5"];
+export const lessonWeeks = lessons.map((_, i) => `Week ${i + 1}`);
 
 export const stepLabel = (s: Step) => (s.kind === "reading" ? "Reading" : s.kind === "color" ? "Coloring" : s.kick || "Activity");
 

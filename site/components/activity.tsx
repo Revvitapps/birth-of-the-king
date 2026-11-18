@@ -157,7 +157,8 @@ function BlockView({ b, id, page, title }: { b: Block; id: string; page: number;
       return (
         <div className="mt-5">
           <p className="font-serif text-lg font-bold text-ink"><Md text={b.text} /></p>
-          <Answer id={id} lines={b.lines} label={b.text} />
+          {b.lines > 0 && <Answer id={id} lines={b.lines} label={b.text} />}
+          {b.draw && <div className="mt-3"><DrawPad id={`${id}.d`} label={b.draw} /></div>}
         </div>
       );
     case "lines":
@@ -220,7 +221,10 @@ function BlockView({ b, id, page, title }: { b: Block; id: string; page: number;
       );
     case "order":
       return b.answer ? (
-        <OrderGame id={id} items={b.items} answer={b.answer} />
+        <>
+          {b.lead && <p className="mt-5 font-serif text-lg font-bold text-ink"><Md text={b.lead} /></p>}
+          <OrderGame id={id} items={b.items} answer={b.answer} />
+        </>
       ) : (
         <ul className="mt-4 space-y-2">{b.items.map((it) => <li key={it.letter} className="rounded-xl bg-white p-3 ring-1 ring-line"><b>{it.letter}.</b> <Md text={it.text} /></li>)}</ul>
       );

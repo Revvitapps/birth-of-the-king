@@ -39,10 +39,10 @@ const cover = await sharp(join(art, "cover.jpg")).resize(560, 630, { fit: "cover
 const text = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect width="1200" height="630" fill="${NAVY}"/>
   <text x="64" y="150" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="6" fill="${GOLD}">AN IN-DEPTH BIBLE CURRICULUM</text>
-  <text x="60" y="280" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="900" fill="#fff">BIRTH OF</text>
-  <text x="60" y="390" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="900" fill="#fff">THE KING</text>
+  <text x="60" y="280" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900" fill="#fff">BEYOND</text>
+  <text x="60" y="390" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900" fill="#fff">THE MANGER</text>
   <rect x="64" y="420" width="120" height="6" fill="${GOLD}"/>
-  <text x="64" y="480" font-family="Georgia, serif" font-style="italic" font-size="28" fill="${SOFT}">5 lessons · readings, coloring and activities</text>
+  <text x="64" y="480" font-family="Georgia, serif" font-style="italic" font-size="28" fill="${SOFT}">7 lessons · readings, coloring and activities</text>
 </svg>`;
 await sharp(Buffer.from(text)).composite([{ input: cover, left: 640, top: 0 }]).png().toFile(join(out, "og.png"));
 console.log("icons written to public/pwa");

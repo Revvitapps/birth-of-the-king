@@ -2,7 +2,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 import { cookies } from "next/headers";
 
-// Lesson 1 is always free. When ACCESS_CODE is set, Lessons 2 to 5 need the code buyers
+// Lesson 1 is always free. When ACCESS_CODE is set, Lessons 2 to 7 need the code buyers
 // receive with the book. When it is not set (prototype), everything is open.
 export const FREE_LESSONS = [1];
 export const ACCESS_COOKIE = "botk_access";

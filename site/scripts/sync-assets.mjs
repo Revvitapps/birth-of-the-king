@@ -25,6 +25,6 @@ for (const [from, to] of jobs) {
 mkdirSync(join(site, "public/downloads"), { recursive: true });
 cpSync(
   join(pdfs, "Printable-Lesson-1-Student-Pages.pdf"),
-  join(site, "public/downloads/Birth-of-the-King-Lesson-1-Free-Sample.pdf"),
+  join(site, "public/downloads/Beyond-the-Manger-Lesson-1-Free-Sample.pdf"),
 );
 console.log("assets synced");

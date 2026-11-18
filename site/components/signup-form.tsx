@@ -16,7 +16,7 @@ export function SignupForm({ source = "free-sample", dark = false }: { source?: 
         <p className="font-sans text-lg font-extrabold">It’s yours.</p>
         <p className="mt-1 font-serif">The Lesson 1 student pack is ready to print.</p>
         <a
-          href="/downloads/Birth-of-the-King-Lesson-1-Free-Sample.pdf"
+          href="/downloads/Beyond-the-Manger-Lesson-1-Free-Sample.pdf"
           download
           className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-full bg-gold px-5 font-sans text-sm font-extrabold text-navy"
         >

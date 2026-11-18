@@ -14,8 +14,8 @@ const answers = [
   { href: stepHref(1, first.steps[0].slug), icon: BookOpen, title: "Read the story with my kids", note: "Painted art, read aloud on any phone" },
   { href: "/activities#coloring", icon: Palette, title: "Something to color", note: "Tap-to-fill coloring pages from the book" },
   { href: "/activities", icon: Sparkles, title: "Activities and quizzes", note: "Answer on screen or print them out" },
-  { href: "/book#sample", icon: Printer, title: "Printable student pages", note: "Lesson 1 pack free, all five with the book" },
-  { href: "/book", icon: Crown, title: "Get the whole book", note: "102 pages, teacher edition" },
+  { href: "/book#sample", icon: Printer, title: "Printable student pages", note: "Lesson 1 pack free, all seven with the book" },
+  { href: "/book", icon: Crown, title: "Get the whole book", note: "108 pages, teacher edition" },
 ];
 
 export default function Home() {
@@ -26,14 +26,15 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-night/70 via-night/20 to-night" />
         <div className="px-site mx-auto grid min-h-[88svh] max-w-6xl items-end gap-12 pb-12 pt-24 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:py-20">
           <div>
-          <p className="kicker text-gold-soft">An In-Depth Bible Curriculum on</p>
-          <h1 className="display mt-3 text-[clamp(3.2rem,12vw,7.5rem)]">
-            Birth of
+          <p className="kicker text-gold-soft">An In-Depth Bible Curriculum</p>
+          <h1 className="display mt-3 text-[clamp(3rem,11vw,7rem)]">
+            Beyond
             <br />
-            the King
+            the Manger
           </h1>
           <div className="mt-4 h-1 w-24 bg-gold" />
-          <p className="mt-4 max-w-xl font-serif text-lg italic text-white/90">{site.sub}</p>
+          <p className="mt-4 max-w-xl font-sans text-xl font-bold text-gold-soft">{site.tagline}</p>
+          <p className="mt-2 max-w-xl font-serif text-lg italic text-white/90">{site.sub}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/lessons/1" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-gold px-6 font-sans font-extrabold text-navy">
               Start Lesson 1 <ArrowRight size={18} aria-hidden />
@@ -69,15 +70,15 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="bg-navy py-14 text-white" aria-labelledby="five">
+      <section className="bg-navy py-14 text-white" aria-labelledby="seven">
         <div className="px-site mx-auto max-w-6xl">
-          <p className="kicker text-gold">Five lessons</p>
-          <h2 id="five" className="display mt-2 text-3xl sm:text-4xl">From the promise to the escape to Egypt</h2>
+          <p className="kicker text-gold">Seven lessons</p>
+          <h2 id="seven" className="display mt-2 text-3xl sm:text-4xl">From the promise to the road home to Nazareth</h2>
           <p className="mt-3 max-w-2xl font-serif text-lg text-white/85">
             Each lesson has a one-page plan, painted reading spreads, Teaching Nuggets for the grown-ups, and the coloring pages and worksheets that belong with each reading.
           </p>
         </div>
-        <div className="px-site mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-5 lg:overflow-visible">
+        <div className="px-site mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-4 lg:overflow-visible">
           {lessons.map((l, i) => (
             <div key={l.num} className="w-[72vw] max-w-72 shrink-0 snap-start sm:w-[42vw] lg:w-auto lg:max-w-none">
               <LessonCard l={l} priority={i < 2} />
