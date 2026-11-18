@@ -50,7 +50,7 @@ def pg_title(p):
 <div class="tp-c"><b>{html.escape(COPYRIGHT[0])}</b><br>{html.escape(COPYRIGHT[1])}</div></div></section>'''
 
 def pg_verse(p):
-    return f'''<section class="page back"><div class="bk-in"><div class="bk-star">✦</div>
+    return f'''<section class="page back versepg"><div class="bk-in"><div class="bk-star">✦</div>
 <p class="bk-v">{md(p["verse"])}</p><p class="bk-r">{md(p["ref"])}</p></div></section>'''
 
 def pg_copy(p):

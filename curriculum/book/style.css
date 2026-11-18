@@ -293,3 +293,7 @@ table.wsearch { margin-left:auto; margin-right:auto; }
 .scopy h1 { font-size:36pt; }
 .scopy .tp-logo { width:3.3in; margin-top:.5in; }
 .scopy .tp-c { font-size:11pt; margin-top:.45in; }
+/* verse page behind the title page: light page, navy lettering */
+.versepg { background:#fbf8f1; color:var(--navy); }
+.versepg .bk-v { font-size:19pt; }
+.versepg .bk-r { color:#82621c; font-size:10pt; }

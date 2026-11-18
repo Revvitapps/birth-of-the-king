@@ -49,6 +49,8 @@ select option{background:#141b30;color:var(--ink)}
 #simg{transform-origin:left center;transition:transform .6s cubic-bezier(.45,.05,.25,1),filter .6s;box-shadow:0 0 0 rgba(0,0,0,0);backface-visibility:hidden;-webkit-backface-visibility:hidden}
 #simg.turned{transform:rotateY(-110deg);filter:brightness(.6)}
 #simg.instant{transition:none}
+body.fs header{display:none}
+body.fs #stage{padding-top:10px}
 body.narrow #book{display:none}
 body.narrow #single{display:block}
 body.narrow header .hint{display:none}
@@ -67,6 +69,7 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
   <button id="prev" aria-label="Previous page">← Back</button>
   <span id="pg" aria-live="polite"></span>
   <button id="next" aria-label="Next page">Turn page →</button>
+  <button id="fs" aria-label="Full screen" hidden>⛶ Full screen</button>
   <select id="jump" aria-label="Go to section">
     <option value="1">Cover</option>
     <option value="5">How to Use This Book</option>
@@ -214,6 +217,19 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
     var r = this.getBoundingClientRect(); (e.clientX - r.left < r.width/3 ? document.getElementById('prev') : document.getElementById('next')).click();
   });
 
+  // full screen: shown only where the browser allows it (iPhones do not)
+  var fsBtn = document.getElementById('fs'), root = document.documentElement;
+  var fsReq = root.requestFullscreen || root.webkitRequestFullscreen;
+  var fsExit = document.exitFullscreen || document.webkitExitFullscreen;
+  var fsOn = function(){ return document.fullscreenElement || document.webkitFullscreenElement; };
+  if (fsReq && (document.fullscreenEnabled || document.webkitFullscreenEnabled)){
+    fsBtn.hidden = false;
+    var fsToggle = function(){ try { var r = fsOn() ? fsExit.call(document) : fsReq.call(root); if (r && r.catch) r.catch(function(){}); } catch(e){} };
+    fsBtn.onclick = fsToggle;
+    var fsSync = function(){ var on = !!fsOn(); fsBtn.textContent = on ? '✕ Exit full screen' : '⛶ Full screen'; document.body.classList.toggle('fs', on); setTimeout(layout, 60); };
+    document.addEventListener('fullscreenchange', fsSync); document.addEventListener('webkitfullscreenchange', fsSync);
+    document.addEventListener('keydown', function(e){ if ((e.key === 'f' || e.key === 'F') && e.target.tagName !== 'SELECT') fsToggle(); });
+  }
   window.addEventListener('resize', layout);
   stack(); shift(); layout();
   var saved = 1; try { saved = parseInt(localStorage.getItem('botk-page') || '1', 10) || 1; } catch(e){}
