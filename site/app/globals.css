@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+/* Brand tokens, recovered 2026-11-18 from the printed book's stylesheet
+   (curriculum/book/style.css :root): navy #1f2f5c, navy2 #2b3f78, gold #c9a24a,
+   goldsoft #efe2bf, cream #fbf8f1, ink #22242a.
+   Gold on cream is 2.3:1, so gold text on light grounds uses --gold-deep (5.3:1).
+   The exact gold stays for fills, rules and text on navy (5.4:1). */
+:root {
+  --navy: #1f2f5c;
+  --navy-2: #2b3f78;
+  --night: #141b30;
+  --gold: #c9a24a;
+  --gold-deep: #82621c;
+  --gold-soft: #efe2bf;
+  --cream: #fbf8f1;
+  --paper: #fffdf7;
+  --ink: #22242a;
+  --muted: #5d6170;
+  --line: #e3dccb;
+  --tab-h: 64px;
+  --pad: clamp(16px, 4vw, 72px);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-2: var(--navy-2);
+  --color-night: var(--night);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-soft: var(--gold-soft);
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-caladea), Georgia, "Times New Roman", serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-bottom: calc(var(--tab-h) + 80px);
+}
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  padding-bottom: calc(var(--tab-h) + env(safe-area-inset-bottom));
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.px-site {
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
+
+.kicker {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.display {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.98;
+  letter-spacing: 0.005em;
+}
+
+/* Reading prose, set like the book */
+.prose-book p {
+  font-size: 1.16rem;
+  line-height: 1.7;
+  margin: 0 0 0.9em;
+}
+.prose-book p.first::first-letter {
+  float: left;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  color: var(--navy);
+  font-size: 3.4em;
+  line-height: 0.82;
+  padding: 0.04em 0.05em 0 0;
+}
+.prose-book h2 {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  color: var(--navy);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  margin: 1.6em 0 0.5em;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+.prose-book p.li {
+  padding-left: 1.2em;
+  position: relative;
+}
+.prose-book p.li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.8em;
+  top: 0.25em;
+}
+.prose-book blockquote {
+  margin: 1.2em 0;
+  padding: 0.6em 0 0.6em 1em;
+  border-left: 4px solid var(--gold);
+  font-style: italic;
+  color: var(--navy);
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+
+/* Teacher / student mode. The mode is set on <html> before paint. */
+html[data-mode="student"] .teacher-only {
+  display: none !important;
+}
+html[data-mode="teacher"] .student-only {
+  display: none !important;
+}
+
+/* The one signature motion: storybook art drifts slowly, like a camera on a painting. */
+@keyframes drift {
+  from {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(0, -2%, 0);
+  }
+}
+.drift {
+  animation: drift 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .drift {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Game feedback: a wrong tap shakes, a right one pops. */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
+.pop { animation: pop 0.35s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .shake, .pop { animation: none; }
+}
+
+/* Writing lines in activities */
+.ruled {
+  background-image: linear-gradient(to bottom, transparent calc(2.2rem - 1px), #c9cdd6 calc(2.2rem - 1px));
+  background-size: 100% 2.2rem;
+  line-height: 2.2rem;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    padding: 0;
+    background: #fff;
+  }
+}

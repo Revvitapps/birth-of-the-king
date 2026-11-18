@@ -1,0 +1,39 @@
+{
+  "name": "birth-of-the-king-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "export:book": "python3 -I scripts/export_book.py",
+    "icons": "node scripts/make-icons.mjs",
+    "check:routes": "node scripts/check-routes.mjs",
+    "check:shots": "node scripts/check-shots.mjs",
+    "predev": "node scripts/sync-assets.mjs",
+    "prebuild": "node scripts/sync-assets.mjs",
+    "check:a11y": "node scripts/check-a11y.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "lucide-react": "^1.74.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.6",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3"
+  }
+}

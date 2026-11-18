@@ -12,6 +12,7 @@ An in-depth Bible curriculum on the birth of the King: a 102-page teaching flip 
 - `curriculum/history/` : earlier versions of the build script and stylesheet.
 - `output/` : the finished PDFs.
 - `notes/` : revision checklists.
+- `site/` : the interactive teaching site (Next.js PWA) built from the book source. See `site/README.md`.
 
 ## Rebuild
 
