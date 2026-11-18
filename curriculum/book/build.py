@@ -54,7 +54,10 @@ def pg_verse(p):
 <p class="bk-v">{md(p["verse"])}</p><p class="bk-r">{md(p["ref"])}</p></div></section>'''
 
 def pg_copy(p):
-    return f'<section class="page copyonly">{copy_html()}</section>'
+    # student workbook: title, large logo in the middle, copyright wording under it
+    return f'''<section class="page titlepg scopy"><div class="tp-in"><div class="tp-k">Student Workbook</div><h1>Beyond<br>the Manger</h1><div class="tp-bar"></div>
+<div class="tp-s">{SUBTITLE}</div><div class="tp-logo"><img src="imgc/fhk_logo.png"></div>
+<div class="tp-c"><b>{html.escape(COPYRIGHT[0])}</b><br>{html.escape(COPYRIGHT[1])}</div></div></section>'''
 
 def pg_opener(p):
     return f'''<section class="page art opener"><img src="{src(p["img"])}">

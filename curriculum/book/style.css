@@ -290,3 +290,6 @@ table.wsearch { margin-left:auto; margin-right:auto; }
 .tp-in { inset:0.9in 0.9in 0.7in; }
 .tp-logo { margin-top:.55in; }
 .tp-c { margin-top:.4in; font-size:9.5pt; line-height:1.45; max-width:5in; color:var(--navy); }
+.scopy h1 { font-size:36pt; }
+.scopy .tp-logo { width:3.3in; margin-top:.5in; }
+.scopy .tp-c { font-size:11pt; margin-top:.45in; }
