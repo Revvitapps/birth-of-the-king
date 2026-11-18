@@ -267,3 +267,14 @@ table.wsearch { margin-left:auto; margin-right:auto; }
 .cv-ref { font-family:Inter; font-weight:700; letter-spacing:.2em; font-size:8.5pt; text-transform:uppercase; color:var(--goldsoft); margin-top:10px; }
 .bk-s { font-style:italic; font-size:12pt; margin-top:6px; }
 .cv-ed { display:inline-block; margin-top:16px; background:var(--gold); color:var(--navy); font-family:Inter; font-weight:900; font-size:17pt; letter-spacing:.14em; text-transform:uppercase; padding:8px 22px; border-radius:8px; }
+
+/* copyright notice: a cream panel under the frontispiece, and a page of its own in the student workbook */
+.art.copy > img { height:80%; bottom:auto; }
+.cpy { font-family:Caladea, serif; color:var(--navy); text-align:center; font-size:10pt; line-height:1.45; }
+.art.copy .cpy { position:absolute; left:0; right:0; bottom:0; height:20%; background:#fbf8f1; border-top:4px solid var(--gold); display:flex; flex-direction:column; justify-content:center; padding:0 1.1in; box-sizing:border-box; }
+.cpy p { margin:3px 0; }
+.cpy-t { font-family:Inter; font-weight:900; font-size:13pt; letter-spacing:.08em; text-transform:uppercase; }
+.cpy-s { font-style:italic; margin-bottom:6px; }
+.cpy-c { font-weight:700; }
+.copyonly { background:#fbf8f1; }
+.copyonly .cpy { position:absolute; left:1.2in; right:1.2in; bottom:1.3in; font-size:11pt; border-top:4px solid var(--gold); padding-top:.25in; }

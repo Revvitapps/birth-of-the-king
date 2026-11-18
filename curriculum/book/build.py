@@ -2,6 +2,10 @@
 """Builds the Beyond the Manger flip book HTML from content modules."""
 TITLE = "Beyond the Manger"
 SUBTITLE = "A Detailed Look into the Story of the Promised King"
+# Copyright owner: placeholder until the author confirms the name or business.
+OWNER = "[OWNER NAME]"
+COPYRIGHT = (f"© 2026 {OWNER}. All rights reserved.",
+             "No part of this book may be reproduced or shared without written permission, except that the purchaser may copy the student pages for use in their own household or single classroom.")
 import html, re, sys, json, importlib
 sys.path.insert(0, '.')
 
@@ -32,7 +36,15 @@ def pg_illus(p):
     cap = f'<div class="pill">{md(p["cap"])}</div>' if p.get('cap') else ''
     fit = 'contain' if p.get('contain') else 'cover'
     extra = ' map' if p.get('contain') else ''
+    if p.get('copy'):
+        return f'<section class="page art copy"><img src="{src(p["img"])}" style="object-fit:cover">{copy_html()}<div class="edge"></div></section>'
     return f'<section class="page art{extra}"><img src="{src(p["img"])}" style="object-fit:{fit}">{cap}<div class="edge"></div></section>'
+
+def copy_html():
+    return f'<div class="cpy"><div class="cpy-t">{TITLE}</div><div class="cpy-s">{SUBTITLE}</div><p class="cpy-c">{html.escape(COPYRIGHT[0])}</p><p>{html.escape(COPYRIGHT[1])}</p></div>'
+
+def pg_copy(p):
+    return f'<section class="page copyonly">{copy_html()}</section>'
 
 def pg_opener(p):
     return f'''<section class="page art opener"><img src="{src(p["img"])}">
@@ -153,7 +165,7 @@ def wband(p, kick):
 <div class="wname">Name: ____________________</div><div class="wart"><img class="spot" src="imgc/spot_l{SPOT[L]}.png"><img class="logo" src="imgc/fhk_logo.png"></div><h1>{md(p["title"])}</h1></div>'''
 
 SPOT = {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 4, 7: 5}  # header spot art per lesson
-SFOOT = TITLE + " · © For His Kingdom"
+SFOOT = "© 2026 " + TITLE + ". For personal use only."
 
 def pg_work(p):
     ins = f'<div class="ins">{md(p["ins"])}</div>' if p.get('ins') else ''
@@ -191,7 +203,7 @@ def pg_back(p):
 <p class="bk-r">Isaiah 9:6</p><p class="bk-t">Beyond the Manger</p><p class="bk-s">A Detailed Look into the Story of the Promised King</p><div class="bk-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
 
 R = dict(cover=pg_cover, illus=pg_illus, opener=pg_opener, text=pg_text, plan=pg_plan, work=pg_work,
-         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back)
+         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back, copy=pg_copy)
 
 def load_pages():
     pages = []
@@ -218,6 +230,6 @@ if __name__ == '__main__':
                 return ''
             p['rows'] = [(a, b, find(c)) for a, b, c in p['rows_src']]
     build(pages, 'book.html')
-    build([dict(t='cover', img='cover', edition='Student Workbook', n=1)], 'student_cover.html')
+    build([dict(t='cover', img='cover', edition='Student Workbook', n=1), dict(t='copy', n=2)], 'student_cover.html')
     json.dump([{k: v for k, v in p.items() if k in ('n', 't', 'lesson', 'title', 'id', 'img')} for p in pages], open('pages.json', 'w'), indent=0)
     print(len(pages), 'pages')

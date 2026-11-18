@@ -19,7 +19,7 @@ LESSONS = L
 w.write(OUT + 'Beyond-the-Manger-Flip-Book.pdf')
 cw = PdfWriter(); cw.add_page(r.pages[0]); cw.write(OUT + 'Front-Cover-8.5x11.pdf')
 cw = PdfWriter(); cw.add_page(sc.pages[0]); cw.write(OUT + 'Student-Workbook-Cover-8.5x11.pdf')
-allw = PdfWriter(); allw.add_page(sc.pages[0])
+allw = PdfWriter(); allw.add_page(sc.pages[0]); allw.add_page(sc.pages[1])  # cover, then the copyright page
 for L in range(1, LESSONS + 1):
     pw = PdfWriter(); idx = [p['n'] - 1 for p in pages if p['t'] in ('color', 'work') and p.get('lesson') == L]
     for i in idx:
