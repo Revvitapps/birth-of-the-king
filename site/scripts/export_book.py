@@ -76,10 +76,95 @@ def block(b):
     if k == 'img':
         return {'k': 'img', 'img': img_name(b[1])}
     if k == 'html':
+        h = b[1]
+        tag = lambda t: [re.sub(r'<[^>]+>', '', x).strip() for x in re.findall(t, h, re.S)]
+        if 'class="wsearch"' in h:
+            grid = [re.findall(r'<td>(.)</td>', row) for row in re.findall(r'<tr>(.*?)</tr>', h, re.S)]
+            words = re.search(r'Find these words:</b>(.*?)</div>', h, re.S).group(1)
+            return {'k': 'wordsearch', 'grid': grid, 'words': [w.strip() for w in re.sub(r'<[^>]+>', '', words).split('·') if w.strip()]}
+        if h.startswith('<svg viewBox="0 0 690'):
+            return {'k': 'maze', 'svg': h}
+        if 'class="match"' in h:
+            cols = re.findall(r'<div class="mc">(.*?)</div>\s*(?=<div class="mc">|</div>$)', h, re.S)
+            mis = re.findall(r'<div class="mi">(.*?)</div>', h, re.S)
+            left = [re.sub(r'<b>\d+</b>\s*', '', x).strip() for x in mis if x.startswith('<b>')]
+            right = [x.strip() for x in mis if not x.startswith('<b>')]
+            return {'k': 'match', 'left': left, 'right': right}
+        if 'class="seqrow"' in h:
+            items = [{'letter': a, 'text': t.strip()} for a, t in re.findall(r'<b[^>]*>([A-Z])\.</b>(.*?)</div>', h, re.S)]
+            return {'k': 'order', 'items': items}
+        if 'class="tbl"' in h and 'class="blank"' in h:
+            return {'k': 'fill', 'rows': re.findall(r'<tr><td>(.*?)</td><td class="blank">', h)}
+        if 'class="tree"' in h:
+            return {'k': 'tree'}
+        if 'class="hw"' in h:
+            texts = re.findall(r'<text[^>]*fill="#1f2f5c">(.*?)</text>', h)
+            lead = tag(r'<div class="qt"[^>]*>(.*?)</div>')
+            return {'k': 'trace', 'text': texts[0], 'rtl': bool(re.search(r'[\u0590-\u05ff]', texts[0])), 'rows': len(re.findall(r'class="hw"', h)), 'lead': lead[0] if lead else ''}
+        if 'class="letters"' in h:
+            return {'k': 'letters', 'items': [{'char': c, 'name': n} for c, n in re.findall(r'<div class="hl">(.*?)</div><div class="nm">(.*?)</div>', h)]}
         # Hand-laid print layouts (mazes, trees, word searches, handwriting rows).
         # The site shows the printed page for these.
         return {'k': 'printed'}
     raise ValueError(k)
+
+
+def _words(t):
+    return set(w for w in re.findall(r"[a-z]+", t.lower()) if len(w) > 2)
+
+
+def attach_answers(lessons, keys):
+    """Turns the printed answer key into machine-checkable answers where the key is unambiguous."""
+    norm = lambda t: re.sub(r'[^a-z]', '', t.lower())
+    for l in lessons:
+        for st in l['steps']:
+            if st['kind'] != 'activity':
+                continue
+            key = next((k for k in keys if k['lesson'] == l['num'] and norm(k['title']) == norm(st['title'])), None)
+            if not key:
+                continue
+            ans = key['answers']
+            letters = [a for a in ans if re.match(r'^[A-E]\. ', a)]
+            li = 0
+            for b in st['blocks']:
+                if b['k'] == 'mc':
+                    for it in b['items']:
+                        if it.get('options') and li < len(letters):
+                            it['answer'] = ord(letters[li][0]) - 65
+                            li += 1
+                if b['k'] == 'match':
+                    flat = ' · '.join(ans)
+                    parts = re.split(r' · |\n', flat)
+                    out = []
+                    for i, left in enumerate(b['left']):
+                        cand = [x for x in parts if re.match(rf'^(Matching: )?{i+1} ', x)] or [x for x in parts if norm(x).startswith(norm(left))]
+                        line = cand[0] if cand else ans[i] if i < len(ans) else ''
+                        line = line.split(': ', 1)[-1]
+                        scores = [len(_words(line) & _words(r)) for r in b['right']]
+                        out.append(max(range(len(scores)), key=lambda j: scores[j]))
+                    if len(set(out)) == len(out):
+                        b['answer'] = out
+                if b['k'] == 'order':
+                    m = dict(re.findall(r'([A-J]) (\d+)', ans[0]))
+                    if len(m) == len(b['items']):
+                        b['answer'] = [int(m[it['letter']]) for it in b['items']]
+                if b['k'] == 'fill':
+                    bank = next((x['words'] for x in st['blocks'] if x['k'] == 'bank'), [])
+                    want = [a.lower() for a in ans[:len(b['rows'])]]
+                    if all(w in [x.lower() for x in bank] for w in want):
+                        b['answer'] = want
+                        b['bank'] = bank
+                if b['k'] == 'tree':
+                    t = ' '.join(ans)
+                    slots = [('Abraham’s son', r'Abraham’s son: (\w+)'), ('Ruth’s husband', r'Ruth’s husband: (\w+)'), ('David’s father', r'David’s father: (\w+)'),
+                             ('David’s son (Matthew)', r'Matthew: (\w+)'), ('David’s son (Luke)', r'Luke: (\w+)'),
+                             ('Legal father', r'→ (\w+) \(legal father\)'), ('Mother', r'→ (\w+) \(mother\)')]
+                    b['slots'] = [{'label': lab, 'answer': re.search(rx, t).group(1)} for lab, rx in slots]
+                    b['bank'] = next((x['words'] for x in st['blocks'] if x['k'] == 'bank'), [])
+            # a tree or fill page carries its own word bank, so the plain bank chip row is dropped
+            if any(b['k'] in ('tree', 'fill') and b.get('bank') for b in st['blocks']):
+                st['blocks'] = [b for b in st['blocks'] if b['k'] != 'bank']
+            st['printed'] = any(b['k'] == 'printed' for b in st['blocks'])
 
 
 def main():
@@ -155,7 +240,7 @@ def main():
                 step['art'] = pending_art
             else:
                 # "continued" spreads reuse the previous art in the book; keep the first figure as the hero.
-                if figs: step['art'] = {'img': figs[0]['img'], 'cap': figs[0]['cap'], 'contain': False, 'page': p['n']}
+                if figs: step['art'] = {'img': figs[0]['img'], 'cap': figs[0]['cap'], 'contain': figs[0]['img'].startswith('map_'), 'page': p['n']}
             pending_art = None
             cur['steps'].append(step)
             continue
@@ -177,6 +262,7 @@ def main():
         raise ValueError(t)
 
     # the escape-route map sits in the back matter; it is the answer map for Lesson 5
+    attach_answers(lessons, keys)
     data = {'front': front, 'lessons': lessons, 'keys': keys, 'pageCount': len(pages)}
     os.makedirs(os.path.join(SITE, 'data'), exist_ok=True)
     with open(os.path.join(SITE, 'data', 'book.json'), 'w') as f:

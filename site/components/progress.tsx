@@ -50,13 +50,14 @@ export function DoneTick({ id }: { id: string }) {
 export function LessonMeter({ num, ids }: { num: number; ids: string[] }) {
   const done = useDone();
   const n = ids.filter((i) => done.includes(i)).length;
-  const pct = Math.round((n / ids.length) * 100);
   return (
-    <div className="font-sans text-xs font-semibold" aria-label={`Lesson ${num}: ${n} of ${ids.length} done`}>
-      <div className="h-1.5 w-full overflow-hidden rounded-full bg-black/10">
-        <div className="h-full rounded-full bg-gold" style={{ width: `${pct}%` }} />
+    <div className="font-sans text-xs font-semibold" aria-label={`Lesson ${num}: ${n} of ${ids.length} stars`}>
+      <div className="flex flex-wrap gap-0.5 text-lg leading-none" aria-hidden>
+        {ids.map((id) => (
+          <span key={id} className={done.includes(id) ? "text-gold drop-shadow" : "opacity-25"}>★</span>
+        ))}
       </div>
-      <span className="mt-1 block opacity-80">{n} of {ids.length} done</span>
+      <span className="mt-1 block opacity-80">{n === ids.length ? "Every star collected!" : `${n} of ${ids.length} stars`}</span>
     </div>
   );
 }

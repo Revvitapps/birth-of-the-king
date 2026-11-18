@@ -9,7 +9,7 @@ export type Nugget = { h: string; t: string };
 export type Block =
   | { k: "q"; text: string; lines: number }
   | { k: "qs"; items: { text: string; lines: number }[] }
-  | { k: "mc"; start: number; items: { text: string; options?: string[]; lines?: number }[] }
+  | { k: "mc"; start: number; items: { text: string; options?: string[]; lines?: number; answer?: number }[] }
   | { k: "read"; paras: string[] }
   | { k: "box"; label: string }
   | { k: "grid4"; cells: string[] }
@@ -17,7 +17,15 @@ export type Block =
   | { k: "bank"; words: string[] }
   | { k: "part"; text: string }
   | { k: "img"; img: string }
-  | { k: "printed" };
+  | { k: "printed" }
+  | { k: "wordsearch"; grid: string[][]; words: string[] }
+  | { k: "maze"; svg: string }
+  | { k: "match"; left: string[]; right: string[]; answer?: number[] }
+  | { k: "order"; items: { letter: string; text: string }[]; answer?: number[] }
+  | { k: "fill"; rows: string[]; answer?: string[]; bank?: string[] }
+  | { k: "tree"; slots?: { label: string; answer: string }[]; bank?: string[] }
+  | { k: "trace"; text: string; rtl: boolean; rows: number; lead: string }
+  | { k: "letters"; items: { char: string; name: string }[] };
 
 export type Reading = {
   kind: "reading";

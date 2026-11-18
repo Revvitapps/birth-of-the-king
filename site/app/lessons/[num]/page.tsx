@@ -35,9 +35,10 @@ export default async function LessonPage({ params }: PageProps<"/lessons/[num]">
   return (
     <main>
       <section className="relative isolate overflow-hidden bg-night text-white">
-        <Image src={img(l.cover)} alt="" fill priority sizes="100vw" className="drift -z-10 object-cover object-[50%_35%]" />
+        <Image src={img(l.cover)} alt="" fill priority sizes="100vw" className="drift -z-10 object-cover object-[50%_35%] lg:opacity-40 lg:blur-xl" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/50 to-night/20" />
-        <div className="px-site mx-auto flex min-h-[62svh] max-w-6xl flex-col justify-end pb-10 pt-20">
+        <div className="px-site mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
+        <div className="flex min-h-[62svh] flex-col justify-end pb-10 pt-20 lg:min-h-0 lg:py-16">
           <Link href="/lessons" className="mb-auto inline-flex min-h-11 items-center font-sans text-sm font-bold text-gold-soft hover:text-white">← All lessons</Link>
           <p className="kicker text-gold">Lesson {num}</p>
           <h1 className="display mt-2 text-[clamp(2.6rem,9vw,5.5rem)]">{l.title}</h1>
@@ -51,6 +52,10 @@ export default async function LessonPage({ params }: PageProps<"/lessons/[num]">
             <ModeToggle className="text-white" />
           </div>
           <div className="mt-6 max-w-xs"><LessonMeter num={num} ids={ids} /></div>
+        </div>
+        <div className="relative hidden aspect-[2/3] w-full max-w-sm justify-self-end overflow-hidden rounded-2xl shadow-2xl ring-4 ring-gold/70 lg:my-12 lg:block">
+          <Image src={img(l.cover)} alt="" fill sizes="380px" className="object-cover" />
+        </div>
         </div>
       </section>
 

@@ -1,11 +1,25 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { RotateCcw } from "lucide-react";
 
 const INKS = ["#1f2f5c", "#d9483b", "#3f9b5a", "#e7b93e", "#7d4fb0"];
 
 // A small sketch pad for the book's "draw your answer" boxes. Saved on this device.
-export function DrawPad({ id, label, tall = false }: { id: string; label: string; tall?: boolean }) {
+export function DrawPad({
+  id,
+  label,
+  tall = false,
+  background,
+  aspect,
+  thick = false,
+}: {
+  id: string;
+  label: string;
+  tall?: boolean;
+  background?: ReactNode;
+  aspect?: string;
+  thick?: boolean;
+}) {
   const ref = useRef<HTMLCanvasElement>(null);
   const ink = useRef(INKS[0]);
   const drawing = useRef(false);
@@ -22,7 +36,7 @@ export function DrawPad({ id, label, tall = false }: { id: string; label: string
     ctx.scale(ratio, ratio);
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    ctx.lineWidth = 4;
+    ctx.lineWidth = thick ? 7 : 4;
     try {
       const saved = localStorage.getItem(key);
       if (saved) {
@@ -31,7 +45,7 @@ export function DrawPad({ id, label, tall = false }: { id: string; label: string
         im.src = saved;
       }
     } catch {}
-  }, [key]);
+  }, [key, thick]);
 
   const pos = (e: React.PointerEvent) => {
     const r = ref.current!.getBoundingClientRect();
@@ -85,15 +99,21 @@ export function DrawPad({ id, label, tall = false }: { id: string; label: string
           </button>
         </div>
       </div>
-      <canvas
-        ref={ref}
-        onPointerDown={down}
-        onPointerMove={move}
-        onPointerUp={up}
-        onPointerCancel={up}
-        aria-label={`Drawing space: ${label}`}
-        className={`mt-2 block w-full touch-none rounded-lg bg-paper ${tall ? "h-72" : "h-52"}`}
-      />
+      <div
+        className={`relative mt-2 overflow-hidden rounded-lg bg-paper ${aspect ? "" : tall ? "h-72" : "h-52"}`}
+        style={aspect ? { aspectRatio: aspect } : undefined}
+      >
+        {background && <div aria-hidden className="pointer-events-none absolute inset-0">{background}</div>}
+        <canvas
+          ref={ref}
+          onPointerDown={down}
+          onPointerMove={move}
+          onPointerUp={up}
+          onPointerCancel={up}
+          aria-label={`Drawing space: ${label}`}
+          className="absolute inset-0 block h-full w-full touch-none"
+        />
+      </div>
     </div>
   );
 }

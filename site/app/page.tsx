@@ -22,9 +22,10 @@ export default function Home() {
   return (
     <main>
       <section className="relative isolate min-h-[88svh] overflow-hidden bg-night text-white">
-        <Image src={img("cover.jpg")} alt="" fill priority sizes="100vw" className="drift -z-10 object-cover object-[50%_30%] opacity-90" />
+        <Image src={img("cover.jpg")} alt="" fill priority sizes="100vw" className="drift -z-10 object-cover object-[50%_30%] opacity-90 lg:opacity-35 lg:blur-xl" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-night/70 via-night/20 to-night" />
-        <div className="px-site mx-auto flex min-h-[88svh] max-w-6xl flex-col justify-end pb-12 pt-24">
+        <div className="px-site mx-auto grid min-h-[88svh] max-w-6xl items-end gap-12 pb-12 pt-24 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:py-20">
+          <div>
           <p className="kicker text-gold-soft">An In-Depth Bible Curriculum on</p>
           <h1 className="display mt-3 text-[clamp(3.2rem,12vw,7.5rem)]">
             Birth of
@@ -40,6 +41,10 @@ export default function Home() {
             <Link href="/book" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-white/40 px-6 font-sans font-bold text-white">
               Get the Book
             </Link>
+          </div>
+          </div>
+          <div className="relative hidden aspect-[2/3] w-full max-w-md justify-self-end overflow-hidden rounded-2xl shadow-2xl ring-4 ring-gold/70 lg:block">
+            <Image src={img("cover.jpg")} alt="" fill priority sizes="420px" className="object-cover" />
           </div>
         </div>
       </section>

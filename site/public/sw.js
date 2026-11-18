@@ -2,7 +2,7 @@
    Navigations: network first, then the last good copy, then /offline.html.
    Static assets (/_next/static, /images, /pages, /pwa, fonts): cache first, capped.
    Never touches /api or non-GET requests. Bump VERSION to roll caches. */
-const VERSION = "botk-v1";
+const VERSION = "botk-v2";
 const SHELL = `${VERSION}-shell`;
 const PAGES = `${VERSION}-pages`;
 const ASSETS = `${VERSION}-assets`;

@@ -155,8 +155,38 @@
      "page": 13,
      "blocks": [
       {
-       "k": "bank",
-       "words": [
+       "k": "tree",
+       "slots": [
+        {
+         "label": "Abraham’s son",
+         "answer": "Isaac"
+        },
+        {
+         "label": "Ruth’s husband",
+         "answer": "Boaz"
+        },
+        {
+         "label": "David’s father",
+         "answer": "Jesse"
+        },
+        {
+         "label": "David’s son (Matthew)",
+         "answer": "Solomon"
+        },
+        {
+         "label": "David’s son (Luke)",
+         "answer": "Nathan"
+        },
+        {
+         "label": "Legal father",
+         "answer": "Joseph"
+        },
+        {
+         "label": "Mother",
+         "answer": "Mary"
+        }
+       ],
+       "bank": [
         "Isaac",
         "Boaz",
         "Jesse",
@@ -165,9 +195,6 @@
         "Joseph",
         "Mary"
        ]
-      },
-      {
-       "k": "printed"
       },
       {
        "k": "q",
@@ -185,7 +212,7 @@
        "lines": 2
       }
      ],
-     "printed": true
+     "printed": false
     },
     {
      "kind": "reading",
@@ -284,16 +311,42 @@
      "page": 18,
      "blocks": [
       {
-       "k": "printed"
+       "k": "letters",
+       "items": [
+        {
+         "char": "י",
+         "name": "Yod · Y"
+        },
+        {
+         "char": "ש",
+         "name": "Shin · SH"
+        },
+        {
+         "char": "ו",
+         "name": "Vav · U"
+        },
+        {
+         "char": "ע",
+         "name": "Ayin · A"
+        }
+       ]
       },
       {
-       "k": "printed"
+       "k": "trace",
+       "text": "ישוע",
+       "rtl": true,
+       "rows": 3,
+       "lead": ""
       },
       {
-       "k": "printed"
+       "k": "trace",
+       "text": "Yeshua",
+       "rtl": false,
+       "rows": 3,
+       "lead": "Now write His name in English:"
       }
      ],
-     "printed": true
+     "printed": false
     },
     {
      "kind": "activity",
@@ -304,7 +357,28 @@
      "page": 19,
      "blocks": [
       {
-       "k": "printed"
+       "k": "match",
+       "left": [
+        "Yeshua",
+        "Immanuel",
+        "Son of David",
+        "Messiah (Christ)",
+        "Son of the Most High"
+       ],
+       "right": [
+        "God with us",
+        "The Anointed One, the chosen King",
+        "God saves",
+        "The Son of God",
+        "The King from David’s royal family"
+       ],
+       "answer": [
+        2,
+        0,
+        4,
+        1,
+        3
+       ]
       },
       {
        "k": "q",
@@ -316,7 +390,7 @@
        "label": "Draw a picture of the angel speaking to Joseph in his dream"
       }
      ],
-     "printed": true,
+     "printed": false,
      "sketch": "sk_crown.png"
     },
     {
@@ -960,7 +1034,8 @@
      "page": 43,
      "blocks": [
       {
-       "k": "printed"
+       "k": "maze",
+       "svg": "<svg viewBox=\"0 0 690 552\" style=\"width:100%;display:block\"><path d=\"M150 10h38 M150 48h38 M150 48v38 M150 86v38 M150 124v38 M150 162v38 M150 200v38 M150 238h38 M150 238v38 M150 276v38 M150 314v38 M150 352v38 M150 390v38 M150 428v38 M150 466v38 M150 504v38 M150 542h38 M188 10h38 M188 48h38 M188 86v38 M188 124h38 M188 162h38 M188 162v38 M188 200h38 M188 276h38 M188 276v38 M188 314v38 M188 352v38 M188 390h38 M188 390v38 M188 428v38 M188 466v38 M188 504h38 M188 542h38 M226 10h38 M226 48h38 M226 86h38 M226 86v38 M226 162h38 M226 200v38 M226 238h38 M226 238v38 M226 314h38 M226 352v38 M226 390h38 M226 428h38 M226 428v38 M226 504h38 M226 542h38 M264 10h38 M264 48v38 M264 124h38 M264 124v38 M264 200h38 M264 200v38 M264 276h38 M264 276v38 M264 314v38 M264 352h38 M264 390h38 M264 428h38 M264 466v38 M264 504h38 M264 542h38 M302 10h38 M302 10v38 M302 48v38 M302 86v38 M302 124v38 M302 200h38 M302 238v38 M302 276v38 M302 352h38 M302 390h38 M302 428h38 M302 428v38 M302 466h38 M302 542h38 M340 10h38 M340 48v38 M340 86v38 M340 124v38 M340 162v38 M340 200h38 M340 200v38 M340 238v38 M340 276v38 M340 352h38 M340 428h38 M340 466v38 M340 504v38 M340 542h38 M378 10h38 M378 48v38 M378 86h38 M378 86v38 M378 124v38 M378 162h38 M378 200h38 M378 238v38 M378 276h38 M378 276v38 M378 314v38 M378 352v38 M378 390h38 M378 390v38 M378 466h38 M378 466v38 M378 542h38 M416 10h38 M416 10v38 M416 48h38 M416 124h38 M416 162h38 M416 200v38 M416 238h38 M416 276v38 M416 352h38 M416 390v38 M416 428h38 M416 466v38 M416 504v38 M416 542h38 M454 10h38 M454 48v38 M454 86h38 M454 86v38 M454 162h38 M454 200v38 M454 238h38 M454 238v38 M454 276v38 M454 314v38 M454 352v38 M454 390h38 M454 428v38 M454 466v38 M454 504h38 M454 542h38 M492 10h38 M492 48h38 M492 124h38 M492 124v38 M492 162v38 M492 200h38 M492 238h38 M492 276v38 M492 314v38 M492 352h38 M492 390v38 M492 428v38 M492 504h38 M492 542h38 M530 10h38 M568 10v38 M530 48v38 M568 48v38 M530 86v38 M568 86v38 M568 124v38 M530 162h38 M568 162v38 M530 200h38 M568 200v38 M530 238v38 M568 238v38 M530 276v38 M568 276v38 M568 314v38 M530 352v38 M568 352v38 M530 390v38 M568 390v38 M530 428v38 M568 428v38 M530 466v38 M568 466v38 M530 542h38\" stroke=\"#1f2f5c\" stroke-width=\"3.2\" stroke-linecap=\"round\" fill=\"none\"/><image href=\"imgc/sk_shepherds.png\" x=\"2\" y=\"6\" width=\"142\" height=\"142\"/><text x=\"72\" y=\"160\" text-anchor=\"middle\" font-family=\"Inter\" font-weight=\"800\" font-size=\"10\" fill=\"#1f2f5c\">START</text><path d=\"M570 523.0 h6\" stroke=\"#c9a24a\" stroke-width=\"3\" fill=\"none\"/><rect x=\"625\" y=\"512\" width=\"8\" height=\"62\" fill=\"#d9c08a\" stroke=\"#1f2f5c\" stroke-width=\"2\"/><path d=\"M582 482 h88 l12 16 l-12 16 h-88 z\" fill=\"#f4e3b5\" stroke=\"#1f2f5c\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"628\" y=\"502.5\" text-anchor=\"middle\" font-family=\"Inter\" font-weight=\"900\" font-size=\"11.5\" fill=\"#1f2f5c\">BETHLEHEM</text><text x=\"630\" y=\"472\" text-anchor=\"middle\" font-size=\"24\" fill=\"#c9a24a\">★</text><path d=\"M608 574 q21 -8 42 0\" stroke=\"#1f2f5c\" stroke-width=\"1.6\" fill=\"none\"/></svg>"
       },
       {
        "k": "q",
@@ -968,7 +1043,7 @@
        "lines": 0
       }
      ],
-     "printed": true
+     "printed": false
     },
     {
      "kind": "reading",
@@ -1042,7 +1117,8 @@
           "Caesar Augustus",
           "Pontius Pilate",
           "King David"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "Why did Mary and Joseph travel to Bethlehem?",
@@ -1051,7 +1127,8 @@
           "To register for the census",
           "To escape King Herod",
           "To buy a lamb"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "Which prophet said the Ruler of Israel would be born in Bethlehem?",
@@ -1060,7 +1137,8 @@
           "Daniel",
           "Jeremiah",
           "Micah"
-         ]
+         ],
+         "answer": 3
         },
         {
          "text": "Where did Mary lay her baby after He was born?",
@@ -1069,7 +1147,8 @@
           "In a manger",
           "In a bed",
           "In a boat"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "Who were the first people to hear the good news?",
@@ -1078,7 +1157,8 @@
           "Kings",
           "Shepherds",
           "Soldiers"
-         ]
+         ],
+         "answer": 2
         },
         {
          "text": "What did Mary do with all these things? (Luke 2:19)",
@@ -1086,7 +1166,8 @@
           "Told everyone in town",
           "Kept them and pondered them in her heart",
           "Wrote them on a scroll"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "In Judea, shepherds stayed out in the fields at night …",
@@ -1094,7 +1175,8 @@
           "only in winter",
           "from spring until early fall",
           "only on feast days"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "During which feast did families live in leafy booths for seven days?",
@@ -1102,7 +1184,8 @@
           "Passover",
           "Shavuot (Pentecost)",
           "Sukkot (Tabernacles)"
-         ]
+         ],
+         "answer": 2
         }
        ]
       },
@@ -1290,7 +1373,8 @@
           "Herod",
           "David",
           "Pilate"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "From where did the Wise Men come? (verse 1)",
@@ -1299,7 +1383,8 @@
           "Egypt",
           "The east",
           "Rome"
-         ]
+         ],
+         "answer": 2
         },
         {
          "text": "What is another name for the Wise Men?",
@@ -1308,7 +1393,8 @@
           "Levites",
           "Scribes",
           "Magi"
-         ]
+         ],
+         "answer": 3
         },
         {
          "text": "Which empire ruled Persia when Yeshua was born?",
@@ -1316,7 +1402,8 @@
           "The Parthian Empire",
           "The Roman Empire",
           "The Greek Empire"
-         ]
+         ],
+         "answer": 0
         },
         {
          "text": "Which Hebrew prophet was chief over the wise men of Babylon?",
@@ -1325,7 +1412,8 @@
           "Daniel",
           "Jonah",
           "Elijah"
-         ]
+         ],
+         "answer": 1
         }
        ]
       },
@@ -1440,7 +1528,7 @@
      "art": {
       "img": "map_magi_wide.png",
       "cap": "The Magi’s likely route from Parthia",
-      "contain": false,
+      "contain": true,
       "page": 56
      }
     },
@@ -1639,7 +1727,220 @@
      "page": 63,
      "blocks": [
       {
-       "k": "printed"
+       "k": "wordsearch",
+       "grid": [
+        [
+         "N",
+         "D",
+         "B",
+         "U",
+         "P",
+         "A",
+         "R",
+         "T",
+         "H",
+         "I",
+         "A",
+         "U",
+         "B"
+        ],
+        [
+         "M",
+         "T",
+         "K",
+         "S",
+         "S",
+         "I",
+         "S",
+         "R",
+         "H",
+         "M",
+         "B",
+         "J",
+         "A"
+        ],
+        [
+         "C",
+         "D",
+         "U",
+         "S",
+         "T",
+         "B",
+         "G",
+         "C",
+         "N",
+         "J",
+         "A",
+         "U",
+         "I"
+        ],
+        [
+         "E",
+         "B",
+         "K",
+         "K",
+         "A",
+         "L",
+         "M",
+         "E",
+         "R",
+         "M",
+         "M",
+         "G",
+         "O"
+        ],
+        [
+         "R",
+         "M",
+         "W",
+         "U",
+         "R",
+         "Y",
+         "S",
+         "I",
+         "D",
+         "I",
+         "U",
+         "R",
+         "I"
+        ],
+        [
+         "I",
+         "K",
+         "N",
+         "W",
+         "H",
+         "J",
+         "N",
+         "I",
+         "C",
+         "R",
+         "B",
+         "J",
+         "S"
+        ],
+        [
+         "K",
+         "I",
+         "A",
+         "N",
+         "E",
+         "A",
+         "S",
+         "T",
+         "T",
+         "A",
+         "K",
+         "E",
+         "A"
+        ],
+        [
+         "M",
+         "N",
+         "U",
+         "T",
+         "D",
+         "A",
+         "N",
+         "I",
+         "E",
+         "L",
+         "H",
+         "H",
+         "S"
+        ],
+        [
+         "W",
+         "G",
+         "E",
+         "B",
+         "B",
+         "E",
+         "T",
+         "H",
+         "L",
+         "E",
+         "H",
+         "E",
+         "M"
+        ],
+        [
+         "W",
+         "W",
+         "J",
+         "E",
+         "R",
+         "U",
+         "S",
+         "A",
+         "L",
+         "E",
+         "M",
+         "R",
+         "K"
+        ],
+        [
+         "O",
+         "L",
+         "Y",
+         "L",
+         "C",
+         "A",
+         "M",
+         "E",
+         "L",
+         "U",
+         "I",
+         "O",
+         "P"
+        ],
+        [
+         "A",
+         "C",
+         "A",
+         "R",
+         "A",
+         "V",
+         "A",
+         "N",
+         "T",
+         "B",
+         "Y",
+         "D",
+         "A"
+        ],
+        [
+         "L",
+         "I",
+         "W",
+         "O",
+         "J",
+         "P",
+         "R",
+         "O",
+         "P",
+         "H",
+         "E",
+         "T",
+         "T"
+        ]
+       ],
+       "words": [
+        "MAGI",
+        "STAR",
+        "HEROD",
+        "BETHLEHEM",
+        "PARTHIA",
+        "CAMEL",
+        "CARAVAN",
+        "SCRIBES",
+        "PROPHET",
+        "JERUSALEM",
+        "DANIEL",
+        "MICAH",
+        "KING",
+        "EAST"
+       ]
       },
       {
        "k": "q",
@@ -1647,7 +1948,7 @@
        "lines": 2
       }
      ],
-     "printed": true,
+     "printed": false,
      "sketch": "sk_caravan.png"
     }
    ],
@@ -1855,7 +2156,22 @@
      "page": 72,
      "blocks": [
       {
-       "k": "printed"
+       "k": "match",
+       "left": [
+        "Gold",
+        "Frankincense",
+        "Myrrh"
+       ],
+       "right": [
+        "A sweet-smelling resin burned in worship. It shows Yeshua is the High Priest.",
+        "An ointment used in burial. It points to Yeshua’s death for sin.",
+        "A treasure fit for royalty. It shows Yeshua is the King."
+       ],
+       "answer": [
+        2,
+        0,
+        1
+       ]
       },
       {
        "k": "qs",
@@ -1879,7 +2195,7 @@
        "label": "Draw a gift you would bring to the King"
       }
      ],
-     "printed": true,
+     "printed": false,
      "sketch": "sk_chest.png"
     },
     {
@@ -2073,7 +2389,28 @@
      "page": 81,
      "blocks": [
       {
-       "k": "printed"
+       "k": "match",
+       "left": [
+        "Gabriel",
+        "Simeon",
+        "Anna",
+        "Two turtledoves",
+        "Jerusalem"
+       ],
+       "right": [
+        "A prophetess, 84 years old, from the tribe of Asher",
+        "The city where the temple stood",
+        "The angel who told Mary to name her son Yeshua",
+        "The offering of a family who could not afford a lamb",
+        "Said, “Mine eyes have seen thy salvation”"
+       ],
+       "answer": [
+        2,
+        4,
+        0,
+        3,
+        1
+       ]
       },
       {
        "k": "mc",
@@ -2086,7 +2423,8 @@
           "The third day",
           "The eighth day",
           "The fortieth day"
-         ]
+         ],
+         "answer": 2
         },
         {
          "text": "Why did Mary and Joseph present Yeshua at the temple?",
@@ -2094,7 +2432,8 @@
           "Every firstborn son belonged to the Lord",
           "To pay a Roman tax",
           "To make Him a priest"
-         ]
+         ],
+         "answer": 0
         },
         {
          "text": "What had the Holy Spirit promised Simeon?",
@@ -2102,7 +2441,8 @@
           "He would be high priest",
           "He would see the Lord’s Christ before he died",
           "He would visit Bethlehem"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "What did Anna do at the temple?",
@@ -2110,7 +2450,8 @@
           "Sold doves",
           "Worshiped with fasting and prayer night and day",
           "Guarded the gate"
-         ]
+         ],
+         "answer": 1
         },
         {
          "text": "What does it mean to “present” yourself to God? (Romans 12:1)",
@@ -2118,12 +2459,13 @@
           "To give yourself completely to Him as a living sacrifice",
           "To dress up for church",
           "To bring Him money"
-         ]
+         ],
+         "answer": 0
         }
        ]
       }
      ],
-     "printed": true,
+     "printed": false,
      "sketch": "sk_doves.png"
     }
    ],
@@ -2242,17 +2584,28 @@
      "page": 87,
      "blocks": [
       {
-       "k": "bank",
-       "words": [
+       "k": "fill",
+       "rows": [
+        "Where the family slept and guests could stay",
+        "A flat top made of branches, straw, and clay",
+        "Where bread was baked in a clay oven",
+        "Where animals stayed safe at night",
+        "An open space outside for working and visiting"
+       ],
+       "answer": [
+        "upstairs living space",
+        "straw-covered roof",
+        "kitchen",
+        "stable",
+        "courtyard"
+       ],
+       "bank": [
         "straw-covered roof",
         "upstairs living space",
         "kitchen",
         "stable",
         "courtyard"
        ]
-      },
-      {
-       "k": "printed"
       },
       {
        "k": "qs",
@@ -2272,7 +2625,7 @@
        ]
       }
      ],
-     "printed": true,
+     "printed": false,
      "sketch": "sk_oven.png"
     },
     {
@@ -2410,7 +2763,25 @@
      "page": 93,
      "blocks": [
       {
-       "k": "printed"
+       "k": "match",
+       "left": [
+        "Matthew 1:20",
+        "Matthew 2:13",
+        "Matthew 2:19–20",
+        "Matthew 2:22"
+       ],
+       "right": [
+        "“Go into the land of Israel.”",
+        "Go to Galilee, not Judea.",
+        "“Fear not to take unto thee Mary thy wife.”",
+        "“Flee into Egypt.”"
+       ],
+       "answer": [
+        2,
+        3,
+        0,
+        1
+       ]
       },
       {
        "k": "q",
@@ -2422,7 +2793,7 @@
        "label": "Draw one of Joseph’s dreams"
       }
      ],
-     "printed": true,
+     "printed": false,
      "sketch": "sk_dream.png"
     },
     {
@@ -2496,14 +2867,68 @@
      "page": 97,
      "blocks": [
       {
-       "k": "printed"
+       "k": "order",
+       "items": [
+        {
+         "letter": "A",
+         "text": "An angel appears to shepherds in the fields."
+        },
+        {
+         "letter": "B",
+         "text": "The Wise Men return to their country by another way."
+        },
+        {
+         "letter": "C",
+         "text": "The Roman emperor orders everyone to register for a census."
+        },
+        {
+         "letter": "D",
+         "text": "Joseph and his family escape to Egypt."
+        },
+        {
+         "letter": "E",
+         "text": "Yeshua is born in Bethlehem."
+        },
+        {
+         "letter": "F",
+         "text": "An angel appears to Mary."
+        },
+        {
+         "letter": "G",
+         "text": "Mary and Joseph travel to Bethlehem."
+        },
+        {
+         "letter": "H",
+         "text": "The Wise Men bow down and worship Yeshua."
+        },
+        {
+         "letter": "I",
+         "text": "Yeshua is presented at the temple (Leviticus 12; Exodus 13)."
+        },
+        {
+         "letter": "J",
+         "text": "The Wise Men see a star and travel to Jerusalem to meet King Herod."
+        }
+       ],
+       "answer": [
+        5,
+        9,
+        2,
+        10,
+        4,
+        1,
+        3,
+        8,
+        6,
+        7
+       ]
       },
       {
        "k": "box",
        "label": "Draw your favorite part of the whole story"
       }
      ],
-     "printed": true
+     "printed": false
     }
    ],
    "plan": {

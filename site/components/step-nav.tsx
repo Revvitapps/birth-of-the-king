@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Flag } from "lucide-react";
 import { markDone } from "@/components/progress";
+import { celebrate } from "@/lib/fun";
 
 type L = { href: string; title: string } | null;
 
@@ -28,7 +29,10 @@ export function StepNav({ id, prev, next, lessonHref, index, total }: { id: stri
         </div>
         <Link
           href={next ? next.href : lessonHref}
-          onClick={() => markDone(id)}
+          onClick={(e) => {
+            markDone(id);
+            if (!next) celebrate(e.currentTarget);
+          }}
           className="flex min-h-11 items-center gap-2 rounded-full bg-navy px-4 font-sans text-sm font-extrabold text-white"
         >
           {next ? (

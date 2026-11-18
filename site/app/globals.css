@@ -155,6 +155,23 @@ html[data-mode="teacher"] .student-only {
   }
 }
 
+/* Game feedback: a wrong tap shakes, a right one pops. */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
+.pop { animation: pop 0.35s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .shake, .pop { animation: none; }
+}
+
 /* Writing lines in activities */
 .ruled {
   background-image: linear-gradient(to bottom, transparent calc(2.2rem - 1px), #c9cdd6 calc(2.2rem - 1px));
