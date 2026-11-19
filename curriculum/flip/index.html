@@ -1,59 +1,47 @@
 <title>Beyond the Manger</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap">
 <style>
-/* Layout: a reading-table backdrop with the open book centered; a slim toolbar below. Single dark look by choice. */
+/* Layout: a dark reading-table backdrop with the open book centered and a slim toolbar below.
+   The viewer keeps only the two pages in view on screen. A page turn is a flat (2D) fold of one
+   extra panel, so it stays smooth on big and full screen displays. No 3D layers, no web fonts. */
 :root{
   --table:#141b30; --table2:#0d1222; --ink:#efe6cf; --muted:#a9a38f; --gold:#c9a24a; --line:rgba(201,162,74,.28);
-  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --ui:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display:Georgia, "Times New Roman", serif;
+  --ui:system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   color-scheme:dark;
 }
 html,body{height:100%}
-body{margin:0;background:radial-gradient(120% 90% at 50% 40%,var(--table),var(--table2));color:var(--ink);font-family:var(--ui);
+body{margin:0;background:var(--table2);color:var(--ink);font-family:var(--ui);
   overflow:hidden;display:flex;flex-direction:column;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));box-sizing:border-box}
 header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-block:14px 6px;flex-wrap:wrap}
 header h1{font-family:var(--display);font-weight:600;font-size:clamp(20px,2.4vw,28px);letter-spacing:.02em;margin:0;color:var(--ink)}
 header .hint{font-size:12px;color:var(--muted);letter-spacing:.02em}
-#stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;perspective:2600px}
-#book{position:relative;transition:transform .8s cubic-bezier(.4,.1,.2,1)}
-#book.still{transition:none}
-#book::before{content:"";position:absolute;inset:3% 1% 0 1%;box-shadow:0 22px 44px 6px rgba(0,0,0,.5);z-index:-1;border-radius:6px}
-#book.closed-front::before{inset:3% 1% 0 51%}
-#book.closed-back::before{inset:3% 51% 0 1%}
-.leaf{position:absolute;top:0;left:50%;width:50%;height:100%;transform-origin:left center;transform-style:preserve-3d;
-  transition:transform .9s cubic-bezier(.45,.05,.25,1);cursor:pointer}
-.leaf.flipped{transform:rotateY(-180deg)}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:#fbf8f1}
-.face img{display:block;width:100%;height:100%;object-fit:cover;max-width:none;user-select:none;-webkit-user-drag:none;pointer-events:none}
-.face.back{transform:rotateY(180deg)}
+#stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#book{position:relative;flex:none;touch-action:pan-y;cursor:pointer}
+.slot,#turn{position:absolute;top:0;width:50%;height:100%;overflow:hidden;background:#fbf8f1}
+.slot.l{left:0}.slot.r{left:50%}
+.slot img,#turn img{display:block;width:100%;height:100%;max-width:none;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.slot[hidden],#turn[hidden]{display:none}
 /* gutter shading so the spread reads as bound paper */
-.face.front::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,.06) 4%,transparent 10%)}
-.face.back::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(270deg,rgba(0,0,0,.22),rgba(0,0,0,.06) 4%,transparent 10%)}
-.face.cover::after,.face.backcover::after{background:none}
-.leaf.moving .face::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;animation:sheen .9s ease-in-out}
-@keyframes sheen{0%{background:rgba(0,0,0,0)}50%{background:rgba(0,0,0,.18)}100%{background:rgba(0,0,0,0)}}
-.face .ph{position:absolute;inset:0;display:grid;place-items:center;color:#b9ae90;font:500 13px var(--ui)}
+.slot.l::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(270deg,rgba(0,0,0,.2),rgba(0,0,0,.05) 4%,transparent 10%)}
+.slot.r::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.2),rgba(0,0,0,.05) 4%,transparent 10%)}
+#book.one .slot::after{background:none}
+#turn{z-index:2}
+#turn::after{content:"";position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#turn.dim::after{opacity:.22;transition:opacity .2s linear}
+/* narrow screens: one page at a time */
+#book.single .slot.l{display:none}
+#book.single .slot.r,#book.single #turn{left:0;width:100%}
 nav{display:flex;align-items:center;justify-content:center;gap:10px;padding-block:8px max(14px,env(safe-area-inset-bottom,0px));flex-wrap:wrap}
 button,select{font:500 13px var(--ui);color:var(--ink);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
 button:hover,select:hover{border-color:var(--gold)}
 button:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 button:disabled{opacity:.35;cursor:default}
-select{appearance:none;padding-right:16px;background:rgba(255,255,255,.04)}
+select{appearance:none;-webkit-appearance:none}
 select option{background:#141b30;color:var(--ink)}
 #pg{font:500 13px var(--ui);color:var(--muted);min-width:130px;text-align:center;font-variant-numeric:tabular-nums}
-@media (prefers-reduced-motion:reduce){.leaf,#book{transition:none}.leaf.moving .face::before{animation:none}}
-/* single-page mode for narrow screens */
-#single{display:none;position:relative;box-shadow:0 18px 40px rgba(0,0,0,.5);background:#fbf8f1;perspective:1600px;touch-action:pan-y}
-#single img{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;user-select:none;-webkit-user-drag:none}
-#simg{transform-origin:left center;transition:transform .6s cubic-bezier(.45,.05,.25,1),filter .6s;box-shadow:0 0 0 rgba(0,0,0,0);backface-visibility:hidden;-webkit-backface-visibility:hidden}
-#simg.turned{transform:rotateY(-110deg);filter:brightness(.6)}
-#simg.instant{transition:none}
 body.fs header{display:none}
 body.fs #stage{padding-top:10px}
-body.narrow #book{display:none}
-body.narrow #single{display:block}
 body.narrow header .hint{display:none}
 body.narrow nav::after{content:"Tap the right side of the page or swipe to turn it";flex-basis:100%;text-align:center;font-size:12px;color:var(--muted)}
 </style>
@@ -63,8 +51,11 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
   <span class="hint">Click a page or use the ← → keys to turn it.</span>
 </header>
 <div id="stage">
-  <div id="book" aria-label="Flip book"></div>
-  <div id="single" aria-label="Book page"><img id="sunder" alt=""><img id="simg" alt=""></div>
+  <div id="book" aria-label="Flip book">
+    <div class="slot l"><img id="imL" alt="" decoding="sync"></div>
+    <div class="slot r"><img id="imR" alt="" decoding="sync"></div>
+    <div id="turn" hidden><img id="imT" alt="" decoding="sync"></div>
+  </div>
 </div>
 <nav>
   <button id="prev" aria-label="Previous page">← Back</button>
@@ -89,54 +80,37 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
 
 <script>
 (function(){
-  var N = 110, L = Math.ceil(N/2), RATIO = 11/8.5;
-  var book = document.getElementById('book'), stage = document.getElementById('stage');
+  var N = 110, L = Math.ceil(N/2), RATIO = 11/8.5, HALF = 190; // ms for each half of a turn
+  var $ = function(id){ return document.getElementById(id); };
+  var book = $('book'), stage = $('stage'), turn = $('turn');
+  var slotL = book.querySelector('.slot.l'), slotR = book.querySelector('.slot.r');
+  var imL = $('imL'), imR = $('imR'), imT = $('imT');
   var src = function(n){ return 'pages/p' + String(n).padStart(3,'0') + '.jpg'; };
-  var leaves = [], imgs = {}, cur = 0, single = 1, narrow = false;
+  // cur = spread number in two-page mode: spread k shows pages 2k (left) and 2k+1 (right).
+  // single = page number in one-page mode.
+  var cur = 0, single = 1, narrow = false, busy = false, queued = 0;
+  var canAnimate = !!turn.animate && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
 
-  function face(n, cls){
-    var f = document.createElement('div'); f.className = 'face ' + cls;
-    if (n === 1) f.className += ' cover'; if (n === N) f.className += ' backcover';
-    if (n <= N){ var ph = document.createElement('div'); ph.className='ph'; ph.textContent='Page ' + n; f.appendChild(ph);
-      var im = document.createElement('img'); im.alt = 'Page ' + n; im.decoding='async'; im.onload=function(){ph.remove();}; f.appendChild(im); imgs[n] = im; }
-    return f;
+  // keep a handful of nearby pages loaded so a turn never waits on the disk
+  var cache = {};
+  function warm(){
+    var c = narrow ? single : 2*cur, keep = {};
+    for (var n = c-4; n <= c+7; n++){ if (n < 1 || n > N) continue; keep[n] = 1;
+      if (!cache[n]){ var im = new Image(); im.decoding = 'async'; im.src = src(n); cache[n] = im; } }
+    for (var k in cache) if (!keep[k]) delete cache[k];
   }
-  for (var k = 0; k < L; k++){
-    var lf = document.createElement('div'); lf.className = 'leaf';
-    lf.appendChild(face(2*k+1, 'front')); lf.appendChild(face(2*k+2, 'back'));
-    (function(k){ lf.addEventListener('click', function(){ go(k < cur ? cur-1 : cur+1); }); })(k);
-    book.appendChild(lf); leaves.push(lf);
-  }
+  function set(img, n){ var u = src(n); if (img.getAttribute('src') !== u){ img.src = u; img.alt = 'Page ' + n; } }
+  function leftPage(k){ return k >= 1 ? 2*k : 0; }
+  function rightPage(k){ return 2*k+1 <= N ? 2*k+1 : 0; }
 
-  function want(n){ if (n>=1 && n<=N && imgs[n] && !imgs[n].src) imgs[n].src = src(n); }
-  function preload(){
-    if (narrow){ for (var i=single-2;i<=single+3;i++) want(i); return; }
-    for (var p = 2*cur-3; p <= 2*cur+6; p++) want(p);
-  }
-  function stack(){
-    leaves.forEach(function(lf, k){
-      if (lf.classList.contains('moving')) return;
-      lf.style.zIndex = k < cur ? (k+1) : (L-k);
-    });
-    show();
-  }
-  // Only the two leaves in view (and any leaf still turning) are drawn. Drawing all 55 at once
-  // made large and full screen windows slow.
-  function show(extra){
-    leaves.forEach(function(lf, k){
-      var on = k === cur-1 || k === cur || lf.classList.contains('moving') || (extra && extra.indexOf(k) >= 0);
-      var d = on ? '' : 'none'; if (lf.style.display !== d) lf.style.display = d;
-    });
-  }
-  function setInstant(t){
-    leaves.forEach(function(lf,k){ lf.style.transition='none'; lf.classList.remove('moving'); lf.classList.toggle('flipped', k < t); });
-    cur = t; stack(); void book.offsetWidth; leaves.forEach(function(lf){ lf.style.transition=''; });
-    shift(); preload(); label();
-  }
-  function shift(){
-    book.classList.toggle('closed-front', cur === 0);
-    book.classList.toggle('closed-back', cur === L);
-    book.style.transform = cur === 0 ? 'translateX(-25%)' : cur === L ? 'translateX(25%)' : 'none';
+  // draw the resting state for the current position
+  function paint(){
+    if (narrow){ slotR.hidden = false; set(imR, single); book.classList.add('one'); book.style.transform = ''; return; }
+    var l = leftPage(cur), r = rightPage(cur);
+    slotL.hidden = !l; slotR.hidden = !r;
+    if (l) set(imL, l); if (r) set(imR, r);
+    book.classList.toggle('one', !l || !r);
+    book.style.transform = !l ? 'translateX(-25%)' : !r ? 'translateX(25%)' : '';
   }
   function label(){
     var t;
@@ -144,98 +118,101 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
     else if (cur === 0) t = 'Cover';
     else if (cur === L) t = 'Back cover';
     else t = 'Pages ' + (2*cur) + '–' + (2*cur+1) + ' of ' + N;
-    document.getElementById('pg').textContent = t;
-    var atStart = narrow ? single===1 : cur===0, atEnd = narrow ? single===N : cur===L;
-    document.getElementById('prev').disabled = atStart;
-    document.getElementById('next').disabled = atEnd;
-    var pageNow = narrow ? single : Math.max(1, 2*cur), sel = document.getElementById('jump'), best = sel.options[0].value;
-    for (var i=0;i<sel.options.length;i++){ if (+sel.options[i].value <= pageNow) best = sel.options[i].value; }
+    $('pg').textContent = t;
+    $('prev').disabled = narrow ? single === 1 : cur === 0;
+    $('next').disabled = narrow ? single === N : cur === L;
+    var pageNow = narrow ? single : Math.max(1, 2*cur), sel = $('jump'), best = sel.options[0].value;
+    for (var i = 0; i < sel.options.length; i++){ if (+sel.options[i].value <= pageNow) best = sel.options[i].value; }
     sel.value = best;
     try { localStorage.setItem('botk-page', String(pageNow)); } catch(e){}
   }
+  function settle(){ turn.hidden = true; turn.classList.remove('dim'); turn.style.transform = ''; paint(); label(); warm(); busy = false;
+    if (queued){ var d = queued; queued = 0; step(d); } }
 
-  function go(target, fast){
-    if (narrow) return goSingle(target <= cur ? single-1 : single+1);
-    target = Math.max(0, Math.min(L, target));
-    if (target === cur) return;
-    var fwd = target > cur, from = cur, steps = Math.abs(target-from);
-    if (steps > 1) return setInstant(target);
-    var dur = 0.9;
-    show([target-1, target]);
-    for (var s = 0; s < steps; s++){
-      var k = fwd ? from + s : from - 1 - s;
-      (function(lf, s){
-        lf.classList.add('moving');
-        lf.style.transitionDuration = dur + 's';
-        lf.style.transitionDelay = (s * 0.07) + 's';
-        lf.style.zIndex = 500 + (fwd ? s : steps - s) + (fwd ? 0 : 0);
-        lf.classList.toggle('flipped', fwd);
-        setTimeout(function(){ lf.classList.remove('moving'); lf.style.transitionDelay=''; lf.style.transitionDuration=''; stack(); }, (dur + s*0.07)*1000 + 30);
-      })(leaves[k], s);
+  // one half of a fold: the panel squeezes toward (or opens from) the spine
+  function fold(side, origin, from, to, easing, done){
+    turn.style.left = narrow ? '0' : (side === 'r' ? '50%' : '0');
+    turn.style.transformOrigin = origin + ' center';
+    turn.hidden = false;
+    var a = turn.animate([{transform:'scaleX(' + from + ')'}, {transform:'scaleX(' + to + ')'}], {duration:HALF, easing:easing, fill:'forwards'});
+    var fired = false, fin = function(){ if (fired) return; fired = true; try { a.cancel(); } catch(e){} done(); };
+    a.onfinish = fin; setTimeout(fin, HALF + 120); // safety net if the animation event never arrives
+  }
+
+  function step(dir){ // dir = +1 forward, -1 back
+    if (busy){ queued = dir; return; }
+    if (narrow){
+      var p = single + dir; if (p < 1 || p > N) return;
+      if (!canAnimate){ single = p; cur = Math.floor(p/2); return settle(); }
+      busy = true;
+      if (dir > 0){ set(imT, single); turn.hidden = false; single = p; set(imR, p); turn.classList.add('dim'); fold('r', 'left', 1, 0, 'ease-in', settle); }
+      else { set(imT, p); single = p; fold('r', 'left', 0, 1, 'ease-out', settle); }
+      cur = Math.floor(single/2); return;
     }
-    cur = target; preload(); shift(); label();
-  }
-  function goPage(p){ // page number → spread
-    if (narrow) return goSingle(p);
-    go(Math.floor(p/2));
-  }
-
-  // single-page mode
-  var simg = document.getElementById('simg');
-  var sunder = document.getElementById('sunder'), busy = false;
-  function goSingle(p){
-    p = Math.max(1, Math.min(N, p)); if (busy || (p === single && simg.src)) return;
-    var fwd = p > single; single = p; busy = true;
-    if (fwd){
-      sunder.src = src(p); simg.classList.remove('instant'); simg.classList.add('turned');
-      setTimeout(function(){ simg.classList.add('instant'); simg.src = src(p); simg.classList.remove('turned'); void simg.offsetWidth; simg.classList.remove('instant'); busy = false; }, 620);
+    var t = cur + dir; if (t < 0 || t > L) return;
+    if (!canAnimate){ cur = t; return settle(); }
+    busy = true;
+    var from = cur; cur = t;
+    if (dir > 0){
+      // the right page folds to the spine, then its back opens out over the left side
+      set(imT, rightPage(from)); turn.style.left = '50%'; turn.hidden = false;
+      if (rightPage(t)) { slotR.hidden = false; set(imR, rightPage(t)); } else slotR.hidden = true;
+      turn.classList.add('dim');
+      fold('r', 'left', 1, 0, 'ease-in', function(){
+        turn.hidden = true; turn.classList.remove('dim'); set(imT, leftPage(t));
+        fold('l', 'right', 0, 1, 'ease-out', settle);
+      });
     } else {
-      sunder.src = simg.src; simg.classList.add('instant'); simg.classList.add('turned'); simg.src = src(p); void simg.offsetWidth;
-      simg.classList.remove('instant'); requestAnimationFrame(function(){ simg.classList.remove('turned'); });
-      setTimeout(function(){ sunder.src = src(p); busy = false; }, 640);
+      set(imT, leftPage(from)); turn.style.left = '0'; turn.hidden = false;
+      if (leftPage(t)) { slotL.hidden = false; set(imL, leftPage(t)); } else slotL.hidden = true;
+      turn.classList.add('dim');
+      fold('l', 'right', 1, 0, 'ease-in', function(){
+        turn.hidden = true; turn.classList.remove('dim'); set(imT, rightPage(t));
+        fold('r', 'left', 0, 1, 'ease-out', settle);
+      });
     }
-    simg.alt = 'Page ' + p;
-    cur = Math.floor(p/2); preload(); label();
+    warm();
+  }
+  function goPage(p){ // jump straight to a page, no animation
+    if (busy) return;
+    p = Math.max(1, Math.min(N, p)); single = p; cur = Math.min(L, Math.floor(p/2)); settle();
   }
 
+  var lw = 0, lh = 0;
   function layout(){
     var w = stage.clientWidth, h = stage.clientHeight - 8;
-    var wasNarrow = narrow;
-    narrow = w < 620 && h > w;
-    document.body.classList.toggle('narrow', narrow);
-    if (narrow){
-      var pw = Math.min(w, h / RATIO); var sg = document.getElementById('single');
-      sg.style.width = pw + 'px'; sg.style.height = (pw*RATIO) + 'px';
-      if (!wasNarrow){ single = Math.max(1, cur === 0 ? 1 : 2*cur); simg.src = src(single); sunder.src = src(single); }
-    } else {
-      var pw2 = Math.min(w / 2, h / RATIO);
-      book.style.width = (pw2*2) + 'px'; book.style.height = (pw2*RATIO) + 'px';
-      if (wasNarrow) setInstant(Math.floor(single/2));
-    }
-    preload(); label();
+    if (w === lw && h === lh) return; lw = w; lh = h;
+    var was = narrow; narrow = w < 620 && h > w;
+    document.body.classList.toggle('narrow', narrow); book.classList.toggle('single', narrow);
+    var pw = Math.floor(narrow ? Math.min(w, h / RATIO) : Math.min(w / 2, h / RATIO));
+    book.style.width = (narrow ? pw : pw*2) + 'px'; book.style.height = Math.round(pw*RATIO) + 'px';
+    if (was !== narrow){ if (narrow) single = Math.max(1, 2*cur); else cur = Math.min(L, Math.floor(single/2)); slotL.hidden = false; }
+    if (!busy){ paint(); label(); warm(); }
   }
 
-  document.getElementById('prev').onclick = function(){ narrow ? goSingle(single-1) : go(cur-1); };
-  document.getElementById('next').onclick = function(){ narrow ? goSingle(single+1) : go(cur+1); };
-  document.getElementById('jump').onchange = function(e){ goPage(+e.target.value); };
+  $('prev').onclick = function(){ step(-1); };
+  $('next').onclick = function(){ step(1); };
+  $('jump').onchange = function(e){ goPage(+e.target.value); e.target.blur(); };
+  book.addEventListener('click', function(e){
+    var r = book.getBoundingClientRect(), x = (e.clientX - r.left) / r.width;
+    if (narrow) step(x < 1/3 ? -1 : 1);
+    else if (cur === 0) step(1); else if (cur === L) step(-1); else step(x < .5 ? -1 : 1);
+  });
   document.addEventListener('keydown', function(e){
-    if (e.target.tagName === 'SELECT') return;
-    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); document.getElementById('next').click(); }
-    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); document.getElementById('prev').click(); }
-    if (e.key === 'Home') goPage(1); if (e.key === 'End') goPage(N);
+    if (e.target.tagName === 'SELECT' || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); step(1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); step(-1); }
+    else if (e.key === 'Home') goPage(1); else if (e.key === 'End') goPage(N);
   });
   var sx = null, sy = null;
   stage.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, {passive:true});
   stage.addEventListener('touchend', function(e){
     if (sx === null) return; var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
-    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { e.preventDefault(); (dx < 0 ? document.getElementById('next') : document.getElementById('prev')).click(); }
-  });
-  document.getElementById('single').addEventListener('click', function(e){
-    var r = this.getBoundingClientRect(); (e.clientX - r.left < r.width/3 ? document.getElementById('prev') : document.getElementById('next')).click();
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { e.preventDefault(); step(dx < 0 ? 1 : -1); }
   });
 
   // full screen: shown only where the browser allows it (iPhones do not)
-  var fsBtn = document.getElementById('fs'), root = document.documentElement;
+  var fsBtn = $('fs'), root = document.documentElement;
   var fsReq = root.requestFullscreen || root.webkitRequestFullscreen;
   var fsExit = document.exitFullscreen || document.webkitExitFullscreen;
   var fsOn = function(){ return document.fullscreenElement || document.webkitFullscreenElement; };
@@ -243,17 +220,16 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
     fsBtn.hidden = false;
     var fsToggle = function(){ try { var r = fsOn() ? fsExit.call(document) : fsReq.call(root); if (r && r.catch) r.catch(function(){}); } catch(e){} };
     fsBtn.onclick = function(){ fsToggle(); fsBtn.blur(); };
-    var fsSync = function(){ var on = !!fsOn(); fsBtn.textContent = on ? '✕ Exit full screen' : '⛶ Full screen'; document.body.classList.toggle('fs', on); layout(); setTimeout(layout, 150); };
+    var fsSync = function(){ var on = !!fsOn(); fsBtn.textContent = on ? '✕ Exit full screen' : '⛶ Full screen'; document.body.classList.toggle('fs', on); layout(); };
     document.addEventListener('fullscreenchange', fsSync); document.addEventListener('webkitfullscreenchange', fsSync);
-    document.addEventListener('keydown', function(e){ if ((e.key === 'f' || e.key === 'F') && e.target.tagName !== 'SELECT') fsToggle(); });
+    document.addEventListener('keydown', function(e){ if ((e.key === 'f' || e.key === 'F') && e.target.tagName !== 'SELECT' && !e.ctrlKey && !e.metaKey && !e.altKey) fsToggle(); });
   }
-  var lq = 0; window.addEventListener('resize', function(){ cancelAnimationFrame(lq); lq = requestAnimationFrame(layout); });
-  stack(); shift(); layout();
+  // re-measure whenever the stage changes size (window resize, entering or leaving full screen)
+  if (window.ResizeObserver) new ResizeObserver(function(){ layout(); }).observe(stage);
+  window.addEventListener('resize', layout);
+
   var saved = 1; try { saved = parseInt(localStorage.getItem('botk-page') || '1', 10) || 1; } catch(e){}
-  if (saved > 1){
-    var t = narrow ? 0 : Math.floor(saved/2);
-    if (narrow) goSingle(saved);
-    else setInstant(t);
-  }
+  saved = Math.max(1, Math.min(N, saved)); single = saved; cur = Math.min(L, Math.floor(saved/2));
+  layout();
 })();
 </script>
