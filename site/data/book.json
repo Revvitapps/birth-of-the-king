@@ -142,7 +142,7 @@
      "slug": "king-david-coloring",
      "title": "King David",
      "kick": "Color It!",
-     "img": "c_david.png",
+     "img": "c_david.jpg",
      "caption": "God promised that a King from David’s family would reign forever. (2 Samuel 7:16)",
      "page": 14
     },
@@ -481,7 +481,7 @@
      "slug": "the-bride-and-groom-coloring",
      "title": "The Bride and Groom",
      "kick": "Color It!",
-     "img": "c_wedding.png",
+     "img": "c_wedding.jpg",
      "caption": "When the groom brought his bride home, the families feasted for a week. (Judges 14:12)",
      "page": 26
     },
@@ -675,7 +675,7 @@
       },
       {
        "k": "img",
-       "img": "c_journey_fig.png"
+       "img": "c_journey_fig.jpg"
       }
      ],
      "printed": false
@@ -783,7 +783,7 @@
      "blocks": [
       {
        "k": "img",
-       "img": "c_manger_scene.png"
+       "img": "c_manger_scene.jpg"
       },
       {
        "k": "printed"
@@ -842,7 +842,7 @@
       }
      ],
      "printed": false,
-     "sketch": "c_tower.png"
+     "sketch": "c_tower.jpg"
     },
     {
      "kind": "reading",
@@ -961,7 +961,7 @@
      "slug": "good-news-for-the-shepherds-coloring",
      "title": "Good News for the Shepherds",
      "kick": "Color It!",
-     "img": "c_shepherd.png",
+     "img": "c_shepherd.jpg",
      "caption": "“Fear not: for, behold, I bring you good tidings of great joy.” (Luke 2:10)",
      "page": 44
     },
@@ -1244,7 +1244,7 @@
      "slug": "mary-joseph-and-the-baby-coloring",
      "title": "Mary, Joseph and the Baby",
      "kick": "Color It!",
-     "img": "c_mary.png",
+     "img": "c_mary.jpg",
      "caption": "“But Mary kept all these things, and pondered them in her heart.” (Luke 2:19)",
      "page": 51
     },
@@ -1298,7 +1298,7 @@
      "slug": "the-temple-coloring",
      "title": "The Temple",
      "kick": "Color It!",
-     "img": "c_temple.png",
+     "img": "c_temple.jpg",
      "caption": "Herod made the temple bigger and more beautiful than ever.",
      "page": 54
     },
@@ -1397,7 +1397,7 @@
      "slug": "simeon-and-anna-coloring",
      "title": "Simeon and Anna",
      "kick": "Color It!",
-     "img": "c_simeon.png",
+     "img": "c_simeon.jpg",
      "caption": "“Mine eyes have seen thy salvation.” (Luke 2:30)",
      "page": 58
     },
@@ -1586,7 +1586,7 @@
      "slug": "a-wise-man-from-the-east-coloring",
      "title": "A Wise Man from the East",
      "kick": "Color It!",
-     "img": "c_magus.png",
+     "img": "c_magus.jpg",
      "caption": "“We have seen his star in the east, and are come to worship him.” (Matthew 2:2)",
      "page": 64
     },
@@ -1983,7 +1983,7 @@
       }
      ],
      "printed": false,
-     "sketch": "c_herod.png"
+     "sketch": "c_herod.jpg"
     },
     {
      "kind": "activity",
@@ -2464,7 +2464,7 @@
      "slug": "gifts-for-the-king-coloring",
      "title": "Gifts for the King",
      "kick": "Color It!",
-     "img": "c_gifts.png",
+     "img": "c_gifts.jpg",
      "caption": "“They presented unto him gifts; gold, and frankincense, and myrrh.” (Matthew 2:11)",
      "page": 83
     },
@@ -2612,7 +2612,7 @@
      "slug": "an-israelite-house-coloring",
      "title": "An Israelite House",
      "kick": "Color It!",
-     "img": "c_house.png",
+     "img": "c_house.jpg",
      "caption": "Color the house. Then name its parts on the next page.",
      "page": 88
     },
@@ -2765,7 +2765,7 @@
      "slug": "the-escape-to-egypt-coloring",
      "title": "The Escape to Egypt",
      "kick": "Color It!",
-     "img": "c_flight.png",
+     "img": "c_flight.jpg",
      "caption": "“He took the young child and his mother by night, and departed into Egypt.” (Matthew 2:14)",
      "page": 94
     },
@@ -2972,7 +2972,7 @@
      "slug": "a-man-of-nazareth-coloring",
      "title": "A Man of Nazareth",
      "kick": "Color It!",
-     "img": "c_farmer.png",
+     "img": "c_farmer.jpg",
      "caption": "Families in Nazareth grew grain, olives and grapes on the hillsides.",
      "page": 102
     },

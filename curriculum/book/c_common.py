@@ -73,7 +73,7 @@ def _maze(cols=11, rows=14, cell=38, seed=11):
     return f'<svg viewBox="0 0 {W} {H}" style="width:100%;display:block">{g}</svg>'
 
 CUTS = '<div class="scissors"><b>✂</b> Color, cut on the dashed lines, and glue into the picture</div><div class="cuts">' + ''.join(
-    f'<div><img src="imgc/{n}.png"></div>' for n in ['cut_mary', 'cut_joseph', 'cut_baby', 'cut_sheep', 'cut_lamb']) + '</div>'
+    f'<div><img src="imgc/{n}.jpg"></div>' for n in ['cut_mary', 'cut_joseph', 'cut_baby', 'cut_sheep', 'cut_lamb']) + '</div>'
 
 WS = '''<div class="paper"><div class="ear"><div class="box">Price<br>One Lepton</div><div class="box">Today’s Weather<br>Clear skies · Bright star in the east!</div></div>
 <div class="mast">The Judea Times</div>

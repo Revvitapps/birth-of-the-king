@@ -89,7 +89,7 @@ dict(**{'t': 'work',
  'blocks': [('html',
              '<div style="display:flex;gap:.2in;align-items:center"><div class="readbox" style="flex:1;text-align:left;margin:0"><div class="part" style="margin-top:0">Travel facts</div><p><b>Starting point:</b> '
              'Seleucia–Ctesiphon, the Parthian capital on the Tigris River</p><p><b>Distance:</b> 700 to 900 miles</p><p><b>Time on the road:</b> two to four months each way</p><p><b>Size of the company:</b> perhaps 80 to 100 '
-             'people, with camels, horses, servants and guards</p><p><b>Reason for the trip:</b> “We have seen his star in the east, and are come to worship him” (Matthew 2:2)</p></div><img src="imgc/c_camel.png" '
+             'people, with camels, horses, servants and guards</p><p><b>Reason for the trip:</b> “We have seen his star in the east, and are come to worship him” (Matthew 2:2)</p></div><img src="imgc/c_camel.jpg" '
              'style="height:2.9in;flex:none"></div>'),
             ('part', '1 · Map the route'),
             ('html',
