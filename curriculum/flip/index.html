@@ -124,7 +124,6 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
     var pageNow = narrow ? single : Math.max(1, 2*cur), sel = $('jump'), best = sel.options[0].value;
     for (var i = 0; i < sel.options.length; i++){ if (+sel.options[i].value <= pageNow) best = sel.options[i].value; }
     sel.value = best;
-    try { localStorage.setItem('botk-page', String(pageNow)); } catch(e){}
   }
   function settle(){ turn.hidden = true; turn.classList.remove('dim'); turn.style.transform = ''; paint(); label(); warm(); busy = false;
     if (queued){ var d = queued; queued = 0; step(d); } }
@@ -228,8 +227,8 @@ body.narrow nav::after{content:"Tap the right side of the page or swipe to turn 
   if (window.ResizeObserver) new ResizeObserver(function(){ layout(); }).observe(stage);
   window.addEventListener('resize', layout);
 
-  var saved = 1; try { saved = parseInt(localStorage.getItem('botk-page') || '1', 10) || 1; } catch(e){}
-  saved = Math.max(1, Math.min(N, saved)); single = saved; cur = Math.min(L, Math.floor(saved/2));
+  // always open on the cover; clear the position an earlier version of this page saved
+  try { localStorage.removeItem('botk-page'); } catch(e){}
   layout();
 })();
 </script>
