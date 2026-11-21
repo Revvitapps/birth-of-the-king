@@ -10,123 +10,113 @@
 "n": 2
 },
 {
-"t": "fm",
-"title": "How to Use This Book",
+"t": "title",
 "n": 3
 },
 {
-"t": "toc",
-"title": "What\u2019s Inside",
+"t": "verse",
 "n": 4
 },
 {
 "t": "fm",
-"title": "A Note on Names and Sources",
+"title": "How to Use This Book",
 "n": 5
 },
 {
+"t": "toc",
+"title": "What\u2019s Inside",
+"n": 6
+},
+{
+"t": "fm",
+"title": "A Note on Names and Sources",
+"n": 7
+},
+{
 "t": "opener",
-"id": "l1",
 "img": "l1_open",
 "title": "The Promised King",
-"n": 6
+"n": 8
 },
 {
 "t": "plan",
 "title": "The Promised King",
-"n": 7
-},
-{
-"t": "illus",
-"img": "l1_david",
-"n": 8
-},
-{
-"t": "text",
-"id": "l1a",
-"title": "The Promised King: Son of David",
 "n": 9
 },
 {
 "t": "illus",
-"img": "l1_jesse",
+"img": "l1_david",
 "n": 10
 },
 {
 "t": "text",
-"id": "l1b",
-"title": "Two Family Lines: The Right to Be King",
+"title": "The Promised King: Son of David",
 "n": 11
+},
+{
+"t": "illus",
+"img": "l1_jesse",
+"n": 12
+},
+{
+"t": "text",
+"title": "Two Family Lines: The Right to Be King",
+"n": 13
 },
 {
 "t": "color",
 "lesson": 1,
 "title": "King David",
 "img": "c_david",
-"n": 12
+"n": 14
 },
 {
 "t": "work",
 "lesson": 1,
 "title": "Yeshua\u2019s Family Tree",
-"n": 13
+"n": 15
+},
+{
+"t": "opener",
+"img": "l1_angel",
+"title": "The Announcement",
+"n": 16
+},
+{
+"t": "plan",
+"title": "The Announcement",
+"n": 17
 },
 {
 "t": "illus",
 "img": "l1_angel",
-"n": 14
-},
-{
-"t": "text",
-"id": "l1c",
-"title": "An Angel Visits Mary",
-"n": 15
-},
-{
-"t": "illus",
-"img": "l1_dream",
-"n": 16
-},
-{
-"t": "text",
-"id": "l1d",
-"title": "His Name Is Yeshua",
-"n": 17
-},
-{
-"t": "work",
-"lesson": 1,
-"title": "Let\u2019s Write Yeshua!",
 "n": 18
 },
 {
-"t": "work",
-"lesson": 1,
-"title": "Names of the King",
+"t": "text",
+"title": "An Angel Visits Mary",
 "n": 19
 },
 {
 "t": "illus",
-"img": "l1_nazareth",
+"img": "l1_dream",
 "n": 20
 },
 {
 "t": "text",
-"id": "l1e",
-"title": "Life in Nazareth",
+"title": "His Name Is Yeshua",
 "n": 21
 },
 {
-"t": "color",
-"lesson": 1,
-"title": "A Man of Nazareth",
-"img": "c_farmer",
+"t": "work",
+"lesson": 2,
+"title": "Let\u2019s Write Yeshua!",
 "n": 22
 },
 {
 "t": "work",
-"lesson": 1,
-"title": "Nazareth Village",
+"lesson": 2,
+"title": "Names of the King",
 "n": 23
 },
 {
@@ -136,54 +126,54 @@
 },
 {
 "t": "text",
-"title": "A Hebrew Wedding",
+"id": "l1f",
+"title": "Betrothed: A Promise Before the Wedding",
 "n": 25
 },
 {
 "t": "color",
-"lesson": 1,
+"lesson": 2,
 "title": "The Bride and Groom",
 "img": "c_wedding",
 "n": 26
 },
 {
 "t": "work",
-"lesson": 1,
-"title": "A Hebrew Wedding",
+"lesson": 2,
+"title": "The Bridegroom\u2019s Promise",
 "n": 27
+},
+{
+"t": "opener",
+"img": "l2_open",
+"title": "The Lamb in the Manger",
+"n": 28
+},
+{
+"t": "plan",
+"title": "The Lamb in the Manger",
+"n": 29
 },
 {
 "t": "illus",
 "img": "l1_census",
-"n": 28
+"n": 30
 },
 {
 "t": "text",
 "title": "The Census",
-"n": 29
-},
-{
-"t": "work",
-"lesson": 1,
-"title": "The Road to Bethlehem",
-"n": 30
-},
-{
-"t": "work",
-"lesson": 1,
-"title": "A Census",
 "n": 31
 },
 {
-"t": "opener",
-"id": "l2",
-"img": "l2_open",
-"title": "A King Is Born",
+"t": "work",
+"lesson": 3,
+"title": "The Road to Bethlehem",
 "n": 32
 },
 {
-"t": "plan",
-"title": "A King Is Born",
+"t": "work",
+"lesson": 3,
+"title": "Counted by Caesar",
 "n": 33
 },
 {
@@ -193,7 +183,6 @@
 },
 {
 "t": "text",
-"id": "l2a",
 "title": "Migdal Eder: The Tower of the Flock",
 "n": 35
 },
@@ -204,19 +193,18 @@
 },
 {
 "t": "text",
-"id": "l2b",
 "title": "The Shepherds of the Temple Flocks",
 "n": 37
 },
 {
 "t": "work",
-"lesson": 2,
+"lesson": 3,
 "title": "Lay Him in the Manger",
 "n": 38
 },
 {
 "t": "work",
-"lesson": 2,
+"lesson": 3,
 "title": "The Tower of the Flock",
 "n": 39
 },
@@ -227,7 +215,6 @@
 },
 {
 "t": "text",
-"id": "l2c",
 "title": "Heaven\u2019s Army and the Shepherds",
 "n": 41
 },
@@ -238,350 +225,386 @@
 },
 {
 "t": "work",
-"lesson": 2,
+"lesson": 3,
 "title": "Shepherds, Hurry to Bethlehem!",
 "n": 43
 },
 {
-"t": "illus",
-"img": "l2_fall",
+"t": "color",
+"lesson": 3,
+"title": "Good News for the Shepherds",
+"img": "c_shepherd",
 "n": 44
 },
 {
-"t": "text",
-"id": "l2d",
-"title": "When Was Yeshua Born?",
+"t": "work",
+"lesson": 3,
+"title": "Heard, Went, Told",
 "n": 45
 },
 {
-"t": "work",
-"lesson": 2,
-"title": "Let\u2019s See What You Remember",
+"t": "opener",
+"img": "l2_birth",
+"title": "Forty Days Old",
 "n": 46
 },
 {
-"t": "work",
-"lesson": 2,
-"title": "Birth of the King",
+"t": "plan",
+"title": "Forty Days Old",
 "n": 47
 },
 {
-"t": "opener",
-"id": "l3",
-"img": "l3_open",
-"title": "Star in the Sky",
+"t": "illus",
+"img": "l2_fall",
 "n": 48
 },
 {
-"t": "plan",
-"title": "Star in the Sky",
+"t": "text",
+"title": "When Was Yeshua Born?",
 "n": 49
 },
 {
-"t": "illus",
-"img": "l3_magi",
+"t": "work",
+"lesson": 4,
+"title": "Let\u2019s See What You Remember",
 "n": 50
 },
 {
-"t": "text",
-"id": "l3a",
-"title": "Who Were the Magi?",
+"t": "color",
+"lesson": 4,
+"title": "Mary, Joseph and the Baby",
+"img": "c_mary",
 "n": 51
-},
-{
-"t": "color",
-"lesson": 3,
-"title": "A Wise Man from the East",
-"img": "c_magus",
-"n": 52
-},
-{
-"t": "work",
-"lesson": 3,
-"title": "The Wise Men",
-"n": 53
-},
-{
-"t": "illus",
-"img": "l3_star",
-"n": 54
-},
-{
-"t": "text",
-"id": "l3b",
-"title": "The Star: What Did They See?",
-"n": 55
-},
-{
-"t": "text",
-"id": "l3c",
-"title": "The Parthian Empire",
-"n": 56
-},
-{
-"t": "work",
-"lesson": 3,
-"title": "Journey to Jerusalem",
-"n": 57
-},
-{
-"t": "illus",
-"img": "l3_herod",
-"n": 58
-},
-{
-"t": "text",
-"id": "l3d",
-"title": "Herod Is Troubled",
-"n": 59
-},
-{
-"t": "text",
-"title": "Who Was King Herod?",
-"n": 60
-},
-{
-"t": "work",
-"lesson": 3,
-"title": "Parthia and King Herod",
-"n": 61
-},
-{
-"t": "work",
-"lesson": 3,
-"title": "The Judea Times",
-"n": 62
-},
-{
-"t": "work",
-"lesson": 3,
-"title": "Star in the Sky Word Search",
-"n": 63
-},
-{
-"t": "opener",
-"id": "l4",
-"img": "l4_open",
-"title": "The Wise Men Worship the King",
-"n": 64
-},
-{
-"t": "plan",
-"title": "The Wise Men Worship the King",
-"n": 65
-},
-{
-"t": "illus",
-"img": "l4_worship",
-"n": 66
-},
-{
-"t": "text",
-"id": "l4a",
-"title": "They Bowed Down and Worshiped Him",
-"n": 67
-},
-{
-"t": "illus",
-"img": "l4_gifts",
-"n": 68
-},
-{
-"t": "text",
-"id": "l4b",
-"title": "The Gifts: Gold, Frankincense, and Myrrh",
-"n": 69
-},
-{
-"t": "text",
-"title": "Myrrh, and a Gift Worthy of the King",
-"n": 70
-},
-{
-"t": "color",
-"lesson": 4,
-"title": "Gifts for the King",
-"img": "c_gifts",
-"n": 71
-},
-{
-"t": "work",
-"lesson": 4,
-"title": "Gifts for the King",
-"n": 72
-},
-{
-"t": "work",
-"lesson": 4,
-"title": "Your Gift to the King",
-"n": 73
 },
 {
 "t": "illus",
 "img": "l3_temple",
-"n": 74
+"n": 52
 },
 {
 "t": "text",
 "id": "l3e",
-"title": "The Temple in Jerusalem",
-"n": 75
+"title": "The House of the LORD",
+"n": 53
 },
 {
 "t": "color",
 "lesson": 4,
 "title": "The Temple",
 "img": "c_temple",
-"n": 76
+"n": 54
 },
 {
 "t": "work",
 "lesson": 4,
-"title": "Temple in Jerusalem",
-"n": 77
+"title": "Glory in the House",
+"n": 55
 },
 {
 "t": "illus",
 "img": "l3_simeon",
-"n": 78
+"n": 56
 },
 {
 "t": "text",
-"id": "l3f",
 "title": "Presented at the Temple",
-"n": 79
+"n": 57
 },
 {
 "t": "color",
 "lesson": 4,
 "title": "Simeon and Anna",
 "img": "c_simeon",
-"n": 80
+"n": 58
 },
 {
 "t": "work",
 "lesson": 4,
-"title": "Presentation at the Temple",
-"n": 81
+"title": "Forty Days Old",
+"n": 59
 },
 {
 "t": "opener",
-"id": "l5",
-"img": "l5_open",
-"title": "Escape to Egypt",
-"n": 82
+"img": "l3_open",
+"title": "Wise Men from the East",
+"n": 60
 },
 {
 "t": "plan",
-"title": "Escape to Egypt",
+"title": "Wise Men from the East",
+"n": 61
+},
+{
+"t": "illus",
+"img": "l3_magi",
+"n": 62
+},
+{
+"t": "text",
+"title": "Who Were the Magi?",
+"n": 63
+},
+{
+"t": "color",
+"lesson": 5,
+"title": "A Wise Man from the East",
+"img": "c_magus",
+"n": 64
+},
+{
+"t": "work",
+"lesson": 5,
+"title": "Who Came from the East?",
+"n": 65
+},
+{
+"t": "illus",
+"img": "l3_star",
+"n": 66
+},
+{
+"t": "text",
+"title": "The Star: What Did They See?",
+"n": 67
+},
+{
+"t": "text",
+"title": "Parthia: The Empire Rome Could Not Beat",
+"n": 68
+},
+{
+"t": "work",
+"lesson": 5,
+"title": "The Long Road West",
+"n": 69
+},
+{
+"t": "illus",
+"img": "l3_herod",
+"n": 70
+},
+{
+"t": "text",
+"title": "Herod Is Troubled",
+"n": 71
+},
+{
+"t": "text",
+"title": "Two Kings in One Land",
+"n": 72
+},
+{
+"t": "work",
+"lesson": 5,
+"title": "Parthia and King Herod",
+"n": 73
+},
+{
+"t": "work",
+"lesson": 5,
+"title": "A Magi\u2019s Travel Journal",
+"n": 74
+},
+{
+"t": "work",
+"lesson": 5,
+"title": "Wise Men Word Search",
+"n": 75
+},
+{
+"t": "opener",
+"img": "l4_open",
+"title": "Gifts for the King",
+"n": 76
+},
+{
+"t": "plan",
+"title": "Gifts for the King",
+"n": 77
+},
+{
+"t": "illus",
+"img": "l4_worship",
+"n": 78
+},
+{
+"t": "text",
+"title": "They Fell Down and Worshipped Him",
+"n": 79
+},
+{
+"t": "illus",
+"img": "l4_gifts",
+"n": 80
+},
+{
+"t": "text",
+"title": "The Gifts: Gold, Frankincense, and Myrrh",
+"n": 81
+},
+{
+"t": "text",
+"title": "Myrrh, and a Gift Worthy of the King",
+"n": 82
+},
+{
+"t": "color",
+"lesson": 6,
+"title": "Gifts for the King",
+"img": "c_gifts",
 "n": 83
+},
+{
+"t": "work",
+"lesson": 6,
+"title": "Gifts for the King",
+"n": 84
+},
+{
+"t": "work",
+"lesson": 6,
+"title": "Your Gift to the King",
+"n": 85
 },
 {
 "t": "illus",
 "img": "l5_house",
-"n": 84
+"n": 86
 },
 {
 "t": "text",
 "id": "l5a",
-"title": "An Israelite House",
-"n": 85
+"title": "Under an Israelite Roof",
+"n": 87
 },
 {
 "t": "color",
-"lesson": 5,
+"lesson": 6,
 "title": "An Israelite House",
 "img": "c_house",
-"n": 86
+"n": 88
 },
 {
 "t": "work",
-"lesson": 5,
-"title": "Label the House",
-"n": 87
+"lesson": 6,
+"title": "Inside the House",
+"n": 89
+},
+{
+"t": "opener",
+"img": "l5_open",
+"title": "Out of Egypt, Home to Nazareth",
+"n": 90
+},
+{
+"t": "plan",
+"title": "Out of Egypt, Home to Nazareth",
+"n": 91
 },
 {
 "t": "illus",
 "img": "l5_flight",
-"n": 88
-},
-{
-"t": "text",
-"id": "l5b",
-"title": "Flight to Egypt",
-"n": 89
-},
-{
-"t": "color",
-"lesson": 5,
-"title": "The Escape to Egypt",
-"img": "c_flight",
-"n": 90
-},
-{
-"t": "work",
-"lesson": 5,
-"title": "Escape to Egypt",
-"n": 91
-},
-{
-"t": "work",
-"lesson": 5,
-"title": "Where Is Egypt?",
 "n": 92
 },
 {
-"t": "work",
-"lesson": 5,
-"title": "Joseph\u2019s Four Dreams",
+"t": "text",
+"title": "Flight to Egypt",
 "n": 93
+},
+{
+"t": "color",
+"lesson": 7,
+"title": "The Escape to Egypt",
+"img": "c_flight",
+"n": 94
+},
+{
+"t": "work",
+"lesson": 7,
+"title": "Arise and Flee",
+"n": 95
 },
 {
 "t": "illus",
 "img": "l5_egypt",
-"n": 94
-},
-{
-"t": "text",
-"id": "l5c",
-"title": "Safe in Egypt, Home to Nazareth",
-"n": 95
-},
-{
-"t": "work",
-"lesson": 5,
-"title": "The Escape Route",
 "n": 96
 },
 {
-"t": "work",
-"lesson": 5,
-"title": "Put the Story in Order",
+"t": "text",
+"title": "Safe in Egypt, Home to Nazareth",
 "n": 97
+},
+{
+"t": "work",
+"lesson": 7,
+"title": "Out of Egypt: Two Journeys",
+"n": 98
+},
+{
+"t": "work",
+"lesson": 7,
+"title": "The Escape Route",
+"n": 99
+},
+{
+"t": "illus",
+"img": "l1_nazareth",
+"n": 100
+},
+{
+"t": "text",
+"id": "l5n",
+"title": "Can Any Good Thing Come Out of Nazareth?",
+"n": 101
+},
+{
+"t": "color",
+"lesson": 7,
+"title": "A Man of Nazareth",
+"img": "c_farmer",
+"n": 102
+},
+{
+"t": "work",
+"lesson": 7,
+"title": "Come and See Nazareth",
+"n": 103
+},
+{
+"t": "work",
+"lesson": 7,
+"title": "Joseph\u2019s Four Dreams",
+"n": 104
+},
+{
+"t": "work",
+"lesson": 7,
+"title": "From Promise to Nazareth",
+"n": 105
 },
 {
 "t": "illus",
 "img": "map_escape_book",
-"n": 98
+"n": 106
 },
 {
 "t": "key",
 "id": "key",
-"title": "Answers: Lessons 1 and 2",
-"n": 99
+"title": "Answers: Lessons 1 to 3",
+"n": 107
 },
 {
 "t": "key",
-"title": "Answers: Lessons 3 and 4",
-"n": 100
+"title": "Answers: Lessons 4 and 5",
+"n": 108
 },
 {
 "t": "key",
-"title": "Answers: Lesson 5",
-"n": 101
+"title": "Answers: Lessons 6 and 7",
+"n": 109
 },
 {
 "t": "back",
-"n": 102
+"n": 110
 }
 ]

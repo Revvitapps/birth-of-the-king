@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Builds the Birth of the King flip book HTML from content modules."""
+"""Builds the Beyond the Manger flip book HTML from content modules."""
+TITLE = "Beyond the Manger"
+SUBTITLE = "A Detailed Look into the Story of the Promised King"
+# Copyright owner, confirmed by the author 2026-11-18.
+OWNER = "Athena Bryan"
+COPYRIGHT = (f"© 2026 {OWNER}. All rights reserved.",
+             "No part of this book may be reproduced or shared without written permission, except that the purchaser may copy the student pages for use in their own household or single classroom.")
 import html, re, sys, json, importlib
 sys.path.insert(0, '.')
 
@@ -22,15 +28,36 @@ def foot(p, label):
 
 def pg_cover(p):
     return f'''<section class="page cover"><img src="{src(p["img"])}">
-<div class="cv-top"><div class="cv-kick">An In-Depth Bible Curriculum on</div><h1>Birth of<br>the King</h1>
-<div class="cv-sub">The Story of Yeshua the Messiah · Matthew 1–2 · Luke 1–2</div></div>
-<div class="cv-bot">Teacher Edition with Student Activity Pages</div></section>'''
+<div class="cv-top"><div class="cv-kick">An In-Depth Bible Curriculum</div><h1>Beyond<br>the Manger</h1>
+<div class="cv-sub">{SUBTITLE}</div><div class="cv-ref">Matthew 1–2 · Luke 1–2</div>{'<div class="cv-ed">Student Workbook</div>' if p.get("edition") == "Student Workbook" else ""}</div>
+<div class="cv-bot">{p.get("edition", "Teacher Edition with Student Activity Pages")}</div></section>'''
 
 def pg_illus(p):
     cap = f'<div class="pill">{md(p["cap"])}</div>' if p.get('cap') else ''
     fit = 'contain' if p.get('contain') else 'cover'
     extra = ' map' if p.get('contain') else ''
-    return f'<section class="page art{extra}"><img src="{src(p["img"])}" style="object-fit:{fit}">{cap}<div class="edge"></div></section>'
+    # pos: which part of a tall painting to keep when it is cropped to the page ("top" keeps heads). capb: caption pill at the bottom.
+    pos = f';object-position:center {p["pos"]}' if p.get('pos') else ''
+    if p.get('capb'): cap = cap.replace('class="pill"', 'class="pill" style="top:auto;bottom:0.45in"')
+    return f'<section class="page art{extra}"><img src="{src(p["img"])}" style="object-fit:{fit}{pos}">{cap}<div class="edge"></div></section>'
+
+def copy_html():
+    return f'<div class="cpy"><div class="cpy-t">{TITLE}</div><div class="cpy-s">{SUBTITLE}</div><p class="cpy-c">{html.escape(COPYRIGHT[0])}</p><p>{html.escape(COPYRIGHT[1])}</p></div>'
+
+def pg_title(p):
+    return f'''<section class="page titlepg"><div class="tp-in"><div class="tp-k">An In-Depth Bible Curriculum</div><h1>Beyond<br>the Manger</h1><div class="tp-bar"></div>
+<div class="tp-s">{SUBTITLE}</div><div class="tp-r">Matthew 1–2 · Luke 1–2</div><div class="tp-e">Teacher Edition with Student Activity Pages</div><div class="tp-logo"><img src="imgc/fhk_logo.png"></div>
+<div class="tp-c"><b>{html.escape(COPYRIGHT[0])}</b><br>{html.escape(COPYRIGHT[1])}</div></div></section>'''
+
+def pg_verse(p):
+    return f'''<section class="page back versepg"><div class="bk-in"><div class="bk-star">✦</div>
+<p class="bk-v">{md(p["verse"])}</p><p class="bk-r">{md(p["ref"])}</p></div></section>'''
+
+def pg_copy(p):
+    # student workbook: title, large logo in the middle, copyright wording under it
+    return f'''<section class="page titlepg scopy"><div class="tp-in"><div class="tp-k">Student Workbook</div><h1>Beyond<br>the Manger</h1><div class="tp-bar"></div>
+<div class="tp-s">{SUBTITLE}</div><div class="tp-logo"><img src="imgc/fhk_logo.png"></div>
+<div class="tp-c"><b>{html.escape(COPYRIGHT[0])}</b><br>{html.escape(COPYRIGHT[1])}</div></div></section>'''
 
 def pg_opener(p):
     return f'''<section class="page art opener"><img src="{src(p["img"])}">
@@ -96,13 +123,13 @@ def pg_plan(p):
     return f'''<section class="page text plan">{band(p, "Lesson Plan · Lesson " + str(p["num"]))}
 <div class="body fit"><div class="planrow"><div class="pl-l">
 <div class="pbox"><b class="t">Bible Passages</b><br>{md(p["passages"])}</div>
-<div class="pbox"><b class="t">Lesson Objectives</b><br>In this lesson, children will learn:<ol>{obj}</ol></div>
+<div class="pbox"><b class="t">Lesson Goals</b><br>By the end of this lesson, children will be able to:<ol>{obj}</ol></div>
 <div class="pbox"><b class="t">Opening Prayer</b><br><i>{md(p["prayer"])}</i></div>
 <div class="pbox"><b class="t">Materials</b><br>{md(p["materials"])}</div>
-</div><div class="pl-r"><div class="ovw"><b class="t">Bible Lesson Overview</b><p>{md(p["overview"])}</p></div>
-<div class="callout"><b class="t">Did You Know?</b><br>{md(p["dyk"])}</div></div></div>
+</div><div class="pl-r"><div class="ovw"><b class="t">The Big Picture</b><p>{md(p["overview"])}</p></div>
+<div class="callout"><b class="t">Hidden Gem</b><br>{md(p["dyk"])}</div></div></div>
 <div class="flow"><b class="t">Lesson Flow</b><ol>{flow}</ol></div></div>
-{foot(p, "Birth of the King · Lesson " + str(p["num"]))}</section>'''
+{foot(p, TITLE + " · Lesson " + str(p["num"]))}</section>'''
 
 def lines(n, cls='ln'):
     return ''.join(f'<div class="{cls}"></div>' for _ in range(n))
@@ -148,9 +175,10 @@ def block_html(b):
 def wband(p, kick):
     L = p["lesson"]
     return f'''<img class="wm" src="imgc/fhk_watermark.png"><div class="wband"><div class="wk">{kick} · Lesson {L}</div>
-<div class="wname">Name: ____________________</div><div class="wart"><img class="spot" src="imgc/spot_l{L}.png"><img class="logo" src="imgc/fhk_logo.png"></div><h1>{md(p["title"])}</h1></div>'''
+<div class="wname">Name: ____________________</div><div class="wart"><img class="spot" src="imgc/spot_l{SPOT[L]}.png"><img class="logo" src="imgc/fhk_logo.png"></div><h1>{md(p["title"])}</h1></div>'''
 
-SFOOT = "Birth of the King · © For His Kingdom"
+SPOT = {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 4, 7: 5}  # header spot art per lesson
+SFOOT = "© 2026 " + TITLE + ". For personal use only."
 
 def pg_work(p):
     ins = f'<div class="ins">{md(p["ins"])}</div>' if p.get('ins') else ''
@@ -172,27 +200,27 @@ def pg_color(p):
 def pg_key(p):
     cols = ''.join(f'<div class="kb"><h3>{md(h)}</h3><ol>{"".join("<li>"+md(a)+"</li>" for a in items)}</ol></div>' for h, items in p['sections'])
     return f'''<section class="page text key">{band(p, "Teacher Answer Key")}<div class="body fit keycols">{cols}</div>
-{foot(p, "Birth of the King · Answer Key")}</section>'''
+{foot(p, TITLE + " · Answer Key")}</section>'''
 
 def pg_frontmatter(p):
     return f'''<section class="page text fm">{band(p, p["kicker"])}<div class="body fit"><div class="main wide">{paras_html(p["paras"])}</div></div>
-{foot(p, "Birth of the King")}</section>'''
+{foot(p, TITLE)}</section>'''
 
 def pg_toc(p):
     rows = ''.join(f'<div class="toc-l"><span class="tn">{md(a)}</span><span class="tt">{md(b)}</span><span class="tp">{c}</span></div>' if a else f'<div class="toc-s">{md(b)}<span class="tp">{c}</span></div>' for a, b, c in p['rows'])
-    return f'''<section class="page text fm">{band(p, "Contents")}<div class="body fit toc">{rows}</div>{foot(p, "Birth of the King")}</section>'''
+    return f'''<section class="page text fm">{band(p, "Contents")}<div class="body fit toc">{rows}</div>{foot(p, TITLE)}</section>'''
 
 def pg_back(p):
     return f'''<section class="page back"><div class="bk-in"><div class="bk-star">✦</div>
 <p class="bk-v">“For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.”</p>
-<p class="bk-r">Isaiah 9:6</p><p class="bk-t">Birth of the King</p><div class="bk-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
+<p class="bk-r">Isaiah 9:6</p><p class="bk-t">Beyond the Manger</p><p class="bk-s">A Detailed Look into the Story of the Promised King</p><div class="bk-logo"><img src="imgc/fhk_logo.png"></div></div></section>'''
 
 R = dict(cover=pg_cover, illus=pg_illus, opener=pg_opener, text=pg_text, plan=pg_plan, work=pg_work,
-         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back)
+         color=pg_color, key=pg_key, fm=pg_frontmatter, toc=pg_toc, back=pg_back, copy=pg_copy, title=pg_title, verse=pg_verse)
 
 def load_pages():
     pages = []
-    for mod in ['c_front', 'c_l1', 'c_l2', 'c_l3', 'c_l4', 'c_l5', 'c_back']:
+    for mod in ['c_front', 'c_l1', 'c_l2', 'c_l3', 'c_l4', 'c_l5', 'c_l6', 'c_l7', 'c_back']:
         m = importlib.import_module(mod)
         pages += m.PAGES
     for i, p in enumerate(pages):
@@ -211,9 +239,10 @@ if __name__ == '__main__':
         if p['t'] == 'toc':
             def find(key):
                 for q in pages:
-                    if q.get('id') == key: return q['n']
+                    if q.get('id') == key or (q['t'] in ('opener', 'text') and q.get('title') == key): return q['n']
                 return ''
             p['rows'] = [(a, b, find(c)) for a, b, c in p['rows_src']]
     build(pages, 'book.html')
+    build([dict(t='cover', img='cover', edition='Student Workbook', n=1), dict(t='copy', n=2)], 'student_cover.html')
     json.dump([{k: v for k, v in p.items() if k in ('n', 't', 'lesson', 'title', 'id', 'img')} for p in pages], open('pages.json', 'w'), indent=0)
     print(len(pages), 'pages')
